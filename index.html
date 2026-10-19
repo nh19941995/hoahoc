@@ -5,242 +5,333 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Luyện trắc nghiệm Hóa đại cương</title>
 <style>
-:root{--bg:#f6f7f9;--card:#fff;--fg:#1d2330;--mut:#5b6475;--bd:#dde1e8;--ac:#2563eb;--acbg:#e8efff;--ok:#16794a;--okbg:#e3f6ec;--bad:#b42318;--badbg:#fdeaea}
+:root{--bg:#f4f6f9;--card:#fff;--fg:#1d2330;--mut:#5b6475;--bd:#dde1e8;--ac:#2563eb;--acbg:#e8efff;--ok:#16794a;--okbg:#e3f6ec;--bad:#b42318;--badbg:#fdeaea}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151c;--card:#1b2030;--fg:#e8ebf2;--mut:#9aa3b5;--bd:#2c3347;--ac:#6ea0ff;--acbg:#22305a;--ok:#5ad39a;--okbg:#123626;--bad:#ff8a80;--badbg:#401c1c}}
 :root[data-theme="dark"]{--bg:#12151c;--card:#1b2030;--fg:#e8ebf2;--mut:#9aa3b5;--bd:#2c3347;--ac:#6ea0ff;--acbg:#22305a;--ok:#5ad39a;--okbg:#123626;--bad:#ff8a80;--badbg:#401c1c}
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
-main{max-width:760px;margin:0 auto;padding:16px 14px 90px}
-h1{font-size:1.4rem;margin:.2em 0 .1em}h2{font-size:1.05rem;margin:1.2em 0 .5em}
-.mut{color:var(--mut);font-size:.9rem}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:10px 0}
-button{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--fg);border-radius:10px;padding:9px 14px}
-button.p{background:var(--ac);border-color:var(--ac);color:#fff}
-button:disabled{opacity:.45;cursor:default}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;overflow-wrap:anywhere}
+main{max-width:720px;margin:0 auto;padding:12px max(12px,env(safe-area-inset-right)) 24px max(12px,env(safe-area-inset-left))}
+h1{font-size:1.3rem;line-height:1.3;margin:.3em 0 .15em}
+h2{font-size:1.02rem;margin:1.3em 0 .5em}
+.mut{color:var(--mut);font-size:.88rem}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:13px;margin:10px 0}
+button,input,textarea{font-size:16px;font-family:inherit}
+button{min-height:46px;cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--fg);border-radius:12px;padding:10px 14px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+button.p{background:var(--ac);border-color:var(--ac);color:#fff;font-weight:600}
+button:disabled{opacity:.45}
 .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
-.modes button{text-align:left;padding:12px}.modes b{display:block}
-label.chk{display:flex;gap:6px;align-items:center;margin-right:12px}
-input[type=number]{width:70px;font:inherit;padding:6px;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--fg)}
-textarea{width:100%;min-height:90px;font:12px/1.4 monospace;border-radius:8px;border:1px solid var(--bd);background:var(--card);color:var(--fg);padding:8px}
-.tag{font-size:.78rem;color:var(--mut);margin-bottom:4px}
-.q{white-space:pre-line;margin-bottom:8px}
-.opt{display:flex;gap:8px;width:100%;text-align:left;margin:5px 0;padding:9px 11px;white-space:pre-line}
-.opt.sel{border-color:var(--ac);background:var(--acbg)}
+.row>button{flex:1 1 140px}
+.modes{display:grid;grid-template-columns:1fr;gap:8px}
+@media(min-width:560px){.modes{grid-template-columns:1fr 1fr}}
+.modes button{text-align:left;padding:12px 14px}
+.modes b{display:block;font-size:1.02rem}
+.modes span{font-size:.88rem;opacity:.85}
+.chk{display:flex;gap:10px;align-items:center;min-height:44px;padding:2px 0}
+.chk input{width:22px;height:22px;flex:none}
+input[type=number]{width:84px;min-height:44px;padding:6px 10px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--fg)}
+textarea{width:100%;min-height:96px;font:13px/1.4 ui-monospace,Menlo,monospace;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--fg);padding:9px;margin-top:8px}
+.tag{font-size:.78rem;color:var(--mut);margin-bottom:5px}
+.q{white-space:pre-line;margin-bottom:9px;font-size:1.02rem}
+.opt{display:flex;gap:9px;width:100%;text-align:left;margin:6px 0;padding:11px 12px;min-height:50px;align-items:flex-start;white-space:pre-line;line-height:1.45}
+.opt.sel{border-color:var(--ac);background:var(--acbg);box-shadow:inset 0 0 0 1px var(--ac)}
 .opt.ok{border-color:var(--ok);background:var(--okbg)}
 .opt.bad{border-color:var(--bad);background:var(--badbg)}
-.opt i{font-style:normal;font-weight:700;min-width:1.2em}
-.bar{position:sticky;bottom:0;background:var(--card);border-top:1px solid var(--bd);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.score{font-size:2rem;font-weight:700}
+.opt i{font-style:normal;font-weight:700;min-width:1.3em}
+.bar{position:sticky;bottom:0;z-index:5;margin:0 -12px;background:var(--card);border-top:1px solid var(--bd);padding:8px 12px calc(10px + env(safe-area-inset-bottom,0px))}
+.prog{height:5px;border-radius:5px;background:var(--bd);overflow:hidden;margin-bottom:8px}
+.prog i{display:block;height:100%;background:var(--ac);width:0;transition:width .2s}
+.bar .row{flex-wrap:nowrap}.bar .row>button{flex:1;padding:10px 6px}
+.bar .info{font-size:.9rem;margin-bottom:6px;color:var(--mut)}
+.score{font-size:2rem;font-weight:700;line-height:1.2}
 .bd-ok{border-left:5px solid var(--ok)}.bd-bad{border-left:5px solid var(--bad)}.bd-na{border-left:5px solid var(--mut)}
-table{width:100%;border-collapse:collapse;font-size:.92rem}td,th{padding:5px 4px;border-bottom:1px solid var(--bd);text-align:left}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.9rem}td,th{padding:6px 4px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:top}
+.foot{text-align:center;margin:22px 0 4px;color:var(--mut);font-size:.92rem;line-height:1.7}
+.foot a{color:var(--ac);text-decoration:none;font-weight:600}
+@media(max-width:420px){h1{font-size:1.18rem}.score{font-size:1.7rem}.card{padding:11px}}
+.head{display:flex;justify-content:space-between;align-items:center;gap:8px}.head h1{margin:.3em 0 .15em}.head button{min-width:46px;padding:6px 12px;font-size:1.25rem}
+input[type=range]{width:100%;min-height:36px;accent-color:var(--ac)}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.62);display:flex;align-items:center;justify-content:center;z-index:50;padding:16px}
+.slot{background:var(--card);border:3px solid var(--bd);border-radius:20px;padding:18px;max-width:400px;width:100%;text-align:center}
+.slot.gold{border-color:#f5c542;animation:gl 1.2s ease-in-out infinite alternate}
+@keyframes gl{from{box-shadow:0 0 10px #f5c54288}to{box-shadow:0 0 36px #f5c542}}
+.reels{display:flex;gap:8px;justify-content:center;margin:10px 0}
+.reel{width:30%;max-width:96px;height:94px;overflow:hidden;border-radius:14px;background:var(--bg);border:2px solid var(--bd);font-size:52px;line-height:90px}
+.reel.spin{animation:sp .14s linear infinite;filter:blur(1.5px)}
+@keyframes sp{0%{transform:translateY(-14px)}50%{transform:translateY(14px)}100%{transform:translateY(-14px)}}
+.reel.stop{animation:bn .35s ease-out}
+@keyframes bn{0%{transform:scale(1.28)}60%{transform:scale(.92)}100%{transform:scale(1)}}
+.sc{font-size:2.4rem;font-weight:800;line-height:1.2}
+.lab{font-size:1.25rem;font-weight:700;margin:6px 0}
+.pop{animation:pp .25s}@keyframes pp{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
+.toast{position:fixed;left:50%;bottom:calc(118px + env(safe-area-inset-bottom,0px));background:var(--ac);color:#fff;padding:9px 16px;border-radius:22px;z-index:40;font-weight:600;animation:tst 1.7s forwards}
+@keyframes tst{0%{opacity:0;transform:translate(-50%,12px)}15%{opacity:1;transform:translate(-50%,0)}85%{opacity:1}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.pop,.reel.spin,.slot.gold{animation:none}}
 </style>
 </head>
 <body>
 <main id="app"></main>
 <script>
-const TF=(t,a)=>({t,o:["Đúng","Sai"],a:a==="Đ"?0:1});
-const MC=(t,o,a)=>({t,o,a:"ABCD".indexOf(a)});
-const CH=[
-{n:"Bài 1 – Cấu tạo nguyên tử",q:[
-TF("Trong thí nghiệm Rutherford, phần lớn hạt α truyền thẳng qua lá vàng chứng tỏ phần lớn thể tích nguyên tử là khoảng trống.","Đ"),
-TF("Electron của nguyên tử hydrogen chuyển từ mức n = 3 xuống mức n = 2 thì phát ra một lượng tử năng lượng.","Đ"),
-TF("Trong một nguyên tử, không thể có hai electron có cùng một bộ bốn số lượng tử (n, l, mₗ, mₛ).","Đ"),
-TF("Bộ số lượng tử n = 2, l = 1, mₗ = 0, mₛ = +1/2 là một bộ số lượng tử hợp lệ.","Đ"),
-TF("Cách phân bố sáu electron trên năm orbital của phân lớp 3d như sau: [↑↓] [↑↓] [↑] [↑] [ ] tuân thủ quy tắc Hund.","S"),
-TF("Các nguyên tố có tính chất hóa học tương tự nhau được xếp trong cùng một cột của bảng tuần hoàn.","Đ"),
-TF("Trong nhóm halogen, iodine nằm dưới chlorine nên I₂ có tính oxi hóa mạnh hơn Cl₂.","S"),
-TF("Natri (sodium) có cấu hình electron 1s² 2s² 2p⁶ 3s¹ nên thuộc chu kỳ 3 và nhóm IA (nhóm 1).","Đ"),
-TF("Ở trạng thái cơ bản, các electron trong nguyên tử lần lượt chiếm các orbital theo chiều năng lượng từ cao xuống thấp.","S"),
-TF("Các nguyên tố có cùng số lớp electron được xếp cùng một hàng, gọi là chu kì.","Đ"),
-TF("Theo quy tắc (n + l) dùng để dự đoán thứ tự điền electron trong nguyên tử nhiều electron, AO có n + l nhỏ hơn thường có năng lượng thấp hơn.","Đ"),
-TF("Theo quy tắc (n + l), khi hai AO có cùng n + l, AO có n nhỏ hơn thường có năng lượng cao hơn.","S"),
-TF("Ion K⁺ và ion Cl⁻ có cấu hình electron giống nhau, biết K có Z = 19 và Cl có Z = 17.","Đ"),
-TF("Trong cấu hình electron nguyên tử ở trạng thái cơ bản, nếu electron cuối cùng được điền vào phân lớp s hoặc d thì nguyên tố luôn thuộc nhóm chính.","S"),
-TF("Cấu hình electron của ion Fe²⁺ là 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁴ 4s², biết Z(Fe) = 26.","S"),
-TF("Chu kì 3 và chu kì 4 đều có 18 nguyên tố.","S"),
-TF("Theo quy tắc (n + l), các phân lớp có thứ tự năng lượng tăng dần: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 5d, 4f, 6p, 7s.","S"),
-TF("Ion Mg²⁺ có cấu hình electron 1s² 2s² 2p⁶; do có 10 electron nên điện tích hạt nhân của ion là +10e.","S"),
-MC("Phân lớp d có bao nhiêu orbital?",["3 orbital.","5 orbital.","7 orbital.","10 orbital."],"B"),
-MC("Số electron tối đa của lớp n = 3 là bao nhiêu?",["8 electron.","10 electron.","18 electron.","32 electron."],"C"),
-MC("Sắt có Z = 26. Cấu hình electron trạng thái cơ bản nào đúng?",["1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁸.","1s² 2s² 2p⁶ 3s² 3p⁶ 4s⁴ 3d⁴.","1s² 2s² 2p⁶ 3s² 3p⁵ 3d⁷ 4s².","1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²."],"D"),
-MC("Dấu hiệu nào trong cấu hình electron được sử dụng trực tiếp để xác định số thứ tự chu kỳ?",["Tổng số electron độc thân.","Giá trị số lượng tử chính n lớn nhất.","Tổng số orbital đã có electron.","Số electron của phân lớp d."],"B"),
-MC("Đối với các nguyên tố nhóm chính trong một chu kì (bỏ qua khí hiếm), xu hướng chung nào đúng?",["Bán kính tăng, tính khử tăng và tính oxy hóa giảm.","Bán kính tăng, tính khử giảm và tính oxy hóa tăng.","Bán kính không đổi, tính khử và tính oxy hóa không đổi.","Bán kính giảm, tính khử giảm và tính oxy hóa tăng."],"D"),
-MC("Chlorine có Z = 17, cấu hình electron kết thúc 3s²3p⁵. Khi tạo ion đơn nguyên tử bền, chlorine có xu hướng nào?",["Nhường 1 electron để tạo Cl⁺.","Nhường 2 electron để tạo Cl²⁺.","Nhận 1 electron để tạo Cl⁻.","Nhận 2 electron để tạo Cl²⁻."],"C"),
-MC("Calcium có Z = 20 và cấu hình electron kết thúc 4s². Vị trí nào đúng?",["Chu kỳ 2, nhóm IIA (2).","Chu kỳ 4, nhóm IIA (2).","Chu kỳ 4, nhóm VIIIA (18).","Chu kỳ 2, nhóm IVA (14)."],"B"),
-MC("Na và K cùng thuộc nhóm IA, trong đó K nằm dưới Na. Nhận xét nào đúng?",["Na có bán kính lớn hơn và tính khử mạnh hơn K.","Na và K có bán kính và tính khử giống nhau.","K có bán kính nhỏ hơn và tính khử yếu hơn Na.","K có bán kính lớn hơn và tính khử mạnh hơn Na."],"D"),
-MC("Một nguyên tố X có cấu hình electron kết thúc 3s²3p⁴. Vị trí của X trong bảng tuần hoàn là:",["Chu kỳ 3, nhóm IVA (nhóm 14).","Chu kỳ 3, nhóm VIA (nhóm 16).","Chu kỳ 4, nhóm VIA (nhóm 16).","Chu kỳ 3, nhóm VIB (nhóm 6)."],"B"),
-MC("Ở trạng thái cơ bản, nguyên tử nguyên tố nào sau đây có số electron độc thân khác với ba nguyên tử còn lại?",["N (Z=7)","Na (Z=11)","Cl (Z=17)","Al (Z=13)"],"A"),
-MC("Hạt mang điện trong nhân nguyên tử là:",["Electron","Proton","Neutron","Proton và neutron"],"B"),
-MC("Trong nguyên tử, hạt nào có khối lượng không đáng kể so với các hạt còn lại?",["Electron","Proton","Neutron","Electron và neutron"],"A"),
-MC("Số khối của nguyên tử bằng tổng:",["Số p và số n","Số p và số e","Số n, e và số p","Số p và Z"],"A"),
-MC("Đồng vị là những nguyên tử của cùng một nguyên tố, có số p bằng nhau nhưng khác nhau số:",["Neutron","Electron","Proton","Orbital"],"A"),
-MC("Cation M²⁺ có cấu hình electron kết thúc ở phân lớp 2p⁶. Cấu hình electron của nguyên tử M là:",["1s² 2s² 2p⁶ 3s²","1s² 2s² 2p⁶","1s² 2s² 2p⁴","1s² 2s² 2p⁶ 3s¹"],"A"),
-MC("Anion Y²⁻ có cấu hình electron kết thúc ở phân lớp 2p⁶. Số hiệu nguyên tử của Y là:",["8","12","9","16"],"A"),
-MC("Số electron hóa trị của nguyên tố có Z=7 là:",["5","1","3","6"],"A"),
-MC("Gọi Nₑ, Nₚ và Nₙ lần lượt là số electron, proton và neutron của ion X²⁻. Hệ thức nào sau đây luôn đúng?",["Nₑ − Nₚ = 2","Nₚ − Nₑ = 2","Nₑ − Nₙ = 2","Nₑ − (Nₚ + Nₙ) = 2"],"A"),
-MC("Trong cơ học lượng tử, trạng thái của electron được mô tả bằng khái niệm nào?",["Quỹ đạo hành tinh xác định.","Tốc độ không đổi quanh hạt nhân.","Hàm sóng hoặc hàm trạng thái.","Đường tròn có bán kính bất kỳ."],"C"),
-MC("Trạng thái của một electron trong nguyên tử được đặc trưng bằng bao nhiêu số lượng tử?",["Hai số lượng tử n và l.","Bốn số lượng tử n, l, mₗ và mₛ.","Ba số lượng tử n, l và mₗ.","Năm số lượng tử n, l, mₗ, mₛ và Z."],"B"),
-MC("Với lớp electron M (n = 3), số lượng tử phụ l có thể nhận các giá trị nào?",["l = 1, 2, 3.","l = 0, 1, 2, 3.","l = -2, -1, 0, 1, 2.","l = 0, 1, 2."],"D")
-]},
-{n:"Bài 2 – Cấu tạo phân tử và liên kết hóa học",q:[
-TF("Độ âm điện là đại lượng đặc trưng cho khả năng hút electron liên kết về phía mình của một nguyên tử khi tham gia liên kết hóa học.","Đ"),
-TF("Năng lượng liên kết càng nhỏ thì liên kết càng bền.","S"),
-TF("Liên kết trong NaCl là liên kết cộng hóa trị phân cực.","S"),
-TF("Liên kết π được hình thành do các orbital hóa trị xen phủ theo trục nối hai hạt nhân.","S"),
-TF("Liên kết σ được hình thành do các orbital hóa trị xen phủ bên.","S"),
-TF("Lai hóa sp² tạo ra ba orbital lai hóa nằm trong cùng một mặt phẳng, định hướng về ba đỉnh của một tam giác đều, với góc lý tưởng xấp xỉ 120°.","Đ"),
-TF("Theo thuyết orbital phân tử (MO), phân tử được xem là một hệ thống nhất.","Đ"),
-TF("Khi n orbital nguyên tử tổ hợp tuyến tính thì tạo thành n orbital phân tử.","Đ"),
-TF("Phân tử H₂O phân cực vì các liên kết O–H phân cực và các moment lưỡng cực liên kết không triệt tiêu nhau.","Đ"),
-TF("Theo thuyết liên kết hóa trị (VB), khi hình thành liên kết cộng hóa trị, mức độ xen phủ giữa các orbital càng lớn thì liên kết thường càng bền.","Đ"),
-TF("Góc liên kết H–C–H trong phân tử CH₄ là 120°.","S"),
-TF("Góc lý tưởng giữa các orbital lai hóa sp³ là 180°.","S"),
-TF("Lai hóa sp tạo ra hai orbital lai hóa định hướng thẳng hàng, với góc lý tưởng 180°.","Đ"),
-TF("Trong lai hóa sp², một orbital s tổ hợp với một orbital p để tạo ra hai orbital lai hóa.","S"),
-TF("Theo thuyết VB, liên kết cộng hóa trị được hình thành do sự ghép đôi hai electron độc thân có spin cùng chiều của hai nguyên tử tham gia liên kết.","S"),
-TF("Trong phân tử có liên kết bội (liên kết đôi hoặc liên kết ba) luôn chỉ có một liên kết π.","S"),
-TF("Theo thuyết VB, liên kết cộng hóa trị là liên kết có hướng.","Đ"),
-TF("Trừ các khí hiếm, phần lớn nguyên tử thường liên kết với nhau để tạo thành phân tử hoặc mạng tinh thể.","Đ"),
-MC("Dãy phân tử nào sau đây chỉ chứa liên kết σ?",["Cl₂, NH₃, H₂O.","N₂, O₂, CO₂.","C₂H₄, H₂O, NH₃.","C₂H₂, N₂, HCl."],"A"),
-MC("Trong phân tử C₂H₄, tổng số liên kết σ và π lần lượt là:",["4σ và 2π.","5σ và 1π.","6σ và 1π.","5σ và 2π."],"B"),
-MC("Trong phân tử N₂, liên kết ba gồm:",["3 liên kết σ.","2 liên kết σ và 1 liên kết π.","3 liên kết π.","1 liên kết σ và 2 liên kết π."],"D"),
-MC("Trong phân tử BeH₂ ở trạng thái khí, nguyên tử Be có kiểu lai hóa và góc liên kết phù hợp là:",["sp³ và 109°28′.","sp² và 120°.","sp và 180°.","Không lai hóa và 90°."],"C"),
-MC("Nguyên tử N trong NH₃ tạo ba liên kết σ và còn một cặp electron chưa liên kết. Kiểu lai hóa của N là:",["sp.","sp³.","sp².","Không lai hóa."],"B"),
-MC("Điều kiện nào sau đây không phù hợp để các orbital nguyên tử (AO) tổ hợp tạo orbital phân tử (MO)?",["Năng lượng của các AO xấp xỉ nhau.","Các AO có tính đối xứng phù hợp đối với trục liên kết.","Các AO không cần xen phủ đáng kể với nhau.","Sự xen phủ giữa các AO phải đạt mức độ rõ rệt."],"C"),
-MC("Phân tử nào sau đây không phân cực?",["HCl.","CO₂.","H₂O.","CHCl₃."],"B"),
-MC("Cách phân loại nào sau đây đúng?",["HCl không phân cực; CO₂ phân cực; H₂O không phân cực.","HCl phân cực; CO₂ phân cực; H₂O không phân cực.","HCl không phân cực; CO₂ không phân cực; H₂O phân cực.","HCl phân cực; CO₂ không phân cực; H₂O phân cực."],"D"),
-MC("Cho các phân tử: CO₂ (1), H₂O (2), C₂H₂ (3), SO₂ (4), NH₃ (5), BeH₂ (6). Những phân tử nào có hình học thẳng?",["(1), (3) và (6).","(1), (3) và (4).","(1), (2) và (6).","(1), (5) và (6)."],"A"),
-MC("Bản chất của liên kết ion là:",["Lực hút tĩnh điện giữa các ion trái dấu.","Liên kết giữa các nguyên tử bằng cặp electron dùng chung.","Lực hút tĩnh điện giữa các ion cùng dấu.","Sự cho – nhận electron."],"A"),
-MC("Bản chất của liên kết cộng hóa trị là:",["Liên kết giữa các nguyên tử trong đó cặp electron dùng chung không bị lệch về phía nguyên tử nào.","Liên kết giữa các nguyên tử bằng một hay nhiều cặp electron dùng chung.","Liên kết giữa các nguyên tử bằng cặp electron dùng chung do một nguyên tử cung cấp hoàn toàn.","Liên kết trong đó cặp electron dùng chung bị lệch về phía một nguyên tử."],"B"),
-MC("Cặp nào sau đây đều có khả năng tạo liên kết hydrogen giữa các phân tử cùng loại?",["H₂O và HF.","HCl và H₂S.","CH₄ và CO₂.","N₂ và O₂."],"A"),
-MC("Công thức hóa học nào sau đây biểu thị hợp chất ion?",["KCl.","NH₃.","CH₄.","H₂O."],"A"),
-MC("Trong dãy nào sau đây, nguyên tử trung tâm của tất cả các phân tử đều có kiểu lai hóa sp³?",["CH₄, NH₃, H₂O.","CH₄, NH₃, BH₃.","NH₃, H₂O, BeH₂.","BeH₂, BH₃, C₂H₂."],"A"),
-MC("Trong cùng một phép lai hóa trên một nguyên tử, các orbital lai hóa tương đương khác nhau chủ yếu về:",["Hướng trong không gian.","Hình dạng.","Kích thước.","Năng lượng."],"A"),
-MC("Hợp chất nào sau đây có các liên kết được hình thành bằng những cặp electron dùng chung?",["Na₂O.","LiF.","H₂O.","KCl."],"C"),
-MC("Khi cặp electron dùng chung trong một liên kết cộng hóa trị được một nguyên tử cung cấp hoàn toàn, liên kết đó được gọi là:",["Liên kết cho – nhận (liên kết phối trí).","Liên kết ion.","Liên kết cộng hóa trị phân cực.","Liên kết cộng hóa trị không phân cực."],"A"),
-MC("Hợp chất nào sau đây chứa đồng thời cả liên kết cộng hóa trị và liên kết ion?",["NaCl.","H₂SO₄.","H₃PO₄.","NaHCO₃."],"D"),
-MC("NaCl là thành phần của nhiều dung dịch dùng trong y tế. Biết χ(Na) = 0,9 và χ(Cl) = 3,0, loại liên kết chủ yếu trong NaCl là:",["Liên kết ion.","Liên kết cộng hóa trị không phân cực.","Liên kết cộng hóa trị phân cực.","Liên kết hydrogen."],"A"),
-MC("Biết χ(H) = 2,1 và χ(Cl) = 3,0. Trong phân tử HCl, cặp electron dùng chung:",["Lệch về phía H.","Lệch về phía Cl.","Phân bố hoàn toàn đều giữa H và Cl.","Chuyển hoàn toàn từ Cl sang H."],"B"),
-MC("Trong phân tử H₂O, năng lượng phân ly liên kết từng bước của hai liên kết O–H lần lượt là 118 kcal/mol và 102 kcal/mol. Năng lượng liên kết O–H trung bình là:",["108 kcal/mol.","109 kcal/mol.","110 kcal/mol.","220 kcal/mol."],"C")
-]},
-{n:"Bài 3 – Nhiệt động học",q:[
-TF("Hệ mở có thể trao đổi cả vật chất và năng lượng với môi trường.","Đ"),
-TF("Cơ thể người đang sống được xem là hệ mở vì trao đổi cả vật chất và năng lượng với môi trường.","Đ"),
-TF("Hai quá trình đưa một hệ từ cùng trạng thái đầu đến cùng trạng thái cuối có thể cho hai giá trị ΔU khác nhau vì đường đi của chúng khác nhau.","S"),
-TF("Theo định luật Hess, biến thiên enthalpy của phản ứng chỉ phụ thuộc trạng thái đầu và trạng thái cuối, không phụ thuộc con đường phản ứng.","Đ"),
-TF("Ở áp suất không đổi, khi hệ chỉ thực hiện công giãn nở pV, một phản ứng có ΔrH = −120 kJ là phản ứng tỏa nhiệt; hệ giải phóng 120 kJ nhiệt theo phương trình phản ứng đã viết.","Đ"),
-TF("Khi tính ΔrH° của phản ứng đốt cháy glucose, có thể bỏ qua toàn bộ hệ số 6 trước CO₂ và H₂O vì nhiệt sinh đã tính theo đơn vị mol.","S"),
-TF("Entropy là hàm trạng thái liên hệ với số vi trạng thái có thể có và mức độ phân tán năng lượng của hệ; trạng thái có số vi trạng thái lớn hơn thường có entropy lớn hơn.","Đ"),
-TF("Khi đặt túi chườm ấm có nhiệt độ cao hơn lên da, nhiệt tự truyền từ túi chườm sang da cho đến khi hai vật đạt cân bằng nhiệt.","Đ"),
-TF("Một phản ứng tỏa nhiệt luôn tự diễn biến ở mọi nhiệt độ vì ΔrH của phản ứng âm.","S"),
-TF("Nhiệt động học nghiên cứu các quy luật biến đổi năng lượng và mối quan hệ giữa nhiệt, công với các hàm trạng thái của hệ.","Đ"),
-TF("Hệ cô lập là hệ không trao đổi năng lượng nhưng có thể trao đổi vật chất với môi trường.","S"),
-TF("Ở cùng điều kiện, ΔrH° của phản ứng bằng tổng các giá trị νΔfH° của sản phẩm trừ tổng các giá trị νΔfH° của chất tham gia.","Đ"),
-TF("Khi dùng nhiệt cháy chuẩn, ΔrH° của phản ứng bằng tổng các giá trị νΔcH° của sản phẩm trừ tổng các giá trị νΔcH° của chất tham gia.","S"),
-TF("Động cơ vĩnh cửu loại 2 là động cơ liên tục sinh công mà không tiêu tốn năng lượng hay chỉ cần một năng lượng ban đầu.","S"),
-TF("Một động cơ nhiệt hoạt động theo chu trình không thể biến toàn bộ nhiệt nhận từ một nguồn duy nhất thành công mà không gây ra bất kỳ biến đổi nào khác.","Đ"),
-TF("Nhiệt sinh chuẩn (enthalpy tạo thành chuẩn) của một chất là biến thiên enthalpy của phản ứng tạo thành 1 mol chất đó từ các đơn chất cấu thành ở trạng thái chuẩn bền nhất.","Đ"),
-TF("Nhiệt cháy chuẩn của một chất là biến thiên enthalpy khi đốt cháy hoàn toàn 1 mol chất đó bằng oxygen, với các chất ở trạng thái chuẩn và tạo thành các sản phẩm cháy bền.","Đ"),
-TF("Nguyên lý thứ nhất nhiệt động học biểu thị sự bảo toàn năng lượng trong các quá trình biến đổi.","Đ"),
-MC("Đối với một hệ kín chỉ có công giãn nở pV, trong quá trình đẳng tích, quan hệ nào đúng?",["Qv = ΔU.","Qv = ΔH.","Qv = −ΔU.","ΔU = 0."],"A"),
-MC("Đối với một hệ kín chỉ có công giãn nở pV, phản ứng được thực hiện ở áp suất không đổi. Nhiệt trao đổi của phản ứng được xác định bằng đại lượng nào?",["Qp = ΔH.","Qp = ΔS.","Qp = −ΔU.","Qp = 0."],"A"),
-MC("Một hệ giải phóng 40 kJ nhiệt nhưng nhận 10 kJ công điện. Sinh viên tính ΔU = −50 kJ. Phân tích nào đúng nhất?",["Sinh viên đúng vì cả nhiệt và công đều phải lấy dấu âm.","Sinh viên sai; Q = −40 kJ, A = +10 kJ nên ΔU = −30 kJ.","Sinh viên sai; Q = +40 kJ, A = −10 kJ nên ΔU = +30 kJ.","Không thể xác định vì chưa biết hệ mở hay hệ kín."],"B"),
-MC("Một bình kín không cho vật chất đi qua nhưng vẫn truyền nhiệt với môi trường được xếp vào loại hệ nào?",["Hệ mở.","Hệ kín.","Hệ cô lập.","Hệ đẳng nhiệt."],"B"),
-MC("Một hệ nhận 50 kJ nhiệt và thực hiện 20 kJ công lên môi trường. Theo quy ước ΔU = Q + A, biến thiên nội năng của hệ là bao nhiêu?",["+70 kJ.","+30 kJ.","−30 kJ.","−70 kJ."],"B"),
-MC("Cho các phản ứng sau, coi các chất khí là khí lý tưởng và các phản ứng được xét ở cùng nhiệt độ:\n1. N₂(g) + 3H₂(g) → 2NH₃(g)\n2. C(s, graphite) + CO₂(g) → 2CO(g)\n3. CaCO₃(s) → CaO(s) + CO₂(g)\n4. Fe₂O₃(s) + 3CO(g) → 2Fe(s) + 3CO₂(g)\nPhản ứng có ΔrH > ΔrU là:",["2 và 3","1 và 2","3 và 4","2 và 4"],"A"),
-MC("Cho các phản ứng sau, coi các chất khí là khí lý tưởng và các phản ứng được xét ở cùng nhiệt độ:\n1. C(s, graphite) + O₂(g) → CO₂(g)\n2. 2C(s, graphite) + O₂(g) → 2CO(g)\n3. CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)\n4. Fe₂O₃(s) + 3CO(g) → 2Fe(s) + 3CO₂(g)\nPhản ứng có ΔrH = ΔrU là:",["2 và 3","1 và 2","3 và 4","1 và 4"],"D"),
-MC("Cho các phản ứng xảy ra ở điều kiện chuẩn:\n1/2 P₄(s, trắng) + 3Cl₂(g) → 2PCl₃(l), ΔrH° = x kJ\nPCl₃(l) + Cl₂(g) → PCl₅(s), ΔrH° = y kJ\nNhiệt sinh chuẩn ΔfH°[PCl₅(s)] bằng:",["x + y.","x + 2y.","x/2 + y.","2x + y."],"C"),
-MC("Nhiệt cháy chuẩn của C₂H₅OH(l), H₂(g) và C(s, graphite) lần lượt là a, b, c (kJ·mol⁻¹). Nhiệt sinh chuẩn của C₂H₅OH(l) bằng:",["3a + 2c − a","a + b + c","2c + 3b − a","c − a − b"],"C"),
-MC("Một cốc nước đứng yên trên bàn được đun nóng, nhiệt độ của nước trong cốc tăng nhưng vị trí của cốc không thay đổi. Dạng năng lượng nào của hệ tăng lên?",["Động năng vĩ mô.","Thế năng vĩ mô.","Nội năng.","Cơ năng."],"C"),
-MC("Cho phản ứng 2CO(g) + O₂(g) → 2CO₂(g); ΔfH°[CO(g)] = −110,5 kJ·mol⁻¹ và ΔfH°[CO₂(g)] = −393,5 kJ·mol⁻¹. Nhóm A tính ΔrH° = 2(−393,5) − [2(−110,5) + 0] = −566,0 kJ. Nhóm B tính ΔrH° = −393,5 − (−110,5) = −283,0 kJ. Đánh giá nào phù hợp nhất?",["Nhóm A đúng vì đã sử dụng đầy đủ hệ số tỷ lượng của phương trình phản ứng đã viết.","Nhóm B đúng vì nhiệt sinh chuẩn luôn tính cho một mol chất trong phản ứng.","Cả hai đúng vì chỉ khác cách quy ước.","Cả hai sai vì nhiệt sinh chuẩn của O₂(g) không bằng 0."],"A"),
-MC("Trong các phản ứng sau ở 298,15 K và p° = 1 bar, giá trị nào biểu diễn nhiệt cháy chuẩn mol ΔcH° của chất được đốt?",["C(s, graphite) + 1/2O₂(g) → CO(g); ΔrH° = a (kJ)","2H₂(g) + O₂(g) → 2H₂O(l); ΔrH° = b (kJ)","C(s, graphite) + O₂(g) → CO₂(g); ΔrH° = c (kJ/mol)","Cả 3 đều là ΔcH°."],"C"),
-MC("Đối với một quá trình tự diễn biến không thuận nghịch trong hệ cô lập, biến thiên entropy của hệ thỏa mãn điều kiện nào sau đây?",["ΔS hệ > 0.","ΔS hệ = 0.","ΔS hệ < 0.","ΔS hệ luôn không xác định."],"A"),
-MC("Đặc điểm nào sau đây đúng với một hàm trạng thái?",["Biến thiên phụ thuộc vào con đường diễn ra của quá trình.","Biến thiên chỉ phụ thuộc trạng thái đầu và trạng thái cuối.","Biến thiên phụ thuộc vào tốc độ diễn biến của quá trình.","Biến thiên chỉ xác định được đối với hệ cô lập."],"B"),
-MC("Nội dung cơ bản của nguyên lý thứ nhất nhiệt động học là gì?",["Entropy của hệ luôn giảm trong mọi quá trình biến đổi.","Nhiệt luôn chuyển hoàn toàn thành công trong một chu trình.","Năng lượng được bảo toàn trong mọi quá trình biến đổi.","Phản ứng tỏa nhiệt luôn tự diễn biến theo chiều thuận."],"C"),
-MC("Phản ứng nào biểu diễn nhiệt sinh chuẩn của một chất?",["Phân hủy 1 mol chất thành các đơn chất ở trạng thái chuẩn.","Đốt cháy 1 mol chất bằng oxygen trong điều kiện chuẩn.","Hòa tan 1 mol chất vào dung môi trong điều kiện chuẩn.","Tạo thành 1 mol chất từ các đơn chất cấu thành ở trạng thái chuẩn bền nhất."],"D"),
-MC("Ở nhiệt độ và áp suất không đổi, khi ΔrG = 0 đối với phản ứng tại thành phần đang xét, hệ ở trạng thái nào?",["Tự diễn biến mạnh theo chiều thuận.","Cân bằng.","Không thể xảy ra theo cả hai chiều.","Chắc chắn tỏa nhiệt."],"B"),
-MC("Ở 298 K và áp suất không đổi, một phản ứng có ΔrH = −10,0 kJ và ΔrS = −20,0 J·K⁻¹. ΔrG bằng bao nhiêu và chiều thuận có thuận lợi về mặt nhiệt động học không?",["−15,96 kJ; có.","−4,04 kJ; có.","+4,04 kJ; không.","+15,96 kJ; không."],"B"),
-MC("Một phản ứng có ΔrH = +40 kJ và ΔrS = +100 J·K⁻¹. Coi ΔrH và ΔrS không đổi theo nhiệt độ. Chiều thuận có ΔrG < 0 khi nhiệt độ thỏa mãn điều kiện nào?",["T < 100 K.","T < 400 K.","T > 400 K.","T = 0 K."],"C"),
-MC("Ở 310 K, phản ứng A có ΔrH = −25 kJ, ΔrS = −50 J·K⁻¹; phản ứng B có ΔrH = +8 kJ, ΔrS = +20 J·K⁻¹. Giá trị ΔrG và chiều thuận lợi về mặt nhiệt động học của hai phản ứng là:",["ΔrG(A) = −40,5 kJ; ΔrG(B) = +1,8 kJ; chỉ A thuận lợi.","ΔrG(A) = −9,5 kJ; ΔrG(B) = +1,8 kJ; chỉ A thuận lợi.","ΔrG(A) = −9,5 kJ; ΔrG(B) = −1,8 kJ; cả hai thuận lợi.","ΔrG(A) = +9,5 kJ; ΔrG(B) = +1,8 kJ; cả hai không thuận lợi."],"B"),
-MC("Nếu một phản ứng có ΔrG > 0 ở điều kiện đang xét, nhận định nào đúng?",["Chiều thuận thuận lợi về mặt nhiệt động học.","Hệ đang ở trạng thái cân bằng.","Chiều nghịch thuận lợi về mặt nhiệt động học.","Chiều thuận chắc chắn thu nhiệt."],"C")
-]}];
-
-const ALL=[];CH.forEach((c,i)=>c.q.forEach((q,j)=>{q.id=(i+1)+"-"+(j+1);q.ch=i;q.no=j+1;q.tf=j<18&&q.o.length===2&&q.o[0]==="Đúng";ALL.push(q)}));
-const BY={};ALL.forEach(q=>BY[q.id]=q);
-const KEY="hoa-dai-cuong-quiz-v1";
+const KEY="hoa-dai-cuong-quiz-v1",DKEY="hoa-dai-cuong-data-v1",L="ABCDEF";
+const AUTHOR={name:"Nguyễn Trung Hiếu"};
 const esc=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-const fresh=()=>({stats:{},hist:[],sess:null});
-let S;
-try{S=JSON.parse(localStorage.getItem(KEY))||fresh()}catch(e){S=fresh()}
+const $=document.getElementById("app");
+const slug=s=>String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"mon";
+const sid=d=>d.subject?slug(d.subject):slug(d.title);
+const short=c=>c.n.split(" – ")[0];
+const fresh=()=>({stats:{},hist:[],sess:null,cur:null});
+let S;try{S=JSON.parse(localStorage.getItem(KEY))||fresh()}catch(e){S=fresh()}
 if(!S.stats)S.stats={};if(!S.hist)S.hist=[];
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
-const $=document.getElementById("app");
-let sel=[0,1,2];
+const mig=k=>String(k).includes("|")?k:"hoa-dai-cuong|"+k;
+(()=>{const ns={};for(const k in S.stats)ns[mig(k)]=S.stats[k];S.stats=ns;
+  if(S.sess){S.sess.ids=S.sess.ids.map(mig);const na={};for(const k in S.sess.ans)na[mig(k)]=S.sess.ans[k];S.sess.ans=na}})();
 
-function home(msg){
-  const chs=sel.length?sel:[0,1,2];
-  const pool=ALL.filter(q=>sel.includes(q.ch));
-  const wrong=pool.filter(q=>S.stats[q.id]&&S.stats[q.id].last===0);
-  const fresh_=pool.filter(q=>!S.stats[q.id]);
-  const done=ALL.filter(q=>S.stats[q.id]);
-  const sess=S.sess&&!S.sess.sub?S.sess:null;
-  let h=`<h1>Luyện trắc nghiệm Hóa đại cương</h1><div class="mut">117 câu · 3 bài · tiến độ được lưu trong trình duyệt này</div>`;
-  if(msg)h+=`<div class="card">${esc(msg)}</div>`;
-  if(sess)h+=`<div class="card row"><div style="flex:1">Bạn đang làm dở một bài (${Object.keys(sess.ans).length}/${sess.ids.length} câu đã chọn).</div><button class="p" id="resume">Tiếp tục</button></div>`;
-  h+=`<h2>1. Chọn bài</h2><div class="card row">`+CH.map((c,i)=>`<label class="chk"><input type="checkbox" data-c="${i}" ${sel.includes(i)?"checked":""}> ${esc(c.n)}</label>`).join("")+`</div>`;
-  h+=`<h2>2. Chọn cách làm</h2><div class="modes">
-  <button class="p" id="mAll"><b>Làm toàn bộ</b>${pool.length} câu theo thứ tự</button>
-  <button id="mRnd"><b>Làm ngẫu nhiên</b>Trộn thứ tự, chọn số câu bên dưới</button>
-  <button id="mWrong" ${wrong.length?"":"disabled"}><b>Làm lại câu sai</b>${wrong.length} câu sai ở lần làm gần nhất</button>
-  <button id="mNew" ${fresh_.length?"":"disabled"}><b>Làm câu chưa làm</b>${fresh_.length} câu</button></div>
-  <div class="row" style="margin-top:10px"><span>Số câu ngẫu nhiên:</span><input type="number" id="nRnd" min="1" max="117" value="20"></div>`;
-  h+=`<h2>Thống kê</h2><div class="card"><table><tr><th>Bài</th><th>Đã làm</th><th>Đúng lần gần nhất</th><th>Sai lần gần nhất</th></tr>`+CH.map((c,i)=>{const qs=ALL.filter(q=>q.ch===i);const d=qs.filter(q=>S.stats[q.id]);const ok=d.filter(q=>S.stats[q.id].last===1).length;return `<tr><td>${esc(c.n.split(" – ")[0])}</td><td>${d.length}/${qs.length}</td><td>${ok}</td><td>${d.length-ok}</td></tr>`}).join("")+`</table><div class="mut" style="margin-top:6px">Tổng: ${done.length}/117 câu đã làm.</div></div>`;
-  h+=`<h2>Lịch sử các lần làm</h2><div class="card">`+(S.hist.length?`<table><tr><th>Thời gian</th><th>Chế độ</th><th>Kết quả</th></tr>`+S.hist.slice(-10).reverse().map(x=>`<tr><td>${new Date(x.t).toLocaleString("vi-VN")}</td><td>${esc(x.mode)}</td><td>${x.ok}/${x.tot} (${Math.round(100*x.ok/x.tot)}%)</td></tr>`).join("")+`</table>`:`<span class="mut">Chưa có lần làm nào.</span>`)+`</div>`;
-  h+=`<h2>Sao lưu và khôi phục</h2><div class="card"><div class="mut">Dữ liệu nằm trong trình duyệt này. Muốn dùng ở máy khác, bấm Xuất dữ liệu, sao chép đoạn chữ, rồi dán vào máy kia và bấm Nhập dữ liệu.</div><textarea id="bk" placeholder="Dán dữ liệu vào đây để nhập"></textarea><div class="row" style="margin-top:8px"><button id="ex">Xuất dữ liệu</button><button id="im">Nhập dữ liệu</button><button id="rs">Xóa toàn bộ tiến độ</button></div></div>`;
-  $.innerHTML=h;
-  $.querySelectorAll("[data-c]").forEach(e=>e.onchange=()=>{sel=[...$.querySelectorAll("[data-c]")].filter(x=>x.checked).map(x=>+x.dataset.c);home()});
-  const go=(ids,mode)=>{if(!ids.length){home("Không có câu nào phù hợp.");return}S.sess={mode,ids:ids.map(q=>q.id),ans:{},sub:false};save();quiz()};
-  const nz=()=>sel.length?pool:ALL;
-  if(sess)document.getElementById("resume").onclick=quiz;
-  document.getElementById("mAll").onclick=()=>go(nz(),"Toàn bộ");
-  document.getElementById("mRnd").onclick=()=>{const n=Math.max(1,Math.min(+document.getElementById("nRnd").value||20,nz().length));go(shuffle(nz().slice()).slice(0,n),"Ngẫu nhiên")};
-  document.getElementById("mWrong").onclick=()=>go(wrong,"Làm lại câu sai");
-  document.getElementById("mNew").onclick=()=>go(fresh_,"Câu chưa làm");
-  document.getElementById("ex").onclick=()=>{document.getElementById("bk").value=JSON.stringify({stats:S.stats,hist:S.hist});document.getElementById("bk").select()};
-  document.getElementById("im").onclick=()=>{try{const d=JSON.parse(document.getElementById("bk").value);if(!d||typeof d.stats!=="object")throw 0;const st={};for(const k in d.stats){if(BY[k]){const v=d.stats[k];st[k]={n:+v.n||0,ok:+v.ok||0,last:v.last===1?1:0}}}S.stats=st;S.hist=Array.isArray(d.hist)?d.hist.slice(-200).map(x=>({t:+x.t||0,mode:String(x.mode||"").slice(0,30),tot:+x.tot||1,ok:+x.ok||0})):[];save();home("Đã nhập dữ liệu.")}catch(e){home("Dữ liệu không hợp lệ.")}};
-  document.getElementById("rs").onclick=()=>{if(S._c){S=fresh();save();home("Đã xóa toàn bộ tiến độ.")}else{S._c=1;document.getElementById("rs").textContent="Bấm lần nữa để xác nhận xóa"}};
+function check(d){
+  if(!d||typeof d!=="object"||Array.isArray(d))throw "phải là một đối tượng { } cho một môn";
+  if(!d.title)throw "thiếu title (tên môn)";
+  if(!Array.isArray(d.chapters)||!d.chapters.length)throw "thiếu mục chapters";
+  const ids={};
+  d.chapters.forEach((c,i)=>{
+    if(!c||!c.name||!Array.isArray(c.questions))throw `Bài ${i+1} thiếu name hoặc questions`;
+    c.questions.forEach((q,j)=>{
+      const w=`Bài ${i+1}, câu ${j+1}`;
+      if(!q||!q.q||!Array.isArray(q.options)||q.options.length<2||q.options.length>6)throw `${w}: thiếu q hoặc options (cần 2 đến 6 lựa chọn)`;
+      const a=L.indexOf(String(q.answer).toUpperCase());
+      if(a<0||a>=q.options.length)throw `${w}: answer phải là chữ cái A, B, C... có trong options`;
+      const id=q.id!=null?String(q.id):(i+1)+"-"+(j+1);
+      if(ids[id])throw `${w}: id trùng (${id})`;ids[id]=1});
+  });
+}
+let BASEL=[],LOADERR=[];
+let SUBJ=[],CH=[],ALL=[],BY={},cur=0,sel=[],CUS=[];
+function readCustom(){
+  try{const t=localStorage.getItem(DKEY);if(!t)return[];const x=JSON.parse(t);
+    return (Array.isArray(x)?x:[x]).filter(d=>{try{check(d);return true}catch(e){return false}})}catch(e){return[]}
+}
+function rebuild(){
+  CUS=readCustom();
+  const m=new Map();
+  BASEL.forEach(d=>{try{check(d);m.set(sid(d),{d,src:"thư mục mon-hoc"})}catch(e){}});
+  CUS.forEach(d=>m.set(sid(d),{d,src:"file nạp tay"}));
+  SUBJ=[...m].map(([id,v])=>{
+    const s={id,d:v.d,src:v.src,title:v.d.title};
+    s.chs=v.d.chapters.map((c,i)=>({n:c.name,q:c.questions.map((q,j)=>({t:q.q,o:q.options.map(String),a:L.indexOf(String(q.answer).toUpperCase()),id:id+"|"+(q.id!=null?String(q.id):(i+1)+"-"+(j+1)),ch:i,no:j+1,sub:s}))}));
+    return s});
+  BY={};SUBJ.forEach(s=>s.chs.forEach(c=>c.q.forEach(q=>BY[q.id]=q)));
+  if(!SUBJ.length){CH=[];ALL=[];return}
+  const i=SUBJ.findIndex(s=>s.id===S.cur);cur=i<0?0:i;pick();
+  if(S.sess){S.sess.ids=S.sess.ids.filter(i=>BY[i]);if(!S.sess.ids.length)S.sess=null}
+}
+function pick(){const s=SUBJ[cur];CH=s.chs;ALL=[].concat(...CH.map(c=>c.q));sel=CH.map((_,i)=>i);document.title="Luyện trắc nghiệm – "+s.title}
+function applyCustom(ok,bad){
+  if(ok.length){const m=new Map();CUS.forEach(d=>m.set(sid(d),d));ok.forEach(d=>m.set(sid(d),d));
+    try{localStorage.setItem(DKEY,JSON.stringify([...m.values()]))}catch(e){}
+    rebuild();save()}
+  const m=(ok.length?`Đã nạp ${ok.length} môn: ${ok.map(d=>d.title).join(", ")}. `:"")+(bad.length?"Lỗi: "+bad.join(" | "):"");
+  (SUBJ.length&&screen==="set"?settings:home)(m);
+}
+async function loadFiles(files){
+  const ok=[],bad=[];
+  for(const f of files){
+    try{const d=JSON.parse(await f.text());
+      try{check(d);ok.push(d)}catch(e){bad.push(`${f.name}: ${typeof e==="string"?e:"lỗi dữ liệu"}`)}}
+    catch(e){bad.push(`${f.name}: sai định dạng JSON (kiểm tra dấu phẩy, ngoặc, dấu nháy)`)}
+  }
+  applyCustom(ok,bad);
+}
+function loadText(t){
+  const ok=[],bad=[];
+  try{const x=JSON.parse(t);(Array.isArray(x)?x:[x]).forEach((d,k)=>{try{check(d);ok.push(d)}catch(e){bad.push(`mục ${k+1}: ${typeof e==="string"?e:"lỗi dữ liệu"}`)}})}
+  catch(e){bad.push("sai định dạng JSON")}
+  applyCustom(ok,bad);
 }
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
+function home(msg){
+  if(!SUBJ.length){empty(msg);return}
+  screen="home";
+  const pool=ALL.filter(q=>sel.includes(q.ch));
+  const wrong=pool.filter(q=>S.stats[q.id]&&S.stats[q.id].last===0);
+  const nw=pool.filter(q=>!S.stats[q.id]);
+  const ss=S.sess&&!S.sess.sub?S.sess:null;
+  const au=SUBJ[cur].d.author||AUTHOR;
+  let h=`<div class="head"><h1>Luyện trắc nghiệm</h1><button id="gear" aria-label="Cài đặt">⚙</button></div><div class="mut">${SUBJ.length} môn · tiến độ lưu trên thiết bị này</div>`;
+  if(msg)h+=`<div class="card">${esc(msg)}</div>`;
+  if(ss)h+=`<div class="card"><div>Bạn đang làm dở một bài (${Object.keys(ss.ans).length}/${ss.ids.length} câu đã chọn).</div><div class="row" style="margin-top:8px"><button class="p" id="resume">Tiếp tục</button></div></div>`;
+  {const xp=S.xp||0,td=ymd(new Date()),yd=ymd(new Date(Date.now()-864e5)),sn=S.dy&&(S.dy.last===td||S.dy.last===yd)?S.dy.n:0;h+=`<div class="card"><div class="row" style="justify-content:space-between;flex-wrap:nowrap"><b>Cấp ${Math.floor(xp/300)+1}</b><span>🔥 ${sn} ngày liên tiếp</span></div><div class="prog" style="margin:8px 0 4px"><i style="width:${(xp%300)/3}%"></i></div><div class="mut">${xp%300}/300 XP đến cấp tiếp theo</div></div>`}
+  h+=`<h2>Chọn môn</h2><div class="modes">`+SUBJ.map((s,i)=>`<button class="${i===cur?"p":""}" data-s="${i}"><b>${esc(s.title)}</b><span>${s.chs.reduce((n,c)=>n+c.q.length,0)} câu · ${s.chs.length} bài</span></button>`).join("")+`</div>`;
+  h+=`<h2>Chọn bài</h2><div class="card">`+CH.map((c,i)=>`<label class="chk"><input type="checkbox" data-c="${i}" ${sel.includes(i)?"checked":""}><span>${esc(c.n)} <span class="mut">(${c.q.length} câu)</span></span></label>`).join("")+`</div>`;
+  const nmax=Math.max(1,pool.length),nv=Math.min(Math.max(1,(S.set&&S.set.n)||nmax),nmax);
+  h+=`<h2>Chọn cách làm</h2><div class="card"><div class="row" style="justify-content:space-between;flex-wrap:nowrap"><span>Số câu muốn làm</span><b id="nv" style="font-size:1.3rem">${nv}</b></div>
+  <input type="range" id="nRng" min="1" max="${nmax}" value="${nv}" step="1">
+  <div class="row" style="justify-content:space-between;flex-wrap:nowrap"><span class="mut">1</span><span class="mut">${nmax}</span></div>
+  <div class="row" style="margin-top:8px">`+[10,20,50].filter(n=>n<nmax).map(n=>`<button style="flex:1 1 60px" data-n="${n}">${n}</button>`).join("")+`<button style="flex:1 1 60px" data-n="${nmax}">Tất cả</button></div></div>
+  <div class="modes">
+  <button class="p" id="mAll"><b id="tAll">Làm toàn bộ</b><span id="sAll"></span></button>
+  <button id="mRnd"><b>Làm ngẫu nhiên</b><span id="sRnd"></span></button>
+  <button id="mWrong" ${wrong.length?"":"disabled"}><b>Làm lại câu sai</b><span id="sWr"></span></button>
+  <button id="mNew" ${nw.length?"":"disabled"}><b>Làm câu chưa làm</b><span id="sNw"></span></button></div>`;
+  h+=`<h2>Thống kê môn ${esc(SUBJ[cur].title)}</h2><div class="card tw"><table><tr><th>Bài</th><th>Đã làm</th><th>Đúng</th><th>Sai</th></tr>`+CH.map(c=>{const d=c.q.filter(q=>S.stats[q.id]);const ok=d.filter(q=>S.stats[q.id].last===1).length;return `<tr><td>${esc(short(c))}</td><td>${d.length}/${c.q.length}</td><td>${ok}</td><td>${d.length-ok}</td></tr>`}).join("")+`</table><div class="mut" style="margin-top:6px">Đúng, Sai tính theo lần làm gần nhất của từng câu.</div></div>`;
+  h+=`<h2>Lịch sử</h2><div class="card tw">`+(S.hist.length?`<table><tr><th>Thời gian</th><th>Chế độ</th><th>Kết quả</th></tr>`+S.hist.slice(-10).reverse().map(x=>`<tr><td>${new Date(x.t).toLocaleString("vi-VN",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}</td><td>${esc(x.mode)}</td><td>${x.ok}/${x.tot} (${Math.round(100*x.ok/x.tot)}%)</td></tr>`).join("")+`</table>`:`<span class="mut">Chưa có lần làm nào.</span>`)+`</div>`;
+  h+=`<div class="foot">Tác giả: <b>${esc(au.name||"")}</b><div class="mut" style="margin-top:10px">Liên hệ nếu bạn muốn làm bài học tương tự cho môn học của mình:<br><a href="https://www.facebook.com/profile.php?id=61593373552027" target="_blank" rel="noopener noreferrer">Facebook của tác giả</a></div></div>`;
+  $.innerHTML=h;
+  const g=id=>document.getElementById(id);
+  $.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{cur=+b.dataset.s;S.cur=SUBJ[cur].id;save();pick();home()});
+  $.querySelectorAll("[data-c]").forEach(e=>e.onchange=()=>{sel=[...$.querySelectorAll("[data-c]")].filter(x=>x.checked).map(x=>+x.dataset.c);if(!sel.length)sel=CH.map((_,i)=>i);home()});
+  const go=(qs,mode)=>{if(!qs.length){home("Không có câu nào phù hợp.");return}play("bat-dau");S.sess={mode,ids:qs.map(q=>q.id),ans:{},sub:false};save();quiz();scrollTo(0,0)};
+  g("gear").onclick=()=>{settings();scrollTo(0,0)};
+  if(ss)g("resume").onclick=()=>{quiz();scrollTo(0,0)};
+  const N=()=>Math.max(1,+g("nRng").value||1);
+  const upd=()=>{const n=N();g("nv").textContent=n;
+    g("tAll").textContent=n>=pool.length?"Làm toàn bộ":"Làm theo thứ tự";
+    g("sAll").textContent=Math.min(n,pool.length)+" câu theo thứ tự";
+    g("sRnd").textContent=Math.min(n,pool.length)+" câu trộn ngẫu nhiên";
+    g("sWr").textContent=Math.min(n,wrong.length)+"/"+wrong.length+" câu sai ở lần gần nhất";
+    g("sNw").textContent=Math.min(n,nw.length)+"/"+nw.length+" câu chưa làm"};
+  g("nRng").oninput=upd;
+  g("nRng").onchange=()=>{S.set=Object.assign(cfg(),{n:N()});save()};
+  $.querySelectorAll("[data-n]").forEach(b=>b.onclick=()=>{g("nRng").value=b.dataset.n;upd();S.set=Object.assign(cfg(),{n:N()});save();play("chon")});
+  upd();
+  g("mAll").onclick=()=>go(pool.slice(0,N()),N()>=pool.length?"Toàn bộ":"Theo thứ tự");
+  g("mRnd").onclick=()=>go(shuffle(pool.slice()).slice(0,N()),"Ngẫu nhiên");
+  g("mWrong").onclick=()=>go(wrong.slice(0,N()),"Làm lại câu sai");
+  g("mNew").onclick=()=>go(nw.slice(0,N()),"Câu chưa làm");
+}
+
 function quiz(){
   const ss=S.sess;if(!ss){home();return}
-  const sub=ss.sub;
-  let ok=0;
-  let h=`<h1>${esc(ss.mode)}</h1>`;
-  if(sub){ss.ids.forEach(id=>{if(ss.ans[id]===BY[id].a)ok++});h+=`<div class="card"><div class="score">${ok}/${ss.ids.length} <span class="mut" style="font-size:1rem">(${Math.round(100*ok/ss.ids.length)}%)</span></div><div class="mut">Câu bỏ trống được tính là sai.</div></div>`}
-  h+=ss.ids.map((id,k)=>{const q=BY[id];const a=ss.ans[id];
-    let cls="";if(sub)cls=a===undefined?"bd-na":a===q.a?"bd-ok":"bd-bad";
-    return `<div class="card ${cls}"><div class="tag">${esc(CH[q.ch].n.split(" – ")[0])} · Câu ${q.no} · (${k+1}/${ss.ids.length})${sub?(a===undefined?" · Chưa chọn":a===q.a?" · Đúng":" · Sai"):""}</div><div class="q">${esc(q.t)}</div>`+
-    q.o.map((o,i)=>{let c="opt";if(sub){if(i===q.a)c+=" ok";else if(i===a)c+=" bad"}else if(i===a)c+=" sel";return `<button class="${c}" data-q="${id}" data-i="${i}"><i>${"ABCD"[i]}.</i><span>${esc(o)}</span></button>`}).join("")+`</div>`}).join("");
+  const sub=ss.sub,tot=ss.ids.length;let ok=0;
+  if(sub)ss.ids.forEach(id=>{if(ss.ans[id]===BY[id].a)ok++});
+  let h=`<h1>${esc(ss.mode)}</h1><div class="mut">${esc(BY[ss.ids[0]].sub.title)}</div>`;
+  if(sub)h+=`<div class="card"><div class="score">${ok}/${tot} <span class="mut" style="font-size:1rem">(${Math.round(100*ok/tot)}%)</span></div><div><b>${ss.rec?"🏆 Kỷ lục mới! ":""}${tier(ok/tot)}</b></div><div class="mut">Câu bỏ trống được tính là sai. Kéo xuống để xem đáp án từng câu.</div></div>`;
+  h+=ss.ids.map((id,k)=>{const q=BY[id],a=ss.ans[id];
+    const cls=sub?(a===undefined?"bd-na":a===q.a?"bd-ok":"bd-bad"):"";
+    return `<div class="card ${cls}"><div class="tag">${esc(short(q.sub.chs[q.ch]))} · Câu ${q.no} · ${k+1}/${tot}${sub?(a===undefined?" · Chưa chọn":a===q.a?" · Đúng":" · Sai"):""}</div><div class="q">${esc(q.t)}</div>`+
+    q.o.map((o,i)=>{let c="opt";if(sub){if(i===q.a)c+=" ok";else if(i===a)c+=" bad"}else if(i===a)c+=" sel";return `<button class="${c}" data-q="${esc(id)}" data-i="${i}"><i>${L[i]}.</i><span>${esc(o)}</span></button>`}).join("")+`</div>`}).join("");
   const n=Object.keys(ss.ans).length;
-  h+=`<div class="bar">`+(sub?`<span>Kết quả: ${ok}/${ss.ids.length}</span><span class="row"><button id="redo" ${ok===ss.ids.length?"disabled":""}>Làm lại câu sai của bài này</button><button class="p" id="back">Về trang chính</button></span>`:`<span id="cnt">Đã chọn ${n}/${ss.ids.length}</span><span class="row"><button id="back">Thoát (lưu nháp)</button><button class="p" id="sub">Nộp bài</button></span>`)+`</div>`;
+  h+=sub?`<div class="bar"><div class="info">Kết quả: ${ok}/${tot}</div><div class="row"><button id="redo" ${ok===tot?"disabled":""}>Làm lại câu sai</button><button class="p" id="back">Về trang chính</button></div></div>`
+  :`<div class="bar"><div class="prog"><i id="pg" style="width:${100*n/tot}%"></i></div><div class="info" id="cnt">Đã chọn ${n}/${tot}</div><div class="row"><button id="back">Thoát (lưu nháp)</button><button class="p" id="sub">Nộp bài</button></div></div>`;
   $.innerHTML=h;
   if(!sub)$.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
-    const id=b.dataset.q,i=+b.dataset.i;ss.ans[id]=i;save();
-    $.querySelectorAll(`[data-q="${id}"]`).forEach(x=>x.classList.toggle("sel",+x.dataset.i===i));
-    document.getElementById("cnt").textContent=`Đã chọn ${Object.keys(ss.ans).length}/${ss.ids.length}`});
-  document.getElementById("back").onclick=()=>{if(sub)S.sess=null;save();home()};
+    play("chon");pop(b);const id=b.dataset.q,i=+b.dataset.i;ss.ans[id]=i;save();
+    $.querySelectorAll(".opt").forEach(x=>{if(x.dataset.q===id)x.classList.toggle("sel",+x.dataset.i===i)});
+    const m=Object.keys(ss.ans).length;document.getElementById("cnt").textContent=`Đã chọn ${m}/${tot}`;document.getElementById("pg").style.width=100*m/tot+"%";mile(ss,m,tot)});
+  document.getElementById("back").onclick=()=>{if(sub)S.sess=null;save();home();scrollTo(0,0)};
   if(!sub)document.getElementById("sub").onclick=()=>{
     ss.ids.forEach(id=>{const a=ss.ans[id];if(a===undefined)return;const s=S.stats[id]||(S.stats[id]={n:0,ok:0,last:0});s.n++;if(a===BY[id].a){s.ok++;s.last=1}else s.last=0});
     let c=0;ss.ids.forEach(id=>{if(ss.ans[id]===BY[id].a)c++});
-    S.hist.push({t:Date.now(),mode:ss.mode,tot:ss.ids.length,ok:c});if(S.hist.length>200)S.hist=S.hist.slice(-200);
-    ss.sub=true;save();quiz();window.scrollTo(0,0)};
-  else document.getElementById("redo").onclick=()=>{const w=ss.ids.filter(id=>ss.ans[id]!==BY[id].a);S.sess={mode:"Làm lại câu sai",ids:w,ans:{},sub:false};save();quiz();window.scrollTo(0,0)};
+    const sb=BY[ss.ids[0]].sub.id;const pv=S.hist.filter(x=>x.sub===sb&&x.tot>=10).map(x=>x.ok/x.tot);const rec=tot>=10&&c>0&&(!pv.length||c/tot>Math.max(...pv));S.hist.push({t:Date.now(),mode:ss.mode,tot:tot,ok:c,sub:sb});if(S.hist.length>200)S.hist=S.hist.slice(-200);
+    const rw=reward(c,tot,rec);ss.sub=true;ss.rec=rec;save();quiz();scrollTo(0,0);showResult(c,tot,rec,rw)};
+  else document.getElementById("redo").onclick=()=>{const w=ss.ids.filter(id=>ss.ans[id]!==BY[id].a);S.sess={mode:"Làm lại câu sai",ids:w,ans:{},sub:false};save();quiz();scrollTo(0,0)};
 }
-home();
+const ymd=d=>d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();
+function reward(c,tot,rec){
+  const p=c/tot,xp=c*10+(p>=1?50:0)+(rec?30:0),l0=Math.floor((S.xp||0)/300);
+  S.xp=(S.xp||0)+xp;
+  const n=new Date(),t=ymd(n),y=ymd(new Date(n.getTime()-864e5));
+  S.dy=S.dy||{last:"",n:0};let nd=false;
+  if(S.dy.last!==t){S.dy.n=S.dy.last===y?S.dy.n+1:1;S.dy.last=t;nd=true}
+  return{xp,lvUp:Math.floor(S.xp/300)>l0,lv:Math.floor(S.xp/300)+1,newDay:nd,streak:S.dy.n};
+}
+function pop(b){b.classList.remove("pop");void b.offsetWidth;b.classList.add("pop")}
+function toast(t){const d=document.createElement("div");d.className="toast";d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),1700)}
+function mile(ss,m,tot){if(cfg().fx===false)return;const p=m/tot;ss.ms=ss.ms||{};for(const k of [.25,.5,.75,1]){if(p>=k&&!ss.ms[k]){ss.ms[k]=1;toast(k===1?"🎯 Đã chọn hết, nộp bài thôi!":"🔥 "+Math.round(k*100)+"% rồi!");break}}}
+function confetti(n,dur){
+  const cv=document.createElement("canvas");cv.style.cssText="position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60";
+  cv.width=innerWidth;cv.height=innerHeight;document.body.appendChild(cv);const x=cv.getContext("2d");
+  const cols=["#f5c542","#ef4444","#22c55e","#3b82f6","#a855f7","#f97316"];
+  const P=[...Array(n)].map(()=>({x:Math.random()*cv.width,y:-20-Math.random()*cv.height*.5,vx:(Math.random()-.5)*4,vy:2+Math.random()*4,r:4+Math.random()*5,c:cols[Math.random()*6|0],a:Math.random()*6,va:(Math.random()-.5)*.3}));
+  const t0=performance.now();
+  (function f(t){x.clearRect(0,0,cv.width,cv.height);P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.04;p.a+=p.va;x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillStyle=p.c;x.fillRect(-p.r,-p.r/2,p.r*2,p.r);x.restore()});if(t-t0<dur)requestAnimationFrame(f);else cv.remove()})(t0);
+}
+function showResult(c,tot,rec,rw){
+  const p=c/tot,fin=rec?"💎":p>=1?"🏆":p>=.9?"⭐":p>=.5?"🍀":"📘";
+  const fx=cfg().fx!==false&&!matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const lab=(rec?"🏆 Kỷ lục mới! ":"")+tier(p);
+  const ov=document.createElement("div");ov.className="ov";
+  ov.innerHTML='<div class="slot'+(p>=.9||rec?" gold":"")+'"><div class="mut">KẾT QUẢ</div><div class="reels">'+'<div class="reel spin">🎰</div>'.repeat(3)+'</div><div class="sc" id="sc">0/'+tot+'</div><div id="sl"></div><button class="p" id="ovx" style="width:100%;margin-top:14px">Xem đáp án</button></div>';
+  document.body.appendChild(ov);
+  const R=[...ov.querySelectorAll(".reel")],pool=["🍒","🔔","7️⃣","🍀","⭐","💎","🏆","📘"],T=[];let done=false;
+  const end=()=>{if(done)return;done=true;T.forEach(t=>{clearTimeout(t);clearInterval(t)});
+    R.forEach(r=>{r.textContent=fin;r.classList.remove("spin")});
+    document.getElementById("sc").textContent=c+"/"+tot;
+    document.getElementById("sl").innerHTML='<div class="lab">'+esc(lab)+'</div><div class="mut">+'+rw.xp+' XP'+(rw.lvUp?" · Lên cấp "+rw.lv+"!":"")+(rw.newDay?" · 🔥 Chuỗi "+rw.streak+" ngày":"")+'</div>';
+    play(rec?"ky-luc":c===tot?"tuyet-doi":p>=.9?"diem-cao":p>=.5?"dat":"chua-dat");
+    if(fx&&p>=.5)confetti(rec||p>=1?240:p>=.9?150:70,rec||p>=1?3500:2500)};
+  ov.onclick=e=>{if(e.target.id!=="ovx")end()};
+  document.getElementById("ovx").onclick=()=>{end();ov.remove()};
+  if(!fx){end();return}
+  play("nop");
+  T.push(setInterval(()=>R.forEach(r=>{if(!r.classList.contains("stop"))r.textContent=pool[Math.random()*pool.length|0]}),70));
+  [900,1350,1800].forEach((ms,i)=>T.push(setTimeout(()=>{
+    R[i].textContent=fin;R[i].classList.remove("spin");R[i].classList.add("stop");play("chon");
+    if(i===2){let k=0;T.push(setInterval(()=>{k++;document.getElementById("sc").textContent=Math.round(c*k/10)+"/"+tot;if(k>=10)end()},50))}
+  },ms)));
+}
+let screen="home";
+const AUD={};
+const cfg=()=>Object.assign({sound:true,vol:0.7,fx:true},S.set||{});
+function play(n,f){const c=cfg();if(!c.sound&&!f)return;try{let a=AUD[n];if(!a)a=AUD[n]=new Audio("am-thanh/"+n+".wav");a.volume=c.vol;a.currentTime=0;const p=a.play();if(p&&p.catch)p.catch(()=>{})}catch(e){}}
+document.addEventListener("pointerdown",()=>{["chon","bat-dau","nop","dat","chua-dat","diem-cao","tuyet-doi","ky-luc"].forEach(n=>{try{const x=AUD[n]||(AUD[n]=new Audio("am-thanh/"+n+".wav"));x.volume=0;const p=x.play();if(p&&p.then)p.then(()=>{x.pause();x.currentTime=0}).catch(()=>{})}catch(e){}})},{once:true});
+const tier=p=>p>=1?"Tuyệt đối!":p>=.9?"Rất tốt!":p>=.5?"Đạt yêu cầu.":"Cần cố gắng thêm.";
+function settings(msg){
+  screen="set";
+  const c=cfg(),g=id=>document.getElementById(id);
+  let h=`<div class="row"><button id="sBack">← Quay lại</button></div><h1>Cài đặt</h1>`;
+  if(msg)h+=`<div class="card">${esc(msg)}</div>`;
+  h+=`<h2>Âm thanh và hiệu ứng</h2><div class="card"><label class="chk"><input type="checkbox" id="snd" ${c.sound?"checked":""}><span>Bật âm thanh (chọn đáp án, nộp bài, điểm số, kỷ lục)</span></label>
+  <label class="chk"><input type="checkbox" id="fx" ${c.fx?"checked":""}><span>Hiệu ứng động (quay số, pháo giấy, thông báo tiến độ)</span></label>
+  <div style="margin:8px 0">Âm lượng: <b id="vv">${Math.round(c.vol*100)}%</b></div><input type="range" id="vol" min="0" max="100" value="${Math.round(c.vol*100)}">
+  <div class="mut" style="margin:10px 0 6px">Nghe thử:</div><div class="row">`+[["chon","Chọn"],["bat-dau","Bắt đầu"],["nop","Nộp bài"],["chua-dat","Chưa đạt"],["dat","Đạt"],["diem-cao","Điểm cao"],["tuyet-doi","Tuyệt đối"],["ky-luc","Kỷ lục"]].map(x=>`<button style="flex:1 1 90px" data-p="${x[0]}">${x[1]}</button>`).join("")+`</div></div>`;
+  h+=`<h2>Môn học (file JSON)</h2><div class="card"><div class="mut">Mỗi file JSON trong thư mục mon-hoc là một môn, được nạp tự động khi mở trang. Bạn cũng có thể nạp tay nhiều file cùng lúc (chỉ lưu trên thiết bị này); file trùng mã môn sẽ thay thế môn cũ.</div>`+
+  SUBJ.map(s=>`<div style="margin-top:6px">• <b>${esc(s.title)}</b> <span class="mut">(${esc(s.id)} · ${s.chs.reduce((n,c)=>n+c.q.length,0)} câu · ${s.src})</span></div>`).join("")+
+  `<div class="row" style="margin-top:10px"><button id="pick">Chọn file JSON (nhiều file)</button><button id="useBase" ${CUS.length?"":"disabled"}>Bỏ file nạp tay</button></div>
+  <input type="file" id="qf" accept=".json,application/json,text/plain" multiple hidden>
+  <textarea id="qd" placeholder="Hoặc dán nội dung JSON của một môn vào đây"></textarea>
+  <div class="row" style="margin-top:8px"><button id="qLoad">Nạp từ ô dán</button><button id="qOut">Xuất JSON môn đang chọn</button></div></div>`;
+  h+=`<h2>Sao lưu tiến độ</h2><div class="card"><div class="mut">Muốn dùng ở thiết bị khác: Xuất dữ liệu, sao chép, rồi dán vào thiết bị kia và bấm Nhập dữ liệu.</div><textarea id="bk" placeholder="Dán dữ liệu tiến độ vào đây để nhập"></textarea><div class="row" style="margin-top:8px"><button id="ex">Xuất dữ liệu</button><button id="im">Nhập dữ liệu</button><button id="rs">Xóa toàn bộ tiến độ</button></div></div>`;
+  $.innerHTML=h;
+  g("sBack").onclick=()=>{home();scrollTo(0,0)};
+  g("snd").onchange=e=>{S.set=Object.assign(cfg(),{sound:e.target.checked});save()};
+  g("fx").onchange=e=>{S.set=Object.assign(cfg(),{fx:e.target.checked});save()};
+  g("vol").oninput=e=>{S.set=Object.assign(cfg(),{vol:e.target.value/100});g("vv").textContent=e.target.value+"%";save()};
+  g("vol").onchange=()=>play("dat");
+  $.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>play(b.dataset.p,1));
+  g("pick").onclick=()=>g("qf").click();
+  g("qf").onchange=e=>{const f=[...e.target.files];if(f.length)loadFiles(f)};
+  g("qLoad").onclick=()=>loadText(g("qd").value);
+  g("qOut").onclick=()=>{g("qd").value=JSON.stringify(SUBJ[cur].d,null,1);g("qd").select()};
+  g("useBase").onclick=()=>{try{localStorage.removeItem(DKEY)}catch(e){}rebuild();save();settings("Đã bỏ các file nạp tay.")};
+  g("ex").onclick=()=>{g("bk").value=JSON.stringify({stats:S.stats,hist:S.hist,xp:S.xp||0,dy:S.dy||null});g("bk").select()};
+  g("im").onclick=()=>{try{const d=JSON.parse(g("bk").value);if(!d||typeof d.stats!=="object")throw 0;const st={};for(const k in d.stats){const v=d.stats[k];st[mig(k)]={n:+v.n||0,ok:+v.ok||0,last:v.last===1?1:0}}S.stats=st;S.hist=Array.isArray(d.hist)?d.hist.slice(-200).map(x=>({t:+x.t||0,mode:String(x.mode||"").slice(0,30),tot:+x.tot||1,ok:+x.ok||0,sub:String(x.sub||"")})):[];S.xp=+d.xp||0;S.dy=d.dy&&typeof d.dy==="object"?{last:String(d.dy.last||""),n:+d.dy.n||0}:null;save();settings("Đã nhập dữ liệu tiến độ.")}catch(e){settings("Dữ liệu tiến độ không hợp lệ.")}};
+  let armed=false;g("rs").onclick=()=>{if(armed){const c=S.cur,st=S.set;S=fresh();S.cur=c;S.set=st;save();settings("Đã xóa toàn bộ tiến độ.")}else{armed=true;g("rs").textContent="Bấm lần nữa để xác nhận"}};
+}
+function empty(msg){
+  $.innerHTML='<h1>Luyện trắc nghiệm</h1>'+(msg?'<div class="card">'+esc(msg)+'</div>':'')+
+  '<div class="card"><b>Chưa có môn nào.</b><div class="mut" style="margin-top:6px">Đặt các file JSON (mỗi file một môn) vào thư mục <b>mon-hoc</b> cạnh index.html, ghi tên file vào <b>mon-hoc/danh-sach.json</b>, rồi mở trang qua một địa chỉ web (GitHub Pages, Netlify...). Mở trực tiếp file index.html từ ổ đĩa thì trình duyệt không cho đọc file JSON; khi đó hãy nạp tay bên dưới.</div>'+
+  '<div class="row" style="margin-top:10px"><button class="p" id="pk">Chọn file JSON (nhiều file)</button></div><input type="file" id="qf2" accept=".json,application/json,text/plain" multiple hidden></div>';
+  document.getElementById("pk").onclick=()=>document.getElementById("qf2").click();
+  document.getElementById("qf2").onchange=e=>{const f=[...e.target.files];if(f.length)loadFiles(f)};
+}
+async function boot(){
+  $.innerHTML='<div class="card">Đang nạp dữ liệu các môn...</div>';
+  let names=[];
+  try{const r=await fetch("mon-hoc/danh-sach.json",{cache:"no-store"});if(r.ok){const l=await r.json();if(Array.isArray(l))names=l.map(String)}}catch(e){}
+  try{const r=await fetch("mon-hoc/",{cache:"no-store"});if(r.ok){const t=await r.text();[...t.matchAll(/href="([^"?#]+\.json)"/gi)].forEach(m=>names.push(decodeURIComponent(m[1]).split("/").pop()))}}catch(e){}
+  names=[...new Set(names)].filter(n=>n&&n!=="danh-sach.json");
+  const res=await Promise.all(names.map(async n=>{
+    try{const r=await fetch("mon-hoc/"+encodeURIComponent(n),{cache:"no-store"});if(!r.ok)throw "không tìm thấy file";const d=await r.json();check(d);return d}
+    catch(e){LOADERR.push(n+": "+(typeof e==="string"?e:"sai định dạng JSON"));return null}}));
+  BASEL=res.filter(Boolean);
+  rebuild();
+  const m=LOADERR.length?"Không nạp được: "+LOADERR.join(" | "):"";
+  SUBJ.length?home(m):empty(m);
+}
+boot();
+
 </script>
 </body>
 </html>
