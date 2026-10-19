@@ -1,0 +1,1320 @@
+{
+ "subject": "hoa-dai-cuong",
+ "title": "Hóa đại cương",
+ "author": {
+  "name": "Nguyễn Trung Hiếu"
+ },
+ "chapters": [
+  {
+   "name": "Bài 1 – Cấu tạo nguyên tử",
+   "questions": [
+    {
+     "q": "Trong thí nghiệm Rutherford, phần lớn hạt α truyền thẳng qua lá vàng chứng tỏ phần lớn thể tích nguyên tử là khoảng trống.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Phần lớn hạt α xuyên thẳng qua lá vàng, chỉ rất ít hạt bị lệch hoặc bật lại. Rutherford kết luận nguyên tử chủ yếu là khoảng trống, còn khối lượng và điện tích dương tập trung trong hạt nhân rất nhỏ.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Electron của nguyên tử hydrogen chuyển từ mức n = 3 xuống mức n = 2 thì phát ra một lượng tử năng lượng.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Khi electron chuyển từ mức năng lượng cao (n = 3) xuống mức thấp (n = 2), nguyên tử phát ra một lượng tử ánh sáng (photon) có năng lượng bằng hiệu hai mức: ΔE = E₃ − E₂ = hν.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Trong một nguyên tử, không thể có hai electron có cùng một bộ bốn số lượng tử (n, l, mₗ, mₛ).",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Đây là nguyên lý loại trừ Pauli: mỗi electron có một bộ bốn số lượng tử riêng. Hai electron cùng orbital (cùng n, l, mₗ) phải khác nhau về spin mₛ.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Bộ số lượng tử n = 2, l = 1, mₗ = 0, mₛ = +1/2 là một bộ số lượng tử hợp lệ.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Với n = 2 thì l = 0 hoặc 1; l = 1 thì mₗ nhận −1, 0, +1 nên mₗ = 0 hợp lệ; mₛ = ±1/2 nên +1/2 hợp lệ.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Cách phân bố sáu electron trên năm orbital của phân lớp 3d như sau: [↑↓] [↑↓] [↑] [↑] [ ] tuân thủ quy tắc Hund.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Quy tắc Hund: các electron trước hết điền riêng vào từng orbital của cùng phân lớp với spin song song, rồi mới ghép đôi. Sáu electron ở 3d phải là [↑↓][↑][↑][↑][↑], không để một orbital trống trong khi các orbital khác đã ghép đôi.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Các nguyên tố có tính chất hóa học tương tự nhau được xếp trong cùng một cột của bảng tuần hoàn.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Các nguyên tố cùng cột (cùng nhóm) có cấu hình electron lớp ngoài cùng tương tự nên có tính chất hóa học tương tự nhau.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Trong nhóm halogen, iodine nằm dưới chlorine nên I₂ có tính oxi hóa mạnh hơn Cl₂.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Trong nhóm halogen, từ trên xuống (F → Cl → Br → I) bán kính tăng, tính oxi hóa giảm. Vì vậy I₂ có tính oxi hóa yếu hơn Cl₂.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Natri (sodium) có cấu hình electron 1s² 2s² 2p⁶ 3s¹ nên thuộc chu kỳ 3 và nhóm IA (nhóm 1).",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Na (Z = 11) có 3 lớp electron nên ở chu kỳ 3; có 1 electron lớp ngoài cùng (3s¹) nên thuộc nhóm IA (nhóm 1).",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Ở trạng thái cơ bản, các electron trong nguyên tử lần lượt chiếm các orbital theo chiều năng lượng từ cao xuống thấp.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Ở trạng thái cơ bản, electron chiếm các orbital theo thứ tự năng lượng từ thấp lên cao (nguyên lý vững bền), không phải từ cao xuống thấp.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Các nguyên tố có cùng số lớp electron được xếp cùng một hàng, gọi là chu kì.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Chu kì là dãy các nguyên tố có cùng số lớp electron, xếp thành một hàng ngang theo chiều điện tích hạt nhân tăng dần.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Theo quy tắc (n + l) dùng để dự đoán thứ tự điền electron trong nguyên tử nhiều electron, AO có n + l nhỏ hơn thường có năng lượng thấp hơn.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Theo quy tắc Klechkowski (n + l), AO có tổng n + l nhỏ hơn thường có năng lượng thấp hơn và được điền electron trước.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Theo quy tắc (n + l), khi hai AO có cùng n + l, AO có n nhỏ hơn thường có năng lượng cao hơn.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Khi hai AO có cùng n + l thì AO có n nhỏ hơn có năng lượng thấp hơn. Ví dụ 2p và 3s cùng n + l = 3, trong đó 2p thấp hơn 3s.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Ion K⁺ và ion Cl⁻ có cấu hình electron giống nhau, biết K có Z = 19 và Cl có Z = 17.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. K⁺ (Z = 19) mất 1 electron còn 18 electron; Cl⁻ (Z = 17) nhận 1 electron thành 18 electron. Cả hai đều có cấu hình 1s² 2s² 2p⁶ 3s² 3p⁶ (giống Ar).",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong cấu hình electron nguyên tử ở trạng thái cơ bản, nếu electron cuối cùng được điền vào phân lớp s hoặc d thì nguyên tố luôn thuộc nhóm chính.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Electron cuối cùng điền vào phân lớp s hoặc p thì nguyên tố thuộc nhóm A (nhóm chính). Nếu điền vào phân lớp d (hoặc f) thì là nguyên tố nhóm B (chuyển tiếp).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Cấu hình electron của ion Fe²⁺ là 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁴ 4s², biết Z(Fe) = 26.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Fe (Z = 26): [Ar] 3d⁶ 4s². Khi tạo ion, electron ở lớp ngoài cùng (4s) mất trước, nên Fe²⁺ là [Ar] 3d⁶ (24 electron), không phải 3d⁴ 4s².",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Chu kì 3 và chu kì 4 đều có 18 nguyên tố.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Chu kì 3 có 8 nguyên tố (từ Na đến Ar), còn chu kì 4 có 18 nguyên tố (từ K đến Kr).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Theo quy tắc (n + l), các phân lớp có thứ tự năng lượng tăng dần: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s, 4d, 5p, 6s, 5d, 4f, 6p, 7s.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Theo quy tắc n + l, 4f và 5d cùng n + l = 7 nhưng 4f có n nhỏ hơn nên thấp hơn. Thứ tự đúng là ... 5p, 6s, 4f, 5d, 6p, 7s; trong dãy đã cho, 4f phải đứng trước 5d.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Ion Mg²⁺ có cấu hình electron 1s² 2s² 2p⁶; do có 10 electron nên điện tích hạt nhân của ion là +10e.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Điện tích hạt nhân do số proton quyết định. Mg có Z = 12 nên hạt nhân của Mg²⁺ vẫn là +12e; ion có 10 electron vì đã mất 2 electron.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Phân lớp d có bao nhiêu orbital?",
+     "options": [
+      "3 orbital.",
+      "5 orbital.",
+      "7 orbital.",
+      "10 orbital."
+     ],
+     "answer": "B",
+     "explain": "B. Phân lớp d có l = 2 nên có 2l + 1 = 5 orbital.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Số electron tối đa của lớp n = 3 là bao nhiêu?",
+     "options": [
+      "8 electron.",
+      "10 electron.",
+      "18 electron.",
+      "32 electron."
+     ],
+     "answer": "C",
+     "explain": "C. Lớp thứ n chứa tối đa 2n² electron: 2 × 3² = 18 electron.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Sắt có Z = 26. Cấu hình electron trạng thái cơ bản nào đúng?",
+     "options": [
+      "1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁸.",
+      "1s² 2s² 2p⁶ 3s² 3p⁶ 4s⁴ 3d⁴.",
+      "1s² 2s² 2p⁶ 3s² 3p⁵ 3d⁷ 4s².",
+      "1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²."
+     ],
+     "answer": "D",
+     "explain": "D. Fe (Z = 26): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s². Phương án A bỏ qua phân lớp 4s (4s phải điền trước 3d); B có 4s⁴ vượt sức chứa tối đa 2 electron; C có 3p⁵ chưa đủ 6 electron nên sai.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Dấu hiệu nào trong cấu hình electron được sử dụng trực tiếp để xác định số thứ tự chu kỳ?",
+     "options": [
+      "Tổng số electron độc thân.",
+      "Giá trị số lượng tử chính n lớn nhất.",
+      "Tổng số orbital đã có electron.",
+      "Số electron của phân lớp d."
+     ],
+     "answer": "B",
+     "explain": "B. Số thứ tự chu kì bằng số lớp electron, tức giá trị số lượng tử chính n lớn nhất trong cấu hình electron.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Đối với các nguyên tố nhóm chính trong một chu kì (bỏ qua khí hiếm), xu hướng chung nào đúng?",
+     "options": [
+      "Bán kính tăng, tính khử tăng và tính oxy hóa giảm.",
+      "Bán kính tăng, tính khử giảm và tính oxy hóa tăng.",
+      "Bán kính không đổi, tính khử và tính oxy hóa không đổi.",
+      "Bán kính giảm, tính khử giảm và tính oxy hóa tăng."
+     ],
+     "answer": "D",
+     "explain": "D. Trong một chu kì, từ trái sang phải điện tích hạt nhân tăng, lực hút electron tăng: bán kính giảm, tính khử (nhường electron) giảm, tính oxi hóa (nhận electron) tăng.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Chlorine có Z = 17, cấu hình electron kết thúc 3s²3p⁵. Khi tạo ion đơn nguyên tử bền, chlorine có xu hướng nào?",
+     "options": [
+      "Nhường 1 electron để tạo Cl⁺.",
+      "Nhường 2 electron để tạo Cl²⁺.",
+      "Nhận 1 electron để tạo Cl⁻.",
+      "Nhận 2 electron để tạo Cl²⁻."
+     ],
+     "answer": "C",
+     "explain": "C. Cl (3s² 3p⁵) thiếu 1 electron để đạt cấu hình bền của khí hiếm Ar nên có xu hướng nhận 1 electron tạo Cl⁻.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Calcium có Z = 20 và cấu hình electron kết thúc 4s². Vị trí nào đúng?",
+     "options": [
+      "Chu kỳ 2, nhóm IIA (2).",
+      "Chu kỳ 4, nhóm IIA (2).",
+      "Chu kỳ 4, nhóm VIIIA (18).",
+      "Chu kỳ 2, nhóm IVA (14)."
+     ],
+     "answer": "B",
+     "explain": "B. Ca có 4 lớp electron nên ở chu kì 4; có 2 electron lớp ngoài cùng (4s²) nên thuộc nhóm IIA (nhóm 2).",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Na và K cùng thuộc nhóm IA, trong đó K nằm dưới Na. Nhận xét nào đúng?",
+     "options": [
+      "Na có bán kính lớn hơn và tính khử mạnh hơn K.",
+      "Na và K có bán kính và tính khử giống nhau.",
+      "K có bán kính nhỏ hơn và tính khử yếu hơn Na.",
+      "K có bán kính lớn hơn và tính khử mạnh hơn Na."
+     ],
+     "answer": "D",
+     "explain": "D. Trong cùng nhóm, từ trên xuống bán kính tăng, khả năng nhường electron tăng nên tính khử mạnh lên: K có bán kính lớn hơn và tính khử mạnh hơn Na.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Một nguyên tố X có cấu hình electron kết thúc 3s²3p⁴. Vị trí của X trong bảng tuần hoàn là:",
+     "options": [
+      "Chu kỳ 3, nhóm IVA (nhóm 14).",
+      "Chu kỳ 3, nhóm VIA (nhóm 16).",
+      "Chu kỳ 4, nhóm VIA (nhóm 16).",
+      "Chu kỳ 3, nhóm VIB (nhóm 6)."
+     ],
+     "answer": "B",
+     "explain": "B. Cấu hình kết thúc 3s² 3p⁴: lớp ngoài cùng là lớp 3 nên ở chu kì 3; có 2 + 4 = 6 electron hóa trị, electron cuối vào p nên thuộc nhóm VIA (nhóm 16).",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Ở trạng thái cơ bản, nguyên tử nguyên tố nào sau đây có số electron độc thân khác với ba nguyên tử còn lại?",
+     "options": [
+      "N (Z=7)",
+      "Na (Z=11)",
+      "Cl (Z=17)",
+      "Al (Z=13)"
+     ],
+     "answer": "A",
+     "explain": "A. Số electron độc thân: N (2p³) có 3; Na (3s¹) có 1; Cl (3p⁵) có 1; Al (3p¹) có 1. Vậy N khác ba nguyên tử còn lại.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Hạt mang điện trong nhân nguyên tử là:",
+     "options": [
+      "Electron",
+      "Proton",
+      "Neutron",
+      "Proton và neutron"
+     ],
+     "answer": "B",
+     "explain": "B. Hạt nhân gồm proton (mang điện dương) và neutron (không mang điện). Electron chuyển động bên ngoài hạt nhân.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Trong nguyên tử, hạt nào có khối lượng không đáng kể so với các hạt còn lại?",
+     "options": [
+      "Electron",
+      "Proton",
+      "Neutron",
+      "Electron và neutron"
+     ],
+     "answer": "A",
+     "explain": "A. Khối lượng electron (khoảng 1/1840 khối lượng proton) nhỏ không đáng kể so với proton và neutron.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Số khối của nguyên tử bằng tổng:",
+     "options": [
+      "Số p và số n",
+      "Số p và số e",
+      "Số n, e và số p",
+      "Số p và Z"
+     ],
+     "answer": "A",
+     "explain": "A. Số khối A = Z + N, tức tổng số proton và số neutron.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Đồng vị là những nguyên tử của cùng một nguyên tố, có số p bằng nhau nhưng khác nhau số:",
+     "options": [
+      "Neutron",
+      "Electron",
+      "Proton",
+      "Orbital"
+     ],
+     "answer": "A",
+     "explain": "A. Đồng vị là các nguyên tử có cùng số proton (cùng nguyên tố) nhưng khác số neutron nên khác số khối.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Cation M²⁺ có cấu hình electron kết thúc ở phân lớp 2p⁶. Cấu hình electron của nguyên tử M là:",
+     "options": [
+      "1s² 2s² 2p⁶ 3s²",
+      "1s² 2s² 2p⁶",
+      "1s² 2s² 2p⁴",
+      "1s² 2s² 2p⁶ 3s¹"
+     ],
+     "answer": "A",
+     "explain": "A. M²⁺ có cấu hình 1s² 2s² 2p⁶ (10 electron) nên nguyên tử M đã nhường 2 electron, có 12 electron: 1s² 2s² 2p⁶ 3s² (Mg).",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Anion Y²⁻ có cấu hình electron kết thúc ở phân lớp 2p⁶. Số hiệu nguyên tử của Y là:",
+     "options": [
+      "8",
+      "12",
+      "9",
+      "16"
+     ],
+     "answer": "A",
+     "explain": "A. Y²⁻ có 10 electron (1s² 2s² 2p⁶) do nhận thêm 2 electron, nên nguyên tử Y có 8 electron, Z = 8 (oxygen).",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Số electron hóa trị của nguyên tố có Z=7 là:",
+     "options": [
+      "5",
+      "1",
+      "3",
+      "6"
+     ],
+     "answer": "A",
+     "explain": "A. Z = 7: 1s² 2s² 2p³. Electron hóa trị là các electron ở lớp ngoài cùng (2s² 2p³), tổng cộng 5.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Gọi Nₑ, Nₚ và Nₙ lần lượt là số electron, proton và neutron của ion X²⁻. Hệ thức nào sau đây luôn đúng?",
+     "options": [
+      "Nₑ − Nₚ = 2",
+      "Nₚ − Nₑ = 2",
+      "Nₑ − Nₙ = 2",
+      "Nₑ − (Nₚ + Nₙ) = 2"
+     ],
+     "answer": "A",
+     "explain": "A. X²⁻ nhận thêm 2 electron nên số electron nhiều hơn số proton 2 đơn vị: Nₑ − Nₚ = 2. Các hệ thức còn lại có chứa số neutron nên không luôn đúng.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong cơ học lượng tử, trạng thái của electron được mô tả bằng khái niệm nào?",
+     "options": [
+      "Quỹ đạo hành tinh xác định.",
+      "Tốc độ không đổi quanh hạt nhân.",
+      "Hàm sóng hoặc hàm trạng thái.",
+      "Đường tròn có bán kính bất kỳ."
+     ],
+     "answer": "C",
+     "explain": "C. Cơ học lượng tử mô tả trạng thái electron bằng hàm sóng ψ (orbital), không có quỹ đạo xác định như mô hình hành tinh.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Trạng thái của một electron trong nguyên tử được đặc trưng bằng bao nhiêu số lượng tử?",
+     "options": [
+      "Hai số lượng tử n và l.",
+      "Bốn số lượng tử n, l, mₗ và mₛ.",
+      "Ba số lượng tử n, l và mₗ.",
+      "Năm số lượng tử n, l, mₗ, mₛ và Z."
+     ],
+     "answer": "B",
+     "explain": "B. Trạng thái của electron được đặc trưng bởi bốn số lượng tử: n, l, mₗ (xác định orbital) và mₛ (spin).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Với lớp electron M (n = 3), số lượng tử phụ l có thể nhận các giá trị nào?",
+     "options": [
+      "l = 1, 2, 3.",
+      "l = 0, 1, 2, 3.",
+      "l = -2, -1, 0, 1, 2.",
+      "l = 0, 1, 2."
+     ],
+     "answer": "D",
+     "explain": "D. Với n = 3, l nhận các giá trị từ 0 đến n − 1: l = 0, 1, 2 (ứng với phân lớp 3s, 3p, 3d).",
+     "tag": "ly-thuyet"
+    }
+   ]
+  },
+  {
+   "name": "Bài 2 – Cấu tạo phân tử và liên kết hóa học",
+   "questions": [
+    {
+     "q": "Độ âm điện là đại lượng đặc trưng cho khả năng hút electron liên kết về phía mình của một nguyên tử khi tham gia liên kết hóa học.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Độ âm điện đặc trưng cho khả năng hút electron liên kết về phía nguyên tử khi tham gia liên kết hóa học.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Năng lượng liên kết càng nhỏ thì liên kết càng bền.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Năng lượng liên kết là năng lượng cần để phá vỡ liên kết; năng lượng này càng lớn thì liên kết càng bền.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Liên kết trong NaCl là liên kết cộng hóa trị phân cực.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. NaCl gồm kim loại điển hình và phi kim điển hình (Δχ = 3,0 − 0,9 = 2,1 > 1,7) nên là liên kết ion.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Liên kết π được hình thành do các orbital hóa trị xen phủ theo trục nối hai hạt nhân.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Liên kết π hình thành do xen phủ bên (hai orbital p song song). Xen phủ dọc theo trục nối hai hạt nhân tạo liên kết σ.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Liên kết σ được hình thành do các orbital hóa trị xen phủ bên.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Liên kết σ hình thành do xen phủ trục (dọc theo trục nối hai hạt nhân). Xen phủ bên tạo liên kết π.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Lai hóa sp² tạo ra ba orbital lai hóa nằm trong cùng một mặt phẳng, định hướng về ba đỉnh của một tam giác đều, với góc lý tưởng xấp xỉ 120°.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Lai hóa sp² (1 AO s + 2 AO p) tạo 3 orbital lai nằm trong một mặt phẳng, hướng về 3 đỉnh tam giác đều, góc lý tưởng 120°.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Theo thuyết orbital phân tử (MO), phân tử được xem là một hệ thống nhất.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Thuyết MO coi phân tử là một hệ thống nhất: electron chuyển động trong trường của tất cả các hạt nhân, các MO bao trùm toàn phân tử.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Khi n orbital nguyên tử tổ hợp tuyến tính thì tạo thành n orbital phân tử.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Số MO tạo thành bằng số AO tổ hợp (ví dụ 2 AO tạo 1 MO liên kết và 1 MO phản liên kết).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Phân tử H₂O phân cực vì các liên kết O–H phân cực và các moment lưỡng cực liên kết không triệt tiêu nhau.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. H₂O có dạng góc nên moment lưỡng cực của hai liên kết O–H phân cực không triệt tiêu, moment lưỡng cực tổng khác 0.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Theo thuyết liên kết hóa trị (VB), khi hình thành liên kết cộng hóa trị, mức độ xen phủ giữa các orbital càng lớn thì liên kết thường càng bền.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Theo thuyết VB, xen phủ càng lớn thì mật độ electron giữa hai hạt nhân càng cao nên liên kết càng bền.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Góc liên kết H–C–H trong phân tử CH₄ là 120°.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. CH₄ có dạng tứ diện đều (C lai hóa sp³) nên góc H–C–H là 109°28′.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Góc lý tưởng giữa các orbital lai hóa sp³ là 180°.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Góc lý tưởng giữa các orbital lai hóa sp³ là 109°28′. Góc 180° là của lai hóa sp.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Lai hóa sp tạo ra hai orbital lai hóa định hướng thẳng hàng, với góc lý tưởng 180°.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Lai hóa sp (1 AO s + 1 AO p) cho 2 orbital lai nằm thẳng hàng, góc lý tưởng 180°.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Trong lai hóa sp², một orbital s tổ hợp với một orbital p để tạo ra hai orbital lai hóa.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Lai hóa sp² là tổ hợp 1 AO s với 2 AO p để tạo 3 orbital lai. Tổ hợp 1 s với 1 p cho 2 orbital là lai hóa sp.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Theo thuyết VB, liên kết cộng hóa trị được hình thành do sự ghép đôi hai electron độc thân có spin cùng chiều của hai nguyên tử tham gia liên kết.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Theo thuyết VB, liên kết cộng hóa trị hình thành do ghép đôi hai electron độc thân có spin ngược chiều của hai nguyên tử.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Trong phân tử có liên kết bội (liên kết đôi hoặc liên kết ba) luôn chỉ có một liên kết π.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Liên kết đôi gồm 1σ + 1π, nhưng liên kết ba gồm 1σ + 2π, nên không phải luôn chỉ có một liên kết π.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Theo thuyết VB, liên kết cộng hóa trị là liên kết có hướng.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Liên kết cộng hóa trị hình thành theo hướng xen phủ cực đại của các orbital nên có hướng (khác liên kết ion không có hướng).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Trừ các khí hiếm, phần lớn nguyên tử thường liên kết với nhau để tạo thành phân tử hoặc mạng tinh thể.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Khí hiếm đã có cấu hình bền nên tồn tại ở dạng nguyên tử; các nguyên tử khác liên kết với nhau thành phân tử hoặc mạng tinh thể để bền hơn.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Dãy phân tử nào sau đây chỉ chứa liên kết σ?",
+     "options": [
+      "Cl₂, NH₃, H₂O.",
+      "N₂, O₂, CO₂.",
+      "C₂H₄, H₂O, NH₃.",
+      "C₂H₂, N₂, HCl."
+     ],
+     "answer": "A",
+     "explain": "A. Cl–Cl, N–H, O–H đều là liên kết đơn nên chỉ có σ. Các dãy khác chứa liên kết bội (N≡N, O=O, C=O, C=C, C≡C) nên có liên kết π.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong phân tử C₂H₄, tổng số liên kết σ và π lần lượt là:",
+     "options": [
+      "4σ và 2π.",
+      "5σ và 1π.",
+      "6σ và 1π.",
+      "5σ và 2π."
+     ],
+     "answer": "B",
+     "explain": "B. C₂H₄ (CH₂=CH₂): 4 liên kết C–H (4σ) + liên kết đôi C=C (1σ + 1π) = 5σ và 1π.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong phân tử N₂, liên kết ba gồm:",
+     "options": [
+      "3 liên kết σ.",
+      "2 liên kết σ và 1 liên kết π.",
+      "3 liên kết π.",
+      "1 liên kết σ và 2 liên kết π."
+     ],
+     "answer": "D",
+     "explain": "D. Liên kết ba N≡N gồm 1 liên kết σ và 2 liên kết π.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong phân tử BeH₂ ở trạng thái khí, nguyên tử Be có kiểu lai hóa và góc liên kết phù hợp là:",
+     "options": [
+      "sp³ và 109°28′.",
+      "sp² và 120°.",
+      "sp và 180°.",
+      "Không lai hóa và 90°."
+     ],
+     "answer": "C",
+     "explain": "C. Be trong BeH₂ tạo 2 liên kết σ và không có cặp electron riêng nên lai hóa sp; phân tử thẳng, góc H–Be–H = 180°.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Nguyên tử N trong NH₃ tạo ba liên kết σ và còn một cặp electron chưa liên kết. Kiểu lai hóa của N là:",
+     "options": [
+      "sp.",
+      "sp³.",
+      "sp².",
+      "Không lai hóa."
+     ],
+     "answer": "B",
+     "explain": "B. N có 3 liên kết σ + 1 cặp electron riêng = 4 vùng electron nên lai hóa sp³.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Điều kiện nào sau đây không phù hợp để các orbital nguyên tử (AO) tổ hợp tạo orbital phân tử (MO)?",
+     "options": [
+      "Năng lượng của các AO xấp xỉ nhau.",
+      "Các AO có tính đối xứng phù hợp đối với trục liên kết.",
+      "Các AO không cần xen phủ đáng kể với nhau.",
+      "Sự xen phủ giữa các AO phải đạt mức độ rõ rệt."
+     ],
+     "answer": "C",
+     "explain": "C. Để AO tổ hợp thành MO cần: năng lượng gần nhau, đối xứng phù hợp và xen phủ đáng kể. Phát biểu 'không cần xen phủ đáng kể' là sai.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Phân tử nào sau đây không phân cực?",
+     "options": [
+      "HCl.",
+      "CO₂.",
+      "H₂O.",
+      "CHCl₃."
+     ],
+     "answer": "B",
+     "explain": "B. CO₂ có dạng thẳng O=C=O, hai moment lưỡng cực C=O bằng nhau và ngược chiều nên triệt tiêu: phân tử không phân cực. HCl, H₂O, CHCl₃ đều phân cực.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Cách phân loại nào sau đây đúng?",
+     "options": [
+      "HCl không phân cực; CO₂ phân cực; H₂O không phân cực.",
+      "HCl phân cực; CO₂ phân cực; H₂O không phân cực.",
+      "HCl không phân cực; CO₂ không phân cực; H₂O phân cực.",
+      "HCl phân cực; CO₂ không phân cực; H₂O phân cực."
+     ],
+     "answer": "D",
+     "explain": "D. HCl phân cực (hai nguyên tử khác độ âm điện); CO₂ không phân cực (thẳng, moment triệt tiêu); H₂O phân cực (dạng góc).",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Cho các phân tử: CO₂ (1), H₂O (2), C₂H₂ (3), SO₂ (4), NH₃ (5), BeH₂ (6). Những phân tử nào có hình học thẳng?",
+     "options": [
+      "(1), (3) và (6).",
+      "(1), (3) và (4).",
+      "(1), (2) và (6).",
+      "(1), (5) và (6)."
+     ],
+     "answer": "A",
+     "explain": "A. CO₂ (O=C=O), C₂H₂ (H–C≡C–H) và BeH₂ (H–Be–H) đều thẳng. H₂O và SO₂ có dạng góc; NH₃ có dạng chóp tam giác.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Bản chất của liên kết ion là:",
+     "options": [
+      "Lực hút tĩnh điện giữa các ion trái dấu.",
+      "Liên kết giữa các nguyên tử bằng cặp electron dùng chung.",
+      "Lực hút tĩnh điện giữa các ion cùng dấu.",
+      "Sự cho – nhận electron."
+     ],
+     "answer": "A",
+     "explain": "A. Liên kết ion là lực hút tĩnh điện giữa các ion mang điện tích trái dấu (cation và anion).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Bản chất của liên kết cộng hóa trị là:",
+     "options": [
+      "Liên kết giữa các nguyên tử trong đó cặp electron dùng chung không bị lệch về phía nguyên tử nào.",
+      "Liên kết giữa các nguyên tử bằng một hay nhiều cặp electron dùng chung.",
+      "Liên kết giữa các nguyên tử bằng cặp electron dùng chung do một nguyên tử cung cấp hoàn toàn.",
+      "Liên kết trong đó cặp electron dùng chung bị lệch về phía một nguyên tử."
+     ],
+     "answer": "B",
+     "explain": "B. Liên kết cộng hóa trị là liên kết giữa các nguyên tử bằng một hay nhiều cặp electron dùng chung. Các phương án còn lại chỉ mô tả trường hợp riêng (không phân cực, cho – nhận, phân cực).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Cặp nào sau đây đều có khả năng tạo liên kết hydrogen giữa các phân tử cùng loại?",
+     "options": [
+      "H₂O và HF.",
+      "HCl và H₂S.",
+      "CH₄ và CO₂.",
+      "N₂ và O₂."
+     ],
+     "answer": "A",
+     "explain": "A. Liên kết hydrogen hình thành khi H liên kết với nguyên tử có độ âm điện lớn, bán kính nhỏ (F, O, N). H₂O và HF thỏa mãn; HCl, H₂S, CH₄, CO₂, N₂, O₂ thì không.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Công thức hóa học nào sau đây biểu thị hợp chất ion?",
+     "options": [
+      "KCl.",
+      "NH₃.",
+      "CH₄.",
+      "H₂O."
+     ],
+     "answer": "A",
+     "explain": "A. KCl gồm kim loại kiềm và halogen nên là hợp chất ion. NH₃, CH₄, H₂O là hợp chất cộng hóa trị.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong dãy nào sau đây, nguyên tử trung tâm của tất cả các phân tử đều có kiểu lai hóa sp³?",
+     "options": [
+      "CH₄, NH₃, H₂O.",
+      "CH₄, NH₃, BH₃.",
+      "NH₃, H₂O, BeH₂.",
+      "BeH₂, BH₃, C₂H₂."
+     ],
+     "answer": "A",
+     "explain": "A. Nguyên tử trung tâm C (CH₄), N (NH₃), O (H₂O) đều có 4 vùng electron (liên kết σ + cặp electron riêng) nên lai hóa sp³. BH₃ lai hóa sp²; BeH₂ và C₂H₂ lai hóa sp.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong cùng một phép lai hóa trên một nguyên tử, các orbital lai hóa tương đương khác nhau chủ yếu về:",
+     "options": [
+      "Hướng trong không gian.",
+      "Hình dạng.",
+      "Kích thước.",
+      "Năng lượng."
+     ],
+     "answer": "A",
+     "explain": "A. Các orbital lai hóa tương đương nhau về hình dạng, kích thước và năng lượng; chúng chỉ khác nhau về hướng trong không gian.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Hợp chất nào sau đây có các liên kết được hình thành bằng những cặp electron dùng chung?",
+     "options": [
+      "Na₂O.",
+      "LiF.",
+      "H₂O.",
+      "KCl."
+     ],
+     "answer": "C",
+     "explain": "C. H₂O là hợp chất cộng hóa trị (H–O–H) nên các liên kết hình thành bằng cặp electron dùng chung. Na₂O, LiF, KCl là hợp chất ion.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Khi cặp electron dùng chung trong một liên kết cộng hóa trị được một nguyên tử cung cấp hoàn toàn, liên kết đó được gọi là:",
+     "options": [
+      "Liên kết cho – nhận (liên kết phối trí).",
+      "Liên kết ion.",
+      "Liên kết cộng hóa trị phân cực.",
+      "Liên kết cộng hóa trị không phân cực."
+     ],
+     "answer": "A",
+     "explain": "A. Khi cặp electron dùng chung do một nguyên tử cung cấp hoàn toàn thì đó là liên kết cho – nhận (liên kết phối trí).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Hợp chất nào sau đây chứa đồng thời cả liên kết cộng hóa trị và liên kết ion?",
+     "options": [
+      "NaCl.",
+      "H₂SO₄.",
+      "H₃PO₄.",
+      "NaHCO₃."
+     ],
+     "answer": "D",
+     "explain": "D. NaHCO₃ có liên kết ion giữa Na⁺ và HCO₃⁻, đồng thời trong ion HCO₃⁻ có các liên kết cộng hóa trị. NaCl chỉ có liên kết ion; H₂SO₄ và H₃PO₄ chỉ có liên kết cộng hóa trị.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "NaCl là thành phần của nhiều dung dịch dùng trong y tế. Biết χ(Na) = 0,9 và χ(Cl) = 3,0, loại liên kết chủ yếu trong NaCl là:",
+     "options": [
+      "Liên kết ion.",
+      "Liên kết cộng hóa trị không phân cực.",
+      "Liên kết cộng hóa trị phân cực.",
+      "Liên kết hydrogen."
+     ],
+     "answer": "A",
+     "explain": "A. Δχ = 3,0 − 0,9 = 2,1 > 1,7 nên liên kết chủ yếu trong NaCl là liên kết ion.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Biết χ(H) = 2,1 và χ(Cl) = 3,0. Trong phân tử HCl, cặp electron dùng chung:",
+     "options": [
+      "Lệch về phía H.",
+      "Lệch về phía Cl.",
+      "Phân bố hoàn toàn đều giữa H và Cl.",
+      "Chuyển hoàn toàn từ Cl sang H."
+     ],
+     "answer": "B",
+     "explain": "B. Cl có độ âm điện (3,0) lớn hơn H (2,1) nên cặp electron dùng chung lệch về phía Cl (liên kết cộng hóa trị phân cực).",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong phân tử H₂O, năng lượng phân ly liên kết từng bước của hai liên kết O–H lần lượt là 118 kcal/mol và 102 kcal/mol. Năng lượng liên kết O–H trung bình là:",
+     "options": [
+      "108 kcal/mol.",
+      "109 kcal/mol.",
+      "110 kcal/mol.",
+      "220 kcal/mol."
+     ],
+     "answer": "C",
+     "explain": "C. Năng lượng liên kết O–H trung bình = (118 + 102)/2 = 110 kcal/mol.",
+     "tag": "bai-tap"
+    }
+   ]
+  },
+  {
+   "name": "Bài 3 – Nhiệt động học",
+   "questions": [
+    {
+     "q": "Hệ mở có thể trao đổi cả vật chất và năng lượng với môi trường.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Hệ mở trao đổi cả vật chất và năng lượng với môi trường.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Cơ thể người đang sống được xem là hệ mở vì trao đổi cả vật chất và năng lượng với môi trường.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Cơ thể người trao đổi chất (ăn, uống, thở) và năng lượng (nhiệt, công) với môi trường nên là hệ mở.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Hai quá trình đưa một hệ từ cùng trạng thái đầu đến cùng trạng thái cuối có thể cho hai giá trị ΔU khác nhau vì đường đi của chúng khác nhau.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. ΔU là hàm trạng thái, chỉ phụ thuộc trạng thái đầu và cuối, không phụ thuộc đường đi. Cùng trạng thái đầu và cuối thì ΔU như nhau; chỉ Q và A mới phụ thuộc đường đi.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Theo định luật Hess, biến thiên enthalpy của phản ứng chỉ phụ thuộc trạng thái đầu và trạng thái cuối, không phụ thuộc con đường phản ứng.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Định luật Hess: ΔH của phản ứng chỉ phụ thuộc trạng thái đầu và cuối (ở p hoặc V không đổi), không phụ thuộc con đường phản ứng.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Ở áp suất không đổi, khi hệ chỉ thực hiện công giãn nở pV, một phản ứng có ΔrH = −120 kJ là phản ứng tỏa nhiệt; hệ giải phóng 120 kJ nhiệt theo phương trình phản ứng đã viết.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. ΔrH < 0 ở áp suất không đổi là phản ứng tỏa nhiệt; Qp = ΔH nên hệ giải phóng 120 kJ theo phương trình đã viết.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Khi tính ΔrH° của phản ứng đốt cháy glucose, có thể bỏ qua toàn bộ hệ số 6 trước CO₂ và H₂O vì nhiệt sinh đã tính theo đơn vị mol.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. ΔrH° tính theo đúng hệ số tỷ lượng: ΔrH° = ΣνΔfH°(sản phẩm) − ΣνΔfH°(chất đầu). Không được bỏ hệ số 6.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Entropy là hàm trạng thái liên hệ với số vi trạng thái có thể có và mức độ phân tán năng lượng của hệ; trạng thái có số vi trạng thái lớn hơn thường có entropy lớn hơn.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Entropy S là hàm trạng thái, đo mức độ phân tán năng lượng; S = k·ln W nên số vi trạng thái W càng lớn thì entropy càng lớn.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Khi đặt túi chườm ấm có nhiệt độ cao hơn lên da, nhiệt tự truyền từ túi chườm sang da cho đến khi hai vật đạt cân bằng nhiệt.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Nhiệt tự truyền từ vật nóng sang vật lạnh cho đến khi cân bằng nhiệt (nguyên lý thứ hai).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Một phản ứng tỏa nhiệt luôn tự diễn biến ở mọi nhiệt độ vì ΔrH của phản ứng âm.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Chiều tự diễn biến do ΔG = ΔH − TΔS quyết định. Phản ứng tỏa nhiệt (ΔH < 0) nhưng có ΔS < 0 vẫn có thể có ΔG > 0 ở nhiệt độ cao nên không tự diễn biến.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Nhiệt động học nghiên cứu các quy luật biến đổi năng lượng và mối quan hệ giữa nhiệt, công với các hàm trạng thái của hệ.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Nhiệt động học nghiên cứu sự biến đổi năng lượng và mối liên hệ giữa nhiệt, công với các hàm trạng thái của hệ.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Hệ cô lập là hệ không trao đổi năng lượng nhưng có thể trao đổi vật chất với môi trường.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Hệ cô lập không trao đổi cả vật chất lẫn năng lượng với môi trường.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Ở cùng điều kiện, ΔrH° của phản ứng bằng tổng các giá trị νΔfH° của sản phẩm trừ tổng các giá trị νΔfH° của chất tham gia.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. ΔrH° = ΣνΔfH°(sản phẩm) − ΣνΔfH°(chất tham gia).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Khi dùng nhiệt cháy chuẩn, ΔrH° của phản ứng bằng tổng các giá trị νΔcH° của sản phẩm trừ tổng các giá trị νΔcH° của chất tham gia.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Với nhiệt cháy thì ngược lại: ΔrH° = ΣνΔcH°(chất tham gia) − ΣνΔcH°(sản phẩm).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Động cơ vĩnh cửu loại 2 là động cơ liên tục sinh công mà không tiêu tốn năng lượng hay chỉ cần một năng lượng ban đầu.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Động cơ vĩnh cửu loại 1 là động cơ sinh công mà không tiêu tốn năng lượng (vi phạm nguyên lý 1). Loại 2 là động cơ biến toàn bộ nhiệt nhận từ một nguồn thành công (vi phạm nguyên lý 2).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Một động cơ nhiệt hoạt động theo chu trình không thể biến toàn bộ nhiệt nhận từ một nguồn duy nhất thành công mà không gây ra bất kỳ biến đổi nào khác.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Đây là phát biểu của nguyên lý thứ hai (Kelvin – Planck): không thể biến toàn bộ nhiệt từ một nguồn duy nhất thành công mà không gây biến đổi nào khác.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Nhiệt sinh chuẩn (enthalpy tạo thành chuẩn) của một chất là biến thiên enthalpy của phản ứng tạo thành 1 mol chất đó từ các đơn chất cấu thành ở trạng thái chuẩn bền nhất.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Đây là định nghĩa nhiệt sinh chuẩn: ΔfH° của phản ứng tạo thành 1 mol chất từ các đơn chất bền nhất ở trạng thái chuẩn.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Nhiệt cháy chuẩn của một chất là biến thiên enthalpy khi đốt cháy hoàn toàn 1 mol chất đó bằng oxygen, với các chất ở trạng thái chuẩn và tạo thành các sản phẩm cháy bền.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Đây là định nghĩa nhiệt cháy chuẩn: ΔcH° khi đốt cháy hoàn toàn 1 mol chất bằng O₂, các chất ở trạng thái chuẩn, tạo sản phẩm cháy bền (CO₂, H₂O...).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Nguyên lý thứ nhất nhiệt động học biểu thị sự bảo toàn năng lượng trong các quá trình biến đổi.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Nguyên lý thứ nhất là định luật bảo toàn năng lượng: ΔU = Q + A.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Đối với một hệ kín chỉ có công giãn nở pV, trong quá trình đẳng tích, quan hệ nào đúng?",
+     "options": [
+      "Qv = ΔU.",
+      "Qv = ΔH.",
+      "Qv = −ΔU.",
+      "ΔU = 0."
+     ],
+     "answer": "A",
+     "explain": "A. Ở thể tích không đổi hệ không sinh công giãn nở (A = 0) nên Qv = ΔU.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Đối với một hệ kín chỉ có công giãn nở pV, phản ứng được thực hiện ở áp suất không đổi. Nhiệt trao đổi của phản ứng được xác định bằng đại lượng nào?",
+     "options": [
+      "Qp = ΔH.",
+      "Qp = ΔS.",
+      "Qp = −ΔU.",
+      "Qp = 0."
+     ],
+     "answer": "A",
+     "explain": "A. Ở áp suất không đổi, nhiệt trao đổi bằng biến thiên enthalpy: Qp = ΔH.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Một hệ giải phóng 40 kJ nhiệt nhưng nhận 10 kJ công điện. Sinh viên tính ΔU = −50 kJ. Phân tích nào đúng nhất?",
+     "options": [
+      "Sinh viên đúng vì cả nhiệt và công đều phải lấy dấu âm.",
+      "Sinh viên sai; Q = −40 kJ, A = +10 kJ nên ΔU = −30 kJ.",
+      "Sinh viên sai; Q = +40 kJ, A = −10 kJ nên ΔU = +30 kJ.",
+      "Không thể xác định vì chưa biết hệ mở hay hệ kín."
+     ],
+     "answer": "B",
+     "explain": "B. Hệ giải phóng nhiệt: Q = −40 kJ; hệ nhận công: A = +10 kJ. Vậy ΔU = Q + A = −40 + 10 = −30 kJ. Sinh viên đã nhầm dấu của công.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Một bình kín không cho vật chất đi qua nhưng vẫn truyền nhiệt với môi trường được xếp vào loại hệ nào?",
+     "options": [
+      "Hệ mở.",
+      "Hệ kín.",
+      "Hệ cô lập.",
+      "Hệ đẳng nhiệt."
+     ],
+     "answer": "B",
+     "explain": "B. Không trao đổi vật chất nhưng có trao đổi năng lượng (nhiệt) là hệ kín.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Một hệ nhận 50 kJ nhiệt và thực hiện 20 kJ công lên môi trường. Theo quy ước ΔU = Q + A, biến thiên nội năng của hệ là bao nhiêu?",
+     "options": [
+      "+70 kJ.",
+      "+30 kJ.",
+      "−30 kJ.",
+      "−70 kJ."
+     ],
+     "answer": "B",
+     "explain": "B. Hệ nhận nhiệt: Q = +50 kJ; hệ thực hiện công lên môi trường: A = −20 kJ. ΔU = 50 − 20 = +30 kJ.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Cho các phản ứng sau, coi các chất khí là khí lý tưởng và các phản ứng được xét ở cùng nhiệt độ:\n1. N₂(g) + 3H₂(g) → 2NH₃(g)\n2. C(s, graphite) + CO₂(g) → 2CO(g)\n3. CaCO₃(s) → CaO(s) + CO₂(g)\n4. Fe₂O₃(s) + 3CO(g) → 2Fe(s) + 3CO₂(g)\nPhản ứng có ΔrH > ΔrU là:",
+     "options": [
+      "2 và 3",
+      "1 và 2",
+      "3 và 4",
+      "2 và 4"
+     ],
+     "answer": "A",
+     "explain": "A. ΔH = ΔU + Δn·RT với Δn là biến thiên số mol khí; ΔH > ΔU khi Δn > 0. Phản ứng 1: Δn = 2 − 4 = −2; phản ứng 2: Δn = 2 − 1 = +1; phản ứng 3: Δn = +1; phản ứng 4: Δn = 3 − 3 = 0. Vậy là 2 và 3.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Cho các phản ứng sau, coi các chất khí là khí lý tưởng và các phản ứng được xét ở cùng nhiệt độ:\n1. C(s, graphite) + O₂(g) → CO₂(g)\n2. 2C(s, graphite) + O₂(g) → 2CO(g)\n3. CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)\n4. Fe₂O₃(s) + 3CO(g) → 2Fe(s) + 3CO₂(g)\nPhản ứng có ΔrH = ΔrU là:",
+     "options": [
+      "2 và 3",
+      "1 và 2",
+      "3 và 4",
+      "1 và 4"
+     ],
+     "answer": "D",
+     "explain": "D. ΔH = ΔU khi Δn khí = 0. Phản ứng 1: 1 − 1 = 0; phản ứng 2: 2 − 1 = +1; phản ứng 3: 1 − 3 = −2 (H₂O là chất lỏng); phản ứng 4: 3 − 3 = 0. Vậy là 1 và 4.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Cho các phản ứng xảy ra ở điều kiện chuẩn:\n1/2 P₄(s, trắng) + 3Cl₂(g) → 2PCl₃(l), ΔrH° = x kJ\nPCl₃(l) + Cl₂(g) → PCl₅(s), ΔrH° = y kJ\nNhiệt sinh chuẩn ΔfH°[PCl₅(s)] bằng:",
+     "options": [
+      "x + y.",
+      "x + 2y.",
+      "x/2 + y.",
+      "2x + y."
+     ],
+     "answer": "C",
+     "explain": "C. Phản ứng 1 tạo 2 mol PCl₃ nên ΔfH°(PCl₃) = x/2. Từ phản ứng 2: ΔfH°(PCl₅) = ΔfH°(PCl₃) + y = x/2 + y.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Nhiệt cháy chuẩn của C₂H₅OH(l), H₂(g) và C(s, graphite) lần lượt là a, b, c (kJ·mol⁻¹). Nhiệt sinh chuẩn của C₂H₅OH(l) bằng:",
+     "options": [
+      "3a + 2c − a",
+      "a + b + c",
+      "2c + 3b − a",
+      "c − a − b"
+     ],
+     "answer": "C",
+     "explain": "C. Phản ứng tạo thành: 2C + 3H₂ + ½O₂ → C₂H₅OH. Theo định luật Hess: ΔfH° = 2ΔcH°(C) + 3ΔcH°(H₂) − ΔcH°(C₂H₅OH) = 2c + 3b − a.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Một cốc nước đứng yên trên bàn được đun nóng, nhiệt độ của nước trong cốc tăng nhưng vị trí của cốc không thay đổi. Dạng năng lượng nào của hệ tăng lên?",
+     "options": [
+      "Động năng vĩ mô.",
+      "Thế năng vĩ mô.",
+      "Nội năng.",
+      "Cơ năng."
+     ],
+     "answer": "C",
+     "explain": "C. Đun nóng làm tăng chuyển động nhiệt của các phân tử nước, tức là tăng nội năng. Cốc đứng yên nên động năng và thế năng vĩ mô không đổi.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Cho phản ứng 2CO(g) + O₂(g) → 2CO₂(g); ΔfH°[CO(g)] = −110,5 kJ·mol⁻¹ và ΔfH°[CO₂(g)] = −393,5 kJ·mol⁻¹. Nhóm A tính ΔrH° = 2(−393,5) − [2(−110,5) + 0] = −566,0 kJ. Nhóm B tính ΔrH° = −393,5 − (−110,5) = −283,0 kJ. Đánh giá nào phù hợp nhất?",
+     "options": [
+      "Nhóm A đúng vì đã sử dụng đầy đủ hệ số tỷ lượng của phương trình phản ứng đã viết.",
+      "Nhóm B đúng vì nhiệt sinh chuẩn luôn tính cho một mol chất trong phản ứng.",
+      "Cả hai đúng vì chỉ khác cách quy ước.",
+      "Cả hai sai vì nhiệt sinh chuẩn của O₂(g) không bằng 0."
+     ],
+     "answer": "A",
+     "explain": "A. ΔrH° phải tính theo đúng hệ số của phương trình đã viết: ΔrH° = 2(−393,5) − 2(−110,5) = −566,0 kJ. Nhóm B đã bỏ hệ số tỷ lượng. O₂ là đơn chất bền nên ΔfH° = 0.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Trong các phản ứng sau ở 298,15 K và p° = 1 bar, giá trị nào biểu diễn nhiệt cháy chuẩn mol ΔcH° của chất được đốt?",
+     "options": [
+      "C(s, graphite) + 1/2O₂(g) → CO(g); ΔrH° = a (kJ)",
+      "2H₂(g) + O₂(g) → 2H₂O(l); ΔrH° = b (kJ)",
+      "C(s, graphite) + O₂(g) → CO₂(g); ΔrH° = c (kJ/mol)",
+      "Cả 3 đều là ΔcH°."
+     ],
+     "answer": "C",
+     "explain": "C. Nhiệt cháy chuẩn là biến thiên enthalpy khi đốt cháy hoàn toàn 1 mol chất tạo sản phẩm bền. Phản ứng (c) đốt 1 mol C thành CO₂; (a) tạo CO (cháy không hoàn toàn); (b) đốt 2 mol H₂.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Đối với một quá trình tự diễn biến không thuận nghịch trong hệ cô lập, biến thiên entropy của hệ thỏa mãn điều kiện nào sau đây?",
+     "options": [
+      "ΔS hệ > 0.",
+      "ΔS hệ = 0.",
+      "ΔS hệ < 0.",
+      "ΔS hệ luôn không xác định."
+     ],
+     "answer": "A",
+     "explain": "A. Quá trình tự diễn biến không thuận nghịch trong hệ cô lập luôn làm entropy tăng: ΔS > 0 (nguyên lý thứ hai).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Đặc điểm nào sau đây đúng với một hàm trạng thái?",
+     "options": [
+      "Biến thiên phụ thuộc vào con đường diễn ra của quá trình.",
+      "Biến thiên chỉ phụ thuộc trạng thái đầu và trạng thái cuối.",
+      "Biến thiên phụ thuộc vào tốc độ diễn biến của quá trình.",
+      "Biến thiên chỉ xác định được đối với hệ cô lập."
+     ],
+     "answer": "B",
+     "explain": "B. Hàm trạng thái có biến thiên chỉ phụ thuộc trạng thái đầu và cuối, không phụ thuộc đường đi (ví dụ U, H, S, G).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Nội dung cơ bản của nguyên lý thứ nhất nhiệt động học là gì?",
+     "options": [
+      "Entropy của hệ luôn giảm trong mọi quá trình biến đổi.",
+      "Nhiệt luôn chuyển hoàn toàn thành công trong một chu trình.",
+      "Năng lượng được bảo toàn trong mọi quá trình biến đổi.",
+      "Phản ứng tỏa nhiệt luôn tự diễn biến theo chiều thuận."
+     ],
+     "answer": "C",
+     "explain": "C. Nguyên lý thứ nhất là sự bảo toàn năng lượng trong mọi quá trình biến đổi. Các phương án còn lại sai hoặc thuộc nguyên lý khác.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Phản ứng nào biểu diễn nhiệt sinh chuẩn của một chất?",
+     "options": [
+      "Phân hủy 1 mol chất thành các đơn chất ở trạng thái chuẩn.",
+      "Đốt cháy 1 mol chất bằng oxygen trong điều kiện chuẩn.",
+      "Hòa tan 1 mol chất vào dung môi trong điều kiện chuẩn.",
+      "Tạo thành 1 mol chất từ các đơn chất cấu thành ở trạng thái chuẩn bền nhất."
+     ],
+     "answer": "D",
+     "explain": "D. Nhiệt sinh chuẩn ứng với phản ứng tạo thành 1 mol chất từ các đơn chất cấu thành ở trạng thái chuẩn bền nhất.",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Ở nhiệt độ và áp suất không đổi, khi ΔrG = 0 đối với phản ứng tại thành phần đang xét, hệ ở trạng thái nào?",
+     "options": [
+      "Tự diễn biến mạnh theo chiều thuận.",
+      "Cân bằng.",
+      "Không thể xảy ra theo cả hai chiều.",
+      "Chắc chắn tỏa nhiệt."
+     ],
+     "answer": "B",
+     "explain": "B. ΔrG = 0 ở T, p không đổi nghĩa là hệ ở trạng thái cân bằng (không có chiều tự diễn biến).",
+     "tag": "ly-thuyet"
+    },
+    {
+     "q": "Ở 298 K và áp suất không đổi, một phản ứng có ΔrH = −10,0 kJ và ΔrS = −20,0 J·K⁻¹. ΔrG bằng bao nhiêu và chiều thuận có thuận lợi về mặt nhiệt động học không?",
+     "options": [
+      "−15,96 kJ; có.",
+      "−4,04 kJ; có.",
+      "+4,04 kJ; không.",
+      "+15,96 kJ; không."
+     ],
+     "answer": "B",
+     "explain": "B. ΔrG = ΔrH − TΔrS = −10 000 − 298 × (−20) = −10 000 + 5 960 = −4 040 J = −4,04 kJ < 0 nên chiều thuận thuận lợi.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Một phản ứng có ΔrH = +40 kJ và ΔrS = +100 J·K⁻¹. Coi ΔrH và ΔrS không đổi theo nhiệt độ. Chiều thuận có ΔrG < 0 khi nhiệt độ thỏa mãn điều kiện nào?",
+     "options": [
+      "T < 100 K.",
+      "T < 400 K.",
+      "T > 400 K.",
+      "T = 0 K."
+     ],
+     "answer": "C",
+     "explain": "C. ΔrG = ΔrH − TΔrS < 0 ⇔ T > ΔrH/ΔrS = 40 000/100 = 400 K.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Ở 310 K, phản ứng A có ΔrH = −25 kJ, ΔrS = −50 J·K⁻¹; phản ứng B có ΔrH = +8 kJ, ΔrS = +20 J·K⁻¹. Giá trị ΔrG và chiều thuận lợi về mặt nhiệt động học của hai phản ứng là:",
+     "options": [
+      "ΔrG(A) = −40,5 kJ; ΔrG(B) = +1,8 kJ; chỉ A thuận lợi.",
+      "ΔrG(A) = −9,5 kJ; ΔrG(B) = +1,8 kJ; chỉ A thuận lợi.",
+      "ΔrG(A) = −9,5 kJ; ΔrG(B) = −1,8 kJ; cả hai thuận lợi.",
+      "ΔrG(A) = +9,5 kJ; ΔrG(B) = +1,8 kJ; cả hai không thuận lợi."
+     ],
+     "answer": "B",
+     "explain": "B. Phản ứng A: ΔrG = −25 − 310 × (−0,05) = −9,5 kJ (thuận lợi). Phản ứng B: ΔrG = 8 − 310 × 0,02 = +1,8 kJ (không thuận lợi). Chỉ A thuận lợi.",
+     "tag": "bai-tap"
+    },
+    {
+     "q": "Nếu một phản ứng có ΔrG > 0 ở điều kiện đang xét, nhận định nào đúng?",
+     "options": [
+      "Chiều thuận thuận lợi về mặt nhiệt động học.",
+      "Hệ đang ở trạng thái cân bằng.",
+      "Chiều nghịch thuận lợi về mặt nhiệt động học.",
+      "Chiều thuận chắc chắn thu nhiệt."
+     ],
+     "answer": "C",
+     "explain": "C. ΔrG > 0: chiều thuận không tự xảy ra, chiều nghịch thuận lợi về mặt nhiệt động học.",
+     "tag": "ly-thuyet"
+    }
+   ]
+  }
+ ]
+}
