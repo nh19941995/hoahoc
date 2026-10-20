@@ -1,0 +1,6182 @@
+{
+  "subject": "xac-suat-thong-ke",
+  "title": "Xác suất thống kê",
+  "chapters": [
+    {
+      "name": "Bài 1 – Biến cố và xác suất",
+      "questions": [
+        {
+          "id": "xstk-001",
+          "q": "Trong thực hành điều dưỡng, việc tiêm thử một liều thuốc và quan sát xem người bệnh có xuất hiện phản ứng hay không được gọi là gì?",
+          "options": [
+            "Phép thử",
+            "Biến cố",
+            "Biến ngẫu nhiên",
+            "Hàm phân phối"
+          ],
+          "answer": "A",
+          "explain": "Phép thử là thao tác được tiến hành để quan sát một kết quả chưa biết trước.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 2,
+            "question": 1
+          }
+        },
+        {
+          "id": "xstk-002",
+          "q": "Kết quả “người bệnh xuất hiện phản ứng dị ứng sau khi dùng thuốc” trong một lần theo dõi được gọi là gì?",
+          "options": [
+            "Phép thử",
+            "Không gian mẫu",
+            "Tham số mẫu",
+            "Biến cố"
+          ],
+          "answer": "D",
+          "explain": "Biến cố là sự kiện có thể xảy ra sau phép thử; ở đây là xuất hiện dị ứng. Đáp án đúng là D, không phải C như Excel.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 3,
+            "question": 2
+          }
+        },
+        {
+          "id": "xstk-003",
+          "q": "Cặp biến cố A: “bệnh nhân mắc viêm gan B” và B: “bệnh nhân không mắc viêm gan B” có quan hệ nào?",
+          "options": [
+            "Biến cố phụ thuộc",
+            "Biến cố không xung khắc",
+            "Biến cố đối lập",
+            "Biến cố độc lập"
+          ],
+          "answer": "C",
+          "explain": "A và B loại trừ nhau và bao phủ toàn bộ khả năng, nên là hai biến cố đối lập.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 4,
+            "question": 3
+          }
+        },
+        {
+          "id": "xstk-004",
+          "q": "Trong một lần phân loại cấp cứu, người bệnh chỉ có thể thuộc một trong ba mức: nguy kịch, khẩn cấp hoặc thường quy. Ba biến cố này là gì?",
+          "options": [
+            "Các biến cố phụ thuộc",
+            "Các biến cố xung khắc",
+            "Các biến cố độc lập",
+            "Các biến cố tương đương"
+          ],
+          "answer": "B",
+          "explain": "Trong một lần phân loại, hai mức khác nhau không thể cùng xảy ra nên các biến cố xung khắc.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 5,
+            "question": 4
+          }
+        },
+        {
+          "id": "xstk-005",
+          "q": "Hai biến cố được gọi là độc lập khi nào?",
+          "options": [
+            "Việc xảy ra của biến cố này không làm thay đổi xác suất của biến cố kia",
+            "Hai biến cố không thể cùng xảy ra",
+            "Hai biến cố luôn cùng xảy ra",
+            "Biến cố thứ nhất làm tăng xác suất biến cố thứ hai"
+          ],
+          "answer": "A",
+          "explain": "Độc lập nghĩa là biết một biến cố xảy ra không làm thay đổi xác suất của biến cố kia.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 6,
+            "question": 5
+          }
+        },
+        {
+          "id": "xstk-006",
+          "q": "Trong chuỗi biến chứng sốc nhiễm khuẩn làm tăng nguy cơ suy thận cấp, hai biến cố được xem là gì?",
+          "options": [
+            "Biến cố độc lập",
+            "Biến cố xung khắc",
+            "Biến cố đối lập",
+            "Biến cố phụ thuộc"
+          ],
+          "answer": "D",
+          "explain": "Theo giả thiết đề bài, sốc làm thay đổi nguy cơ suy thận nên hai biến cố phụ thuộc.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 7,
+            "question": 6
+          }
+        },
+        {
+          "id": "xstk-007",
+          "q": "Biến cố “bệnh nhân mắc ít nhất một trong hai bệnh tăng huyết áp hoặc đái tháo đường” là phép toán nào?",
+          "options": [
+            "Phép hiệu",
+            "Phép tương đương",
+            "Phép tổng",
+            "Phép tích"
+          ],
+          "answer": "C",
+          "explain": "Ít nhất một trong hai biến cố xảy ra được biểu diễn bởi hợp A∪B, còn gọi là tổng.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 8,
+            "question": 7
+          }
+        },
+        {
+          "id": "xstk-008",
+          "q": "Biến cố “bệnh nhân đồng thời mắc tăng huyết áp và đái tháo đường” là phép toán nào?",
+          "options": [
+            "Phép kéo theo",
+            "Phép tích",
+            "Phép tổng",
+            "Phép hiệu"
+          ],
+          "answer": "B",
+          "explain": "Đồng thời xảy ra tương ứng giao A∩B, còn gọi là tích hai biến cố.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 9,
+            "question": 8
+          }
+        },
+        {
+          "id": "xstk-009",
+          "q": "Biến cố “bệnh nhân có chỉ định điều trị nhưng không có chống chỉ định” được mô tả phù hợp nhất bằng phép toán nào?",
+          "options": [
+            "Phép hiệu",
+            "Phép tổng",
+            "Phép tích",
+            "Phép tương đương"
+          ],
+          "answer": "A",
+          "explain": "Có chỉ định A nhưng không có chống chỉ định B là A\\B=A∩B̄.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 10,
+            "question": 9
+          }
+        },
+        {
+          "id": "xstk-010",
+          "q": "Phát biểu “nếu huyết áp tâm thu vượt ngưỡng chẩn đoán thì bệnh nhân được xác định tăng huyết áp” minh họa phép toán nào?",
+          "options": [
+            "Phép tích",
+            "Phép tổng",
+            "Phép hiệu",
+            "Phép kéo theo"
+          ],
+          "answer": "D",
+          "explain": "Mệnh đề nếu A thì B là phép kéo theo A→B; đây là ví dụ logic theo giả thiết của câu hỏi.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 11,
+            "question": 10
+          }
+        },
+        {
+          "id": "xstk-011",
+          "q": "Theo định nghĩa cổ điển, nếu có m trường hợp thuận lợi trong tổng số n trường hợp đồng khả năng thì P(A) bằng gì?",
+          "options": [
+            "m×n",
+            "1-m/n",
+            "m/n",
+            "n/m"
+          ],
+          "answer": "C",
+          "explain": "Khi n kết quả đồng khả năng và m kết quả thuận lợi, P(A)=m/n.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 12,
+            "question": 11
+          }
+        },
+        {
+          "id": "xstk-012",
+          "q": "Nếu Ā là biến cố đối của A thì công thức nào đúng?",
+          "options": [
+            "P(Ā)=P(A)²",
+            "P(Ā)=1-P(A)",
+            "P(Ā)=P(A)",
+            "P(Ā)=1+P(A)"
+          ],
+          "answer": "B",
+          "explain": "A và Ā đối lập nên P(A)+P(Ā)=1, suy ra P(Ā)=1−P(A).",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 13,
+            "question": 12
+          }
+        },
+        {
+          "id": "xstk-013",
+          "q": "Xác suất của biến cố chắc chắn và biến cố không thể có lần lượt bằng bao nhiêu?",
+          "options": [
+            "1 và 0",
+            "0 và 1",
+            "1 và 1",
+            "0 và 0"
+          ],
+          "answer": "A",
+          "explain": "Biến cố chắc chắn có xác suất 1; biến cố không thể có xác suất 0.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 14,
+            "question": 13
+          }
+        },
+        {
+          "id": "xstk-014",
+          "q": "P(B/A) trong y học lâm sàng được hiểu là gì?",
+          "options": [
+            "Xác suất A và B độc lập",
+            "Xác suất A hoặc B xảy ra",
+            "Xác suất A không xảy ra",
+            "Xác suất B xảy ra khi biết A đã xảy ra"
+          ],
+          "answer": "D",
+          "explain": "P(B/A), thường viết P(B|A), là xác suất B khi biết A đã xảy ra, với P(A)>0.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 15,
+            "question": 14
+          }
+        },
+        {
+          "id": "xstk-015",
+          "q": "Công thức xác suất có điều kiện phù hợp là công thức nào?",
+          "options": [
+            "P(B/A)=P(A)P(B)",
+            "P(B/A)=1-P(A)",
+            "P(B/A)=P(A∩B)/P(A)",
+            "P(B/A)=P(A)+P(B)"
+          ],
+          "answer": "C",
+          "explain": "Theo định nghĩa, P(B|A)=P(A∩B)/P(A), với P(A)>0.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 16,
+            "question": 15
+          }
+        },
+        {
+          "id": "xstk-016",
+          "q": "Với hai biến cố phụ thuộc A và B, xác suất đồng thời xảy ra được tính như thế nào?",
+          "options": [
+            "P(A∩B)=1-P(A)",
+            "P(A∩B)=P(A)×P(B/A)",
+            "P(A∩B)=P(A)+P(B)",
+            "P(A∩B)=P(A)-P(B)"
+          ],
+          "answer": "B",
+          "explain": "Quy tắc nhân tổng quát: P(A∩B)=P(A)P(B|A), với P(A)>0.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 17,
+            "question": 16
+          }
+        },
+        {
+          "id": "xstk-017",
+          "q": "Với hai biến cố độc lập A và B, công thức nào đúng?",
+          "options": [
+            "P(A∩B)=P(A)×P(B)",
+            "P(A∩B)=P(A)+P(B)",
+            "P(A∩B)=P(A)-P(B)",
+            "P(A∩B)=P(A)/P(B)"
+          ],
+          "answer": "A",
+          "explain": "Độc lập cho P(B|A)=P(B), nên P(A∩B)=P(A)P(B).",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 18,
+            "question": 17
+          }
+        },
+        {
+          "id": "xstk-018",
+          "q": "Với hai biến cố không xung khắc, xác suất ít nhất một biến cố xảy ra được tính bằng công thức nào?",
+          "options": [
+            "P(A∪B)=P(A)+P(B)",
+            "P(A∪B)=P(A)P(B)",
+            "P(A∪B)=1-P(A)",
+            "P(A∪B)=P(A)+P(B)-P(A∩B)"
+          ],
+          "answer": "D",
+          "explain": "Cộng hai xác suất riêng đã đếm phần giao hai lần, nên phải trừ P(A∩B) một lần.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 19,
+            "question": 18
+          }
+        },
+        {
+          "id": "xstk-019",
+          "q": "Với hai biến cố xung khắc, công thức cộng xác suất là gì?",
+          "options": [
+            "P(A∪B)=P(A)P(B)",
+            "P(A∪B)=P(A)-P(B)",
+            "P(A∪B)=P(A)+P(B)",
+            "P(A∪B)=1-P(A∩B)"
+          ],
+          "answer": "C",
+          "explain": "Xung khắc nghĩa là P(A∩B)=0, do đó P(A∪B)=P(A)+P(B). Excel có hai lựa chọn C và D tương đương; lựa chọn D đã được đổi thành một phương án nhiễu để chỉ còn một đáp án đúng.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 20,
+            "question": 19
+          }
+        },
+        {
+          "id": "xstk-020",
+          "q": "Công thức xác suất đầy đủ được sử dụng chủ yếu để làm gì?",
+          "options": [
+            "Tính độ lệch chuẩn",
+            "Tính xác suất chung của một biến cố từ các nhóm nguy cơ tạo thành hệ đầy đủ",
+            "Tính trung vị của một mẫu",
+            "So sánh hai số trung bình"
+          ],
+          "answer": "B",
+          "explain": "Với hệ đầy đủ Hᵢ, P(A)=ΣP(Hᵢ)P(A|Hᵢ): cộng xác suất có trọng số của từng nhóm.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 21,
+            "question": 20
+          }
+        },
+        {
+          "id": "xstk-021",
+          "q": "Công thức Bayes giúp bác sĩ thực hiện nhiệm vụ nào?",
+          "options": [
+            "Đảo ngược xác suất có điều kiện để tính khả năng thực sự mắc bệnh sau kết quả xét nghiệm",
+            "Tính số trung bình mẫu",
+            "Tính phương sai mẫu",
+            "Xác định mốt của dữ liệu"
+          ],
+          "answer": "A",
+          "explain": "Bayes tính P(bệnh|test dương) từ tỷ lệ bệnh và các xác suất kết quả xét nghiệm theo tình trạng bệnh.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 22,
+            "question": 21
+          }
+        },
+        {
+          "id": "xstk-022",
+          "q": "Trong khay có 16 ống thuốc giống nhau, gồm 4 ống Adrenaline. Rút ngẫu nhiên 1 ống, xác suất rút đúng Adrenaline là bao nhiêu?",
+          "options": [
+            "0,20 (20%)",
+            "0,40 (40%)",
+            "0,75 (75%)",
+            "0,25 (25%)"
+          ],
+          "answer": "D",
+          "explain": "Có 4 ống thuận lợi trong 16 ống đồng khả năng: P=4/16=0,25=25%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 23,
+            "question": 22
+          }
+        },
+        {
+          "id": "xstk-023",
+          "q": "Một kỹ thuật có xác suất thành công 0,62. Xác suất thất bại của kỹ thuật là bao nhiêu?",
+          "options": [
+            "0,48 (48%)",
+            "1,62 (162%)",
+            "0,38 (38%)",
+            "0,62 (62%)"
+          ],
+          "answer": "C",
+          "explain": "Thất bại là biến cố đối của thành công: 1−0,62=0,38=38%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 24,
+            "question": 23
+          }
+        },
+        {
+          "id": "xstk-024",
+          "q": "Hai tác dụng phụ độc lập có xác suất lần lượt là 0,04 và 0,03. Xác suất người bệnh đồng thời gặp cả hai tác dụng phụ là bao nhiêu?",
+          "options": [
+            "0,0007 (0,07%)",
+            "0,0012 (0,12%)",
+            "0,07 (7%)",
+            "0,012 (1,2%)"
+          ],
+          "answer": "B",
+          "explain": "Hai tác dụng phụ độc lập: P=0,04×0,03=0,0012=0,12%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 25,
+            "question": 24
+          }
+        },
+        {
+          "id": "xstk-025",
+          "q": "Tỷ lệ sốc nhiễm khuẩn là 25%; trong số người đã sốc, 48% tiến triển suy thận cấp. Xác suất đồng thời sốc và suy thận cấp là bao nhiêu?",
+          "options": [
+            "0,12 (12%)",
+            "0,73 (73%)",
+            "0,23 (23%)",
+            "0,052 (5,2%)"
+          ],
+          "answer": "A",
+          "explain": "Quy tắc nhân có điều kiện: P=0,25×0,48=0,12=12%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 26,
+            "question": 25
+          }
+        },
+        {
+          "id": "xstk-026",
+          "q": "Tỷ lệ tăng huyết áp là 35%, đái tháo đường là 22%, mắc đồng thời hai bệnh là 8%. Xác suất mắc ít nhất một trong hai bệnh là bao nhiêu?",
+          "options": [
+            "0,57 (57%)",
+            "0,41 (41%)",
+            "0,08 (8%)",
+            "0,49 (49%)"
+          ],
+          "answer": "D",
+          "explain": "P(A∪B)=0,35+0,22−0,08=0,49=49%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 27,
+            "question": 26
+          }
+        },
+        {
+          "id": "xstk-027",
+          "q": "Hai nguyên nhân hôn mê được giả định xung khắc, có xác suất 0,18 và 0,27. Xác suất hôn mê do một trong hai nguyên nhân là bao nhiêu?",
+          "options": [
+            "0,0486 (4,86%)",
+            "0,55 (55%)",
+            "0,45 (45%)",
+            "0,09 (9%)"
+          ],
+          "answer": "C",
+          "explain": "Hai nguyên nhân xung khắc nên P=0,18+0,27=0,45=45%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 28,
+            "question": 27
+          }
+        },
+        {
+          "id": "xstk-028",
+          "q": "Một quần thể gồm 30% nhóm nguy cơ cao có tỷ lệ biến chứng 12% và 70% nhóm nguy cơ thấp có tỷ lệ biến chứng 4%. Xác suất biến chứng chung là bao nhiêu?",
+          "options": [
+            "0,08 (8%)",
+            "0,064 (6,4%)",
+            "0,16 (16%)",
+            "0,048 (4,8%)"
+          ],
+          "answer": "B",
+          "explain": "Xác suất đầy đủ: P=0,30×0,12+0,70×0,04=0,064=6,4%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 29,
+            "question": 28
+          }
+        },
+        {
+          "id": "xstk-029",
+          "q": "Tỷ lệ mắc bệnh là 5%, độ nhạy xét nghiệm 90%, tỷ lệ dương tính giả 8%. Xác suất thực sự mắc bệnh khi test dương tính xấp xỉ bao nhiêu?",
+          "options": [
+            "37,19%",
+            "90,00%",
+            "5,00%",
+            "12,10%"
+          ],
+          "answer": "A",
+          "explain": "Bayes: P=0,05×0,90/[0,05×0,90+0,95×0,08]=0,3719008≈37,19%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 30,
+            "question": 29
+          }
+        },
+        {
+          "id": "xstk-030",
+          "q": "Tỷ lệ mắc bệnh là 10%, độ nhạy 85%, độ đặc hiệu 90%. Giá trị tiên lượng dương tính của xét nghiệm xấp xỉ bao nhiêu?",
+          "options": [
+            "85,00%",
+            "90,00%",
+            "17,50%",
+            "48,57%"
+          ],
+          "answer": "D",
+          "explain": "Dương tính giả có xác suất 1−0,90=0,10. PPV=0,10×0,85/[0,10×0,85+0,90×0,10]≈48,57%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 31,
+            "question": 30
+          }
+        },
+        {
+          "id": "xstk-031",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Xác suất của một biến cố ngẫu nhiên luôn nằm trong khoảng từ 0 đến 1.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Mọi xác suất đều thỏa 0≤P(A)≤1.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 32,
+            "question": 31
+          }
+        },
+        {
+          "id": "xstk-032",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Xác suất của biến cố không thể có luôn bằng 1.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Biến cố không thể có xác suất 0, không phải 1.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 33,
+            "question": 32
+          }
+        },
+        {
+          "id": "xstk-033",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Tổng xác suất của một biến cố và biến cố đối của nó luôn bằng 1.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Hai biến cố đối lập có tổng xác suất bằng 1.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 34,
+            "question": 33
+          }
+        },
+        {
+          "id": "xstk-034",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Mọi cặp biến cố xung khắc đều đồng thời là một cặp biến cố đối lập.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Xung khắc chỉ đòi hỏi không cùng xảy ra; đối lập còn đòi hỏi hợp là toàn bộ không gian mẫu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 35,
+            "question": 34
+          }
+        },
+        {
+          "id": "xstk-035",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Hai biến cố độc lập nghĩa là việc xảy ra của biến cố này không làm thay đổi xác suất xảy ra của biến cố kia.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Đây là định nghĩa tính độc lập của hai biến cố.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 36,
+            "question": 35
+          }
+        },
+        {
+          "id": "xstk-036",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Hai biến cố phụ thuộc là hai biến cố mà biến cố thứ nhất có thể làm thay đổi xác suất của biến cố thứ hai.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Biết một biến cố xảy ra có thể làm thay đổi xác suất của biến cố phụ thuộc kia.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 37,
+            "question": 36
+          }
+        },
+        {
+          "id": "xstk-037",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phép tổng A∪B xảy ra khi có ít nhất một trong hai biến cố A hoặc B xảy ra.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. A∪B bao gồm A xảy ra, B xảy ra hoặc cả hai xảy ra.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 38,
+            "question": 37
+          }
+        },
+        {
+          "id": "xstk-038",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phép tích A∩B xảy ra khi cả A và B đồng thời xảy ra.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. A∩B đòi hỏi cả A lẫn B cùng xảy ra.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 39,
+            "question": 38
+          }
+        },
+        {
+          "id": "xstk-039",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phép hiệu A\\B xảy ra khi A xảy ra nhưng B không xảy ra.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Hiệu A\\B gồm những kết quả thuộc A nhưng không thuộc B.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 40,
+            "question": 39
+          }
+        },
+        {
+          "id": "xstk-040",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phép kéo theo A→B có nghĩa là nếu A xảy ra thì B chắc chắn xảy ra.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Trong ngữ cảnh quan hệ biến cố, A→B nghĩa là A⊆B: A xảy ra thì B xảy ra.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 41,
+            "question": 40
+          }
+        },
+        {
+          "id": "xstk-041",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Theo định nghĩa cổ điển, xác suất bằng số trường hợp thuận lợi chia cho tổng số trường hợp đồng khả năng.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Định nghĩa cổ điển yêu cầu các kết quả sơ cấp đồng khả năng và hữu hạn.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 42,
+            "question": 41
+          }
+        },
+        {
+          "id": "xstk-042",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu P(A)=0,30 thì xác suất biến cố đối của A bằng 0,70.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. P(Ā)=1−0,30=0,70.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 43,
+            "question": 42
+          }
+        },
+        {
+          "id": "xstk-043",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với hai biến cố độc lập, P(A∩B)=P(A)×P(B).”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Đây là quy tắc nhân của hai biến cố độc lập.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 44,
+            "question": 43
+          }
+        },
+        {
+          "id": "xstk-044",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với hai biến cố phụ thuộc, luôn có P(A∩B)=P(A)×P(B) mà không cần xác suất có điều kiện.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Với hai biến cố phụ thuộc, dùng P(A∩B)=P(A)P(B|A); không được tự thay P(B|A) bằng P(B). Excel đánh dấu nhầm Đúng.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 45,
+            "question": 44
+          }
+        },
+        {
+          "id": "xstk-045",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với hai biến cố không xung khắc, khi tính P(A∪B) phải trừ phần giao P(A∩B) để tránh đếm hai lần.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Trừ phần giao giúp loại bỏ việc đếm trùng.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 46,
+            "question": 45
+          }
+        },
+        {
+          "id": "xstk-046",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với hai biến cố xung khắc, xác suất biến cố tổng bằng tổng xác suất của các biến cố thành phần.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Xung khắc làm phần giao có xác suất 0 nên chỉ cần cộng các xác suất riêng.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 47,
+            "question": 46
+          }
+        },
+        {
+          "id": "xstk-047",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Công thức xác suất đầy đủ tính xác suất chung bằng tổng các tích giữa tỷ trọng từng nhóm và xác suất có điều kiện trong nhóm.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. P(A)=ΣP(Hᵢ)P(A|Hᵢ), trong đó Hᵢ tạo thành một hệ đầy đủ.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 48,
+            "question": 47
+          }
+        },
+        {
+          "id": "xstk-048",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Công thức Bayes được dùng để đảo ngược xác suất có điều kiện.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Bayes liên hệ P(A|B) với P(B|A) và các xác suất ban đầu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 49,
+            "question": 48
+          }
+        },
+        {
+          "id": "xstk-049",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Một xét nghiệm có độ nhạy cao luôn có giá trị tiên lượng dương tính cao, bất kể tỷ lệ hiện mắc bệnh.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Giá trị tiên lượng dương còn phụ thuộc độ đặc hiệu và tỷ lệ hiện mắc.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 50,
+            "question": 49
+          }
+        },
+        {
+          "id": "xstk-050",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Ở vùng có tỷ lệ hiện mắc rất thấp, phần lớn kết quả dương tính của một test chưa tuyệt đối đặc hiệu có thể là dương tính giả.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Khi bệnh rất hiếm và độ đặc hiệu chưa đạt 100%, số dương tính giả có thể vượt số dương tính thật.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 51,
+            "question": 50
+          }
+        },
+        {
+          "id": "xstk-051",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trong mọi trường hợp, P(A/B) luôn bằng P(B/A).”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. P(A|B) và P(B|A) có mẫu số khác nhau nên nói chung không bằng nhau.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 52,
+            "question": 51
+          }
+        },
+        {
+          "id": "xstk-052",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Xác suất đồng thời A và B không thể lớn hơn xác suất riêng của A hoặc của B.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. A∩B là tập con của cả A lẫn B nên P(A∩B)≤min[P(A),P(B)].",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 53,
+            "question": 52
+          }
+        },
+        {
+          "id": "xstk-053",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu P(A)=0,40 và P(B)=0,50 độc lập thì P(A∩B)=0,90.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Độc lập cho P(A∩B)=0,40×0,50=0,20, không phải 0,90.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 54,
+            "question": 53
+          }
+        },
+        {
+          "id": "xstk-054",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu P(A)=0,40, P(B)=0,30 và P(A∩B)=0,10 thì P(A∪B)=0,60.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. P(A∪B)=0,40+0,30−0,10=0,60.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 55,
+            "question": 54
+          }
+        },
+        {
+          "id": "xstk-055",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu A và B xung khắc, P(A)=0,20 và P(B)=0,30 thì P(A∪B)=0,50.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Hai biến cố xung khắc cho P(A∪B)=0,20+0,30=0,50.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 56,
+            "question": 55
+          }
+        },
+        {
+          "id": "xstk-056",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Xác suất của biến cố chắc chắn bằng 1.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Xác suất của toàn bộ không gian mẫu bằng 1.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 57,
+            "question": 56
+          }
+        },
+        {
+          "id": "xstk-057",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Hai biến cố xung khắc có thể đồng thời xảy ra trong cùng một lần thử.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Hai biến cố xung khắc không thể cùng xảy ra trong một lần thử.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 58,
+            "question": 57
+          }
+        },
+        {
+          "id": "xstk-058",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu A và B độc lập thì việc A xảy ra sẽ làm tăng xác suất của B.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Độc lập nghĩa là xác suất của B không đổi khi biết A đã xảy ra.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 59,
+            "question": 58
+          }
+        },
+        {
+          "id": "xstk-059",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Các nhóm trong công thức xác suất đầy đủ phải xung khắc và bao phủ toàn bộ quần thể.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Hệ đầy đủ gồm các nhóm đôi một xung khắc và có hợp là toàn bộ không gian mẫu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 60,
+            "question": 59
+          }
+        },
+        {
+          "id": "xstk-060",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Kết quả Bayes phụ thuộc không chỉ độ nhạy, độ đặc hiệu mà còn phụ thuộc tỷ lệ hiện mắc ban đầu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Bayes kết hợp tỷ lệ hiện mắc với độ nhạy và tỷ lệ dương tính giả.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 61,
+            "question": 60
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bài 2 – Biến ngẫu nhiên và phân phối xác suất",
+      "questions": [
+        {
+          "id": "xstk-061",
+          "q": "Biến “số trẻ sơ sinh gặp tràn khí màng phổi trong nhóm 5 trẻ” thuộc loại nào?",
+          "options": [
+            "Biến ngẫu nhiên rời rạc",
+            "Biến ngẫu nhiên liên tục",
+            "Tham số quần thể",
+            "Hàm mật độ"
+          ],
+          "answer": "A",
+          "explain": "Đếm số trẻ có biến chứng cho giá trị nguyên 0,1,2,3,4,5 nên là biến rời rạc.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 62,
+            "question": 61
+          }
+        },
+        {
+          "id": "xstk-062",
+          "q": "Biến “chỉ số pH máu động mạch” thuộc loại nào?",
+          "options": [
+            "Biến ngẫu nhiên rời rạc",
+            "Biến cố xung khắc",
+            "Biến định tính danh mục",
+            "Biến ngẫu nhiên liên tục"
+          ],
+          "answer": "D",
+          "explain": "pH là đại lượng đo lường, được mô hình hóa là biến liên tục.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 63,
+            "question": 62
+          }
+        },
+        {
+          "id": "xstk-063",
+          "q": "Nếu X là số ca biến chứng trong nhóm 5 người bệnh, tập giá trị phù hợp của X là gì?",
+          "options": [
+            "{1,2,3,4,5}",
+            "Chỉ gồm 0 và 5",
+            "{0,1,2,3,4,5}",
+            "Mọi số thực từ 0 đến 5"
+          ],
+          "answer": "C",
+          "explain": "Không có ca biến chứng nào cũng là khả năng hợp lệ, nên X∈{0,1,2,3,4,5}. Đáp án C; Excel bỏ sót giá trị 0 trong đáp án đánh dấu.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 64,
+            "question": 63
+          }
+        },
+        {
+          "id": "xstk-064",
+          "q": "Đặc điểm nào nhận diện biến ngẫu nhiên liên tục?",
+          "options": [
+            "Luôn có giá trị bằng xác suất",
+            "Giá trị thu được từ đo lường và có thể nhận mọi số trong một khoảng",
+            "Chỉ nhận các số nguyên đếm được",
+            "Chỉ có hai kết quả thành công và thất bại"
+          ],
+          "answer": "B",
+          "explain": "Biến liên tục được mô hình hóa có thể nhận mọi giá trị trong một khoảng, dù thiết bị ghi số có làm tròn.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 65,
+            "question": 64
+          }
+        },
+        {
+          "id": "xstk-065",
+          "q": "Hàm phân phối của biến ngẫu nhiên X được định nghĩa trong giáo trình là gì?",
+          "options": [
+            "F(x)=P(X<x)",
+            "F(x)=P(X=x)",
+            "F(x)=1-P(X<x)",
+            "F(x)=E(X)"
+          ],
+          "answer": "A",
+          "explain": "Theo quy ước được nêu trong bộ câu hỏi, F(x)=P(X<x). Quy ước phổ biến khác là F(x)=P(X≤x); hai quy ước trùng nhau với biến liên tục.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 66,
+            "question": 65
+          }
+        },
+        {
+          "id": "xstk-066",
+          "q": "Nếu F(3)=0,15 đối với thời gian sống thêm T, ý nghĩa phù hợp nhất là gì?",
+          "options": [
+            "Có 15% xác suất T lớn hơn 3 năm",
+            "Thời gian sống trung bình là 3 năm",
+            "Độ lệch chuẩn bằng 0,15 năm",
+            "Có 15% xác suất T nhỏ hơn 3 năm"
+          ],
+          "answer": "D",
+          "explain": "Theo quy ước F(t)=P(T<t), F(3)=0,15 nghĩa là xác suất thời gian sống thêm dưới 3 năm bằng 15%.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 67,
+            "question": 66
+          }
+        },
+        {
+          "id": "xstk-067",
+          "q": "Nếu F(5)=0,32 và F(3)=0,18 thì P(3<T<5) bằng bao nhiêu?",
+          "options": [
+            "0,0576 (5,76%)",
+            "0,18 (18%)",
+            "0,14 (14%)",
+            "0,50 (50%)"
+          ],
+          "answer": "C",
+          "explain": "Với thời gian sống thêm được mô hình hóa liên tục, P(3<T<5)=F(5)−F(3)=0,32−0,18=0,14.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 68,
+            "question": 67
+          }
+        },
+        {
+          "id": "xstk-068",
+          "q": "Giới hạn của hàm phân phối khi x tiến đến âm vô cùng và dương vô cùng lần lượt là gì?",
+          "options": [
+            "1 và 1",
+            "0 và 1",
+            "1 và 0",
+            "0 và 0"
+          ],
+          "answer": "B",
+          "explain": "Khi ngưỡng tiến về −∞, xác suất tích lũy tiến về 0; khi ngưỡng tiến về +∞, nó tiến về 1.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 69,
+            "question": 68
+          }
+        },
+        {
+          "id": "xstk-069",
+          "q": "Kỳ vọng toán học E(X) phản ánh điều gì?",
+          "options": [
+            "Giá trị trung bình lý thuyết khi quan sát trên số lượng rất lớn",
+            "Giá trị chắc chắn của từng bệnh nhân",
+            "Giá trị lớn nhất của biến",
+            "Độ lệch chuẩn của biến"
+          ],
+          "answer": "A",
+          "explain": "Kỳ vọng là trung bình lý thuyết; trung bình quan sát dài hạn tiến gần kỳ vọng trong các điều kiện thích hợp.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 70,
+            "question": 69
+          }
+        },
+        {
+          "id": "xstk-070",
+          "q": "Biến X nhận các giá trị 0,1,2 với xác suất 0,2; 0,5; 0,3. Kỳ vọng E(X) bằng bao nhiêu?",
+          "options": [
+            "0,60",
+            "1,50",
+            "2,00",
+            "1,10"
+          ],
+          "answer": "D",
+          "explain": "E(X)=0×0,2+1×0,5+2×0,3=1,10.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 71,
+            "question": 70
+          }
+        },
+        {
+          "id": "xstk-071",
+          "q": "Một khoa dự kiến số ca nhập viện trung bình E(X)=1,7. Cách hiểu đúng là gì?",
+          "options": [
+            "Không bao giờ có 3 ca",
+            "Phương sai luôn bằng 1,7",
+            "Trong dài hạn trung bình khoảng 1 đến 2 ca mỗi ca trực",
+            "Mỗi ca trực chắc chắn có đúng 1,7 bệnh nhân"
+          ],
+          "answer": "C",
+          "explain": "Trung bình dài hạn là 1,7 ca mỗi ca trực; từng ca trực vẫn có số bệnh nhân nguyên và có thể khác nhau.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 72,
+            "question": 71
+          }
+        },
+        {
+          "id": "xstk-072",
+          "q": "Công thức rút gọn của phương sai là công thức nào?",
+          "options": [
+            "V(X)=E(X)/2",
+            "V(X)=E(X²)-[E(X)]²",
+            "V(X)=E(X²)+[E(X)]²",
+            "V(X)=√E(X)"
+          ],
+          "answer": "B",
+          "explain": "Khai triển E[(X−E(X))²] thu được V(X)=E(X²)−[E(X)]².",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 73,
+            "question": 72
+          }
+        },
+        {
+          "id": "xstk-073",
+          "q": "Với X nhận 0,1,2 có xác suất 0,2; 0,5; 0,3, giá trị E(X²) bằng bao nhiêu?",
+          "options": [
+            "1,70",
+            "1,10",
+            "0,60",
+            "2,50"
+          ],
+          "answer": "A",
+          "explain": "E(X²)=0²×0,2+1²×0,5+2²×0,3=1,70.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 74,
+            "question": 73
+          }
+        },
+        {
+          "id": "xstk-074",
+          "q": "Với E(X)=1,10 và E(X²)=1,70, phương sai V(X) bằng bao nhiêu?",
+          "options": [
+            "0,60",
+            "1,21",
+            "2,80",
+            "0,49"
+          ],
+          "answer": "D",
+          "explain": "V(X)=1,70−1,10²=1,70−1,21=0,49.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 75,
+            "question": 74
+          }
+        },
+        {
+          "id": "xstk-075",
+          "q": "Nếu phương sai của đường huyết là 0,81 (mmol/L)² thì độ lệch chuẩn bằng bao nhiêu?",
+          "options": [
+            "1,62 mmol/L",
+            "0,41 mmol/L",
+            "0,90 mmol/L",
+            "0,81 mmol/L"
+          ],
+          "answer": "C",
+          "explain": "SD=√0,81=0,90 mmol/L; độ lệch chuẩn có cùng đơn vị với biến gốc.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 76,
+            "question": 75
+          }
+        },
+        {
+          "id": "xstk-076",
+          "q": "Hai phác đồ có cùng đường huyết trung bình, nhưng SD của A là 0,4 và SD của B là 1,2. Phác đồ nào ổn định hơn?",
+          "options": [
+            "Không thể so sánh",
+            "Phác đồ A",
+            "Phác đồ B",
+            "Hai phác đồ như nhau"
+          ],
+          "answer": "B",
+          "explain": "Hai phác đồ có cùng trung bình, nhưng 0,4<1,2 nên phác đồ A phân tán ít hơn.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 77,
+            "question": 76
+          }
+        },
+        {
+          "id": "xstk-077",
+          "q": "Một chuỗi phép thử Bernoulli cần thỏa điều kiện nào?",
+          "options": [
+            "Các phép thử độc lập, chỉ hai kết quả và xác suất thành công p không đổi",
+            "Mỗi phép thử có nhiều hơn hai kết quả",
+            "Xác suất p thay đổi qua từng lần thử",
+            "Các phép thử phụ thuộc hoàn toàn"
+          ],
+          "answer": "A",
+          "explain": "Chuỗi Bernoulli gồm các phép thử độc lập, mỗi phép thử có hai kết quả và cùng xác suất thành công p.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 78,
+            "question": 77
+          }
+        },
+        {
+          "id": "xstk-078",
+          "q": "Nếu xác suất thành công p=0,78 thì xác suất thất bại q bằng bao nhiêu?",
+          "options": [
+            "0,78",
+            "1,78",
+            "0,39",
+            "0,22"
+          ],
+          "answer": "D",
+          "explain": "q=1−p=1−0,78=0,22.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 79,
+            "question": 78
+          }
+        },
+        {
+          "id": "xstk-079",
+          "q": "Công thức xác suất có đúng k lần thành công trong n phép thử Bernoulli là gì?",
+          "options": [
+            "npq",
+            "p+q",
+            "C(n,k)p^kq^(n-k)",
+            "np"
+          ],
+          "answer": "C",
+          "explain": "Chọn k vị trí thành công có C(n,k) cách, mỗi cách có xác suất pᵏqⁿ⁻ᵏ.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 80,
+            "question": 79
+          }
+        },
+        {
+          "id": "xstk-080",
+          "q": "Có 4 bệnh nhân độc lập, xác suất đáp ứng thuốc của mỗi người là 0,75. Xác suất có đúng 3 người đáp ứng là bao nhiêu?",
+          "options": [
+            "0,1875",
+            "0,4219",
+            "0,3164",
+            "0,7500"
+          ],
+          "answer": "B",
+          "explain": "P(X=3)=C(4,3)×0,75³×0,25=0,421875≈0,4219.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 81,
+            "question": 80
+          }
+        },
+        {
+          "id": "xstk-081",
+          "q": "Với n=9 và p=0,60, số lần thành công có khả năng nhất theo k₀=[(n+1)p] là bao nhiêu?",
+          "options": [
+            "6",
+            "5",
+            "7",
+            "9"
+          ],
+          "answer": "A",
+          "explain": "(n+1)p=10×0,60=6 nên k₀=6 theo công thức đề bài. Vì tích này là số nguyên, phân phối thực tế có hai mốt là 5 và 6; 6 là lựa chọn phù hợp trong đề.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 82,
+            "question": 81
+          }
+        },
+        {
+          "id": "xstk-082",
+          "q": "Đồ thị phân phối chuẩn có hình dạng nào?",
+          "options": [
+            "Đường thẳng tăng đều",
+            "Đường cong lệch hoàn toàn sang phải",
+            "Biểu đồ cột rời rạc",
+            "Đường cong hình chuông đối xứng qua trung bình"
+          ],
+          "answer": "D",
+          "explain": "Mật độ phân phối chuẩn có dạng chuông, đối xứng qua trung bình μ.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 83,
+            "question": 82
+          }
+        },
+        {
+          "id": "xstk-083",
+          "q": "Trong phân phối chuẩn, khoảng E(X)±1SD chứa xấp xỉ bao nhiêu phần trăm số liệu?",
+          "options": [
+            "99,73%",
+            "50,00%",
+            "68,27%",
+            "95,45%"
+          ],
+          "answer": "C",
+          "explain": "Với phân phối chuẩn, P(μ−σ<X<μ+σ)≈68,27%.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 84,
+            "question": 83
+          }
+        },
+        {
+          "id": "xstk-084",
+          "q": "Trong phân phối chuẩn, khoảng E(X)±2SD chứa xấp xỉ bao nhiêu phần trăm số liệu?",
+          "options": [
+            "80,00%",
+            "95,45%",
+            "68,27%",
+            "99,73%"
+          ],
+          "answer": "B",
+          "explain": "Với phân phối chuẩn, P(μ−2σ<X<μ+2σ)≈95,45%.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 85,
+            "question": 84
+          }
+        },
+        {
+          "id": "xstk-085",
+          "q": "Nồng độ Hemoglobin phân phối chuẩn với trung bình 145 g/L và SD=10 g/L. Khoảng tham chiếu 95% theo quy tắc ±2SD là gì?",
+          "options": [
+            "125-165 g/L",
+            "135-155 g/L",
+            "115-175 g/L",
+            "145-165 g/L"
+          ],
+          "answer": "A",
+          "explain": "145±2×10 cho khoảng 125–165 g/L. Quy tắc ±2SD bao phủ khoảng 95,45%; mức 95% chính xác dùng ±1,96SD.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 86,
+            "question": 85
+          }
+        },
+        {
+          "id": "xstk-086",
+          "q": "Phân phối nhị thức được xác định hoàn toàn bởi hai tham số nào?",
+          "options": [
+            "E(X) và trung vị",
+            "SD và mốt",
+            "a và b",
+            "n và p"
+          ],
+          "answer": "D",
+          "explain": "Phân phối nhị thức được xác định bởi số phép thử n và xác suất thành công p.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 87,
+            "question": 86
+          }
+        },
+        {
+          "id": "xstk-087",
+          "q": "Với X~Binomial(n,p), kỳ vọng E(X) bằng gì?",
+          "options": [
+            "√(npq)",
+            "p/q",
+            "n×p",
+            "n×p×q"
+          ],
+          "answer": "C",
+          "explain": "Tổng n biến Bernoulli cùng xác suất p có kỳ vọng np.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 88,
+            "question": 87
+          }
+        },
+        {
+          "id": "xstk-088",
+          "q": "Với X~Binomial(n,p), phương sai V(X) bằng gì?",
+          "options": [
+            "n/p",
+            "n×p×q",
+            "n×p",
+            "√(npq)"
+          ],
+          "answer": "B",
+          "explain": "Các phép thử độc lập cho V(X)=np(1−p)=npq.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 89,
+            "question": 88
+          }
+        },
+        {
+          "id": "xstk-089",
+          "q": "Với X~Binomial(n,p), độ lệch chuẩn SD bằng gì?",
+          "options": [
+            "√(n×p×q)",
+            "n×p×q",
+            "n×p",
+            "p×q"
+          ],
+          "answer": "A",
+          "explain": "SD=√V(X)=√[np(1−p)]=√(npq).",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 90,
+            "question": 89
+          }
+        },
+        {
+          "id": "xstk-090",
+          "q": "Một thuốc có tỷ lệ đáp ứng p=0,70 trên 200 bệnh nhân độc lập. Độ lệch chuẩn của số người đáp ứng xấp xỉ bao nhiêu?",
+          "options": [
+            "42,00",
+            "140,00",
+            "8,40",
+            "6,48"
+          ],
+          "answer": "D",
+          "explain": "SD=√[200×0,70×0,30]=√42≈6,48 người.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 91,
+            "question": 90
+          }
+        },
+        {
+          "id": "xstk-091",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Biến ngẫu nhiên rời rạc có tập giá trị hữu hạn hoặc vô hạn đếm được.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Biến rời rạc có tập giá trị hữu hạn hoặc vô hạn đếm được.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 92,
+            "question": 91
+          }
+        },
+        {
+          "id": "xstk-092",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Số ca tai biến trong một nhóm cố định có thể nhận mọi giá trị thập phân giữa hai số nguyên.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Số ca tai biến là số đếm nguyên, không nhận các giá trị thập phân tùy ý.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 93,
+            "question": 92
+          }
+        },
+        {
+          "id": "xstk-093",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Chỉ số pH máu là ví dụ của biến ngẫu nhiên liên tục.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. pH được mô hình hóa là đại lượng liên tục.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 94,
+            "question": 93
+          }
+        },
+        {
+          "id": "xstk-094",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Biến liên tục thường thu được từ phép đo bằng cân, thước, máy đo huyết áp hoặc xét nghiệm.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Cân nặng, chiều dài và các chỉ số đo lường thường được mô hình hóa bằng biến liên tục.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 95,
+            "question": 94
+          }
+        },
+        {
+          "id": "xstk-095",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Theo giáo trình, F(x)=P(X<x).”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng theo quy ước của bộ câu hỏi: F(x)=P(X<x). Nhiều tài liệu dùng P(X≤x); cần giữ thống nhất khi tính với biến rời rạc.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 96,
+            "question": 95
+          }
+        },
+        {
+          "id": "xstk-096",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Giá trị của hàm phân phối luôn nằm ngoài khoảng từ 0 đến 1.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Hàm phân phối là xác suất nên luôn nằm trong [0,1].",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 97,
+            "question": 96
+          }
+        },
+        {
+          "id": "xstk-097",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khi x tiến đến dương vô cùng, F(x) tiến đến 1.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Khi ngưỡng tăng vô hạn, xác suất tích lũy tiến đến 1.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 98,
+            "question": 97
+          }
+        },
+        {
+          "id": "xstk-098",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Xác suất X nằm giữa a và b có thể tính bằng F(b)-F(a).”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai nếu khẳng định cho mọi biến ngẫu nhiên mà không nêu điều kiện biên. Theo F(x)=P(X<x), P(a<X<b)=F(b)−F(a)−P(X=a). Nếu X liên tục thì P(X=a)=0 và công thức F(b)−F(a) đúng. Excel đánh dấu Đúng nhưng thiếu điều kiện này.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 99,
+            "question": 98
+          }
+        },
+        {
+          "id": "xstk-099",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Kỳ vọng là giá trị chắc chắn phải xuất hiện ở từng bệnh nhân.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Kỳ vọng là trung bình lý thuyết, không phải kết quả bắt buộc của từng người.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 100,
+            "question": 99
+          }
+        },
+        {
+          "id": "xstk-100",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Đối với biến rời rạc, kỳ vọng bằng tổng các tích giữa giá trị và xác suất tương ứng.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Với biến rời rạc và kỳ vọng tồn tại, E(X)=Σxᵢpᵢ.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 101,
+            "question": 100
+          }
+        },
+        {
+          "id": "xstk-101",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phương sai càng nhỏ thường phản ánh chỉ số lâm sàng càng ổn định.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Khi các yếu tố khác tương đương, phương sai nhỏ phản ánh mức phân tán thấp hơn.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 102,
+            "question": 101
+          }
+        },
+        {
+          "id": "xstk-102",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phương sai có cùng đơn vị gốc với biến ngẫu nhiên.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Phương sai có đơn vị bình phương của đơn vị biến gốc.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 103,
+            "question": 102
+          }
+        },
+        {
+          "id": "xstk-103",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Độ lệch chuẩn là căn bậc hai của phương sai.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. SD=√V(X).",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 104,
+            "question": 103
+          }
+        },
+        {
+          "id": "xstk-104",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Độ lệch chuẩn càng lớn thì dữ liệu càng tập trung sát số trung bình.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. SD càng lớn thì dữ liệu càng phân tán xa trung bình.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 105,
+            "question": 104
+          }
+        },
+        {
+          "id": "xstk-105",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu V(X)=1,44 thì SD=1,20.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. SD=√1,44=1,20.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 106,
+            "question": 105
+          }
+        },
+        {
+          "id": "xstk-106",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Hai phác đồ có cùng trung bình thì luôn có độ ổn định giống nhau.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Cùng trung bình vẫn có thể khác phương sai và độ lệch chuẩn.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 107,
+            "question": 106
+          }
+        },
+        {
+          "id": "xstk-107",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phép thử Bernoulli chỉ có hai khả năng thành công hoặc thất bại.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Phép thử Bernoulli có hai kết quả, thường mã hóa là 1 và 0.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 108,
+            "question": 107
+          }
+        },
+        {
+          "id": "xstk-108",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trong chuỗi Bernoulli, xác suất thành công p phải giữ nguyên giữa các lần thử.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Mô hình chuỗi Bernoulli yêu cầu cùng xác suất thành công p.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 109,
+            "question": 108
+          }
+        },
+        {
+          "id": "xstk-109",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trong chuỗi Bernoulli, các phép thử phải độc lập.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Tính độc lập là điều kiện của chuỗi phép thử Bernoulli trong mô hình nhị thức.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 110,
+            "question": 109
+          }
+        },
+        {
+          "id": "xstk-110",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu p=0,8 thì q=0,2.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. q=1−0,8=0,2.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 111,
+            "question": 110
+          }
+        },
+        {
+          "id": "xstk-111",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Công thức C(n,k)p^kq^(n-k) cho xác suất có đúng k lần thành công.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Đây là hàm xác suất của phân phối nhị thức với k=0,1,…,n.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 112,
+            "question": 111
+          }
+        },
+        {
+          "id": "xstk-112",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phân phối chuẩn là phân phối của biến ngẫu nhiên rời rạc.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Phân phối chuẩn là phân phối liên tục.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 113,
+            "question": 112
+          }
+        },
+        {
+          "id": "xstk-113",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Đường cong chuẩn đối xứng qua giá trị trung bình.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Mật độ chuẩn đối xứng qua μ.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 114,
+            "question": 113
+          }
+        },
+        {
+          "id": "xstk-114",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng trung bình cộng trừ 2 độ lệch chuẩn chứa xấp xỉ 95,45% số liệu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng với phân phối chuẩn. Khoảng μ±2σ chứa khoảng 95,45% xác suất; không phải quy tắc đúng cho mọi phân phối.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 115,
+            "question": 114
+          }
+        },
+        {
+          "id": "xstk-115",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng trung bình cộng trừ 3 độ lệch chuẩn chứa xấp xỉ 68,27% số liệu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Với phân phối chuẩn, μ±3σ chứa khoảng 99,73%; μ±σ mới chứa khoảng 68,27%.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 116,
+            "question": 115
+          }
+        },
+        {
+          "id": "xstk-116",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phân phối nhị thức được xác định bởi n và p.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Hai tham số n và p xác định phân phối nhị thức.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 117,
+            "question": 116
+          }
+        },
+        {
+          "id": "xstk-117",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Kỳ vọng của phân phối nhị thức là np.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. E(X)=np.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 118,
+            "question": 117
+          }
+        },
+        {
+          "id": "xstk-118",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phương sai của phân phối nhị thức là npq.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. V(X)=npq với q=1−p.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 119,
+            "question": 118
+          }
+        },
+        {
+          "id": "xstk-119",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu n=100, p=0,8 thì E(X)=80 và V(X)=16.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. E(X)=100×0,8=80; V(X)=100×0,8×0,2=16.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 120,
+            "question": 119
+          }
+        },
+        {
+          "id": "xstk-120",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với n=100, p=0,8, độ lệch chuẩn của số ca thành công bằng 16.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. 16 là phương sai; SD=√16=4.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 121,
+            "question": 120
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bài 3 – Chọn mẫu và thống kê mô tả",
+      "questions": [
+        {
+          "id": "xstk-121",
+          "q": "Quần thể nghiên cứu là gì?",
+          "options": [
+            "Toàn bộ đối tượng có đặc trưng mà nhà nghiên cứu quan tâm",
+            "Một phần nhỏ được chọn từ quần thể",
+            "Chỉ những người có kết quả bất thường",
+            "Một bảng tần số"
+          ],
+          "answer": "A",
+          "explain": "Quần thể là toàn bộ đối tượng đáp ứng đặc trưng và phạm vi nghiên cứu quan tâm.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 122,
+            "question": 121
+          }
+        },
+        {
+          "id": "xstk-122",
+          "q": "Mẫu nghiên cứu là gì?",
+          "options": [
+            "Toàn bộ quần thể mục tiêu",
+            "Giá trị trung bình của quần thể",
+            "Một biến cố ngẫu nhiên",
+            "Một bộ phận gồm n đối tượng được chọn từ quần thể để thu thập số liệu"
+          ],
+          "answer": "D",
+          "explain": "Mẫu là một bộ phận các đối tượng được chọn từ quần thể để quan sát.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 123,
+            "question": 122
+          }
+        },
+        {
+          "id": "xstk-123",
+          "q": "Điều kiện quan trọng để mẫu có thể suy rộng cho quần thể là gì?",
+          "options": [
+            "Mẫu càng nhỏ càng tốt",
+            "Chỉ chọn một khoa",
+            "Cỡ mẫu đủ lớn và có tính đại diện",
+            "Chỉ chọn người dễ tiếp cận"
+          ],
+          "answer": "C",
+          "explain": "Tính đại diện hỗ trợ suy rộng; cỡ mẫu đủ lớn giúp giảm sai số ngẫu nhiên nhưng không tự loại bỏ thiên lệch.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 124,
+            "question": 123
+          }
+        },
+        {
+          "id": "xstk-124",
+          "q": "Chọn mẫu ngẫu nhiên đơn giản có đặc điểm nào?",
+          "options": [
+            "Chỉ chọn người bệnh nặng",
+            "Mọi đối tượng trong quần thể có cơ hội được chọn như nhau",
+            "Chọn toàn bộ một tầng",
+            "Chọn theo sự thuận tiện của nghiên cứu viên"
+          ],
+          "answer": "B",
+          "explain": "Trong chọn mẫu ngẫu nhiên đơn giản, mỗi đối tượng có xác suất được chọn như nhau.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 125,
+            "question": 124
+          }
+        },
+        {
+          "id": "xstk-125",
+          "q": "Chọn mẫu phân tầng được thực hiện như thế nào?",
+          "options": [
+            "Chia quần thể thành các tầng đồng nhất rồi chọn ngẫu nhiên trong từng tầng",
+            "Chọn liên tiếp người đến khám",
+            "Chỉ chọn tầng lớn nhất",
+            "Không cần phân nhóm quần thể"
+          ],
+          "answer": "A",
+          "explain": "Chia quần thể thành các tầng rồi lấy mẫu ngẫu nhiên trong từng tầng giúp đại diện các nhóm.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 126,
+            "question": 125
+          }
+        },
+        {
+          "id": "xstk-126",
+          "q": "Quần thể gồm 60 bệnh nhân Nội tiết và 20 bệnh nhân Tim mạch. Chọn mẫu phân tầng n=40 theo tỷ lệ, số người cần chọn lần lượt là bao nhiêu?",
+          "options": [
+            "20 và 20",
+            "35 và 5",
+            "25 và 15",
+            "30 và 10"
+          ],
+          "answer": "D",
+          "explain": "Tổng 80 người. Mẫu từng tầng: 40×60/80=30 và 40×20/80=10.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 127,
+            "question": 126
+          }
+        },
+        {
+          "id": "xstk-127",
+          "q": "Quần thể gồm 120 người ở khoa A và 80 người ở khoa B. Chọn mẫu n=50 theo tỷ lệ, cần chọn bao nhiêu người từ A và B?",
+          "options": [
+            "40 và 10",
+            "20 và 30",
+            "30 và 20",
+            "25 và 25"
+          ],
+          "answer": "C",
+          "explain": "Tổng 200 người. Lấy ở A: 50×120/200=30; ở B: 50×80/200=20.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 128,
+            "question": 127
+          }
+        },
+        {
+          "id": "xstk-128",
+          "q": "Giá trị tính từ mẫu, như số trung bình mẫu, được gọi chung là gì?",
+          "options": [
+            "Xác suất có điều kiện",
+            "Số thống kê của mẫu",
+            "Tham số quần thể",
+            "Biến cố đối lập"
+          ],
+          "answer": "B",
+          "explain": "Đại lượng tính từ số liệu mẫu được gọi là thống kê mẫu; tham số là đặc trưng của quần thể.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 129,
+            "question": 128
+          }
+        },
+        {
+          "id": "xstk-129",
+          "q": "Nhịp tim 70 có 2 người, 75 có 5 người, 80 có 3 người. Số trung bình mẫu là bao nhiêu?",
+          "options": [
+            "75,5 lần/phút",
+            "75,0 lần/phút",
+            "76,5 lần/phút",
+            "80,0 lần/phút"
+          ],
+          "answer": "A",
+          "explain": "x̄=(70×2+75×5+80×3)/(2+5+3)=755/10=75,5 lần/phút.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 130,
+            "question": 129
+          }
+        },
+        {
+          "id": "xstk-130",
+          "q": "Phương sai mẫu hiệu chỉnh sử dụng mẫu số nào?",
+          "options": [
+            "n",
+            "n+1",
+            "√n",
+            "n-1"
+          ],
+          "answer": "D",
+          "explain": "Phương sai mẫu hiệu chỉnh s²=Σ(xᵢ−x̄)²/(n−1), với n>1.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 131,
+            "question": 130
+          }
+        },
+        {
+          "id": "xstk-131",
+          "q": "Độ lệch chuẩn mẫu hiệu chỉnh được tính như thế nào?",
+          "options": [
+            "Lấy trung bình chia cho n",
+            "Lấy mốt trừ trung vị",
+            "Lấy căn bậc hai của phương sai mẫu",
+            "Bình phương phương sai mẫu"
+          ],
+          "answer": "C",
+          "explain": "Độ lệch chuẩn mẫu s=√s².",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 132,
+            "question": 131
+          }
+        },
+        {
+          "id": "xstk-132",
+          "q": "Số trung bình của dãy 2, 4, 6, 8 là bao nhiêu?",
+          "options": [
+            "20",
+            "5",
+            "4",
+            "6"
+          ],
+          "answer": "B",
+          "explain": "x̄=(2+4+6+8)/4=20/4=5.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 133,
+            "question": 132
+          }
+        },
+        {
+          "id": "xstk-133",
+          "q": "Trung vị của dãy đã sắp xếp 2, 4, 5, 9, 20 là bao nhiêu?",
+          "options": [
+            "5",
+            "4",
+            "8",
+            "9"
+          ],
+          "answer": "A",
+          "explain": "Có 5 giá trị đã sắp xếp; trung vị là giá trị thứ 3, bằng 5.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 134,
+            "question": 133
+          }
+        },
+        {
+          "id": "xstk-134",
+          "q": "Trung vị của dãy đã sắp xếp 2, 4, 6, 10 là bao nhiêu?",
+          "options": [
+            "4",
+            "6",
+            "5,5",
+            "5"
+          ],
+          "answer": "D",
+          "explain": "Có 4 giá trị; trung vị bằng trung bình hai giá trị giữa: (4+6)/2=5.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 135,
+            "question": 134
+          }
+        },
+        {
+          "id": "xstk-135",
+          "q": "Mốt của dãy 1, 2, 2, 3, 4 là bao nhiêu?",
+          "options": [
+            "3",
+            "4",
+            "2",
+            "1"
+          ],
+          "answer": "C",
+          "explain": "Giá trị 2 xuất hiện hai lần, nhiều nhất trong dãy, nên mốt bằng 2.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 136,
+            "question": 135
+          }
+        },
+        {
+          "id": "xstk-136",
+          "q": "Chỉ số nào nhạy cảm nhất với một giá trị ngoại lai rất lớn?",
+          "options": [
+            "Khoảng tứ phân vị",
+            "Số trung bình",
+            "Trung vị",
+            "Mốt"
+          ],
+          "answer": "B",
+          "explain": "Số trung bình sử dụng giá trị của mọi quan sát nên nhạy với ngoại lai rất lớn.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 137,
+            "question": 136
+          }
+        },
+        {
+          "id": "xstk-137",
+          "q": "Dữ liệu thời gian chờ có một ca ngoại lai 140 phút. Chỉ số nào phản ánh tốt hơn thời gian chờ điển hình?",
+          "options": [
+            "Trung vị",
+            "Số trung bình",
+            "Phương sai",
+            "Khoảng biến thiên"
+          ],
+          "answer": "A",
+          "explain": "Trung vị ít nhạy với ngoại lai nên phù hợp để mô tả thời gian chờ điển hình khi dữ liệu lệch.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 138,
+            "question": 137
+          }
+        },
+        {
+          "id": "xstk-138",
+          "q": "Với dữ liệu chiều cao phân bố đối xứng và ít ngoại lai, chỉ số trung tâm phù hợp nhất là gì?",
+          "options": [
+            "Trung vị bắt buộc",
+            "Mốt duy nhất",
+            "Khoảng biến thiên",
+            "Số trung bình"
+          ],
+          "answer": "D",
+          "explain": "Với dữ liệu đối xứng, ít ngoại lai, số trung bình là thước đo trung tâm phù hợp.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 139,
+            "question": 138
+          }
+        },
+        {
+          "id": "xstk-139",
+          "q": "Công thức hệ số biến thiên Cv là gì?",
+          "options": [
+            "Cv=SD×EX",
+            "Cv=EX-SD",
+            "Cv=(SD/EX)×100%",
+            "Cv=(EX/SD)×100%"
+          ],
+          "answer": "C",
+          "explain": "Cv=(SD/EX)×100%, thường dùng cho đại lượng thang tỷ lệ có trung bình dương.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 140,
+            "question": 139
+          }
+        },
+        {
+          "id": "xstk-140",
+          "q": "Một thiết bị có số trung bình 100 đơn vị và SD=5. Hệ số biến thiên bằng bao nhiêu?",
+          "options": [
+            "500%",
+            "5%",
+            "20%",
+            "0,05%"
+          ],
+          "answer": "B",
+          "explain": "Cv=(5/100)×100%=5%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 141,
+            "question": 140
+          }
+        },
+        {
+          "id": "xstk-141",
+          "q": "Huyết áp trung bình 130 mmHg, SD=15 mmHg. Khoảng ±2SD là gì?",
+          "options": [
+            "100-160 mmHg",
+            "115-145 mmHg",
+            "85-175 mmHg",
+            "130-160 mmHg"
+          ],
+          "answer": "A",
+          "explain": "130±2×15=130±30, tức 100–160 mmHg.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 142,
+            "question": 141
+          }
+        },
+        {
+          "id": "xstk-142",
+          "q": "Khoảng biến thiên của dãy 12, 15, 20, 27 là bao nhiêu?",
+          "options": [
+            "12",
+            "27",
+            "42",
+            "15"
+          ],
+          "answer": "D",
+          "explain": "Khoảng biến thiên=max−min=27−12=15.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 143,
+            "question": 142
+          }
+        },
+        {
+          "id": "xstk-143",
+          "q": "Phác đồ A có EX=100, SD=5; phác đồ B có EX=50, SD=4. Phác đồ nào có biến thiên tương đối nhỏ hơn?",
+          "options": [
+            "Hai phác đồ như nhau",
+            "Không thể tính Cv",
+            "Phác đồ A (Cv=5%)",
+            "Phác đồ B (Cv=8%)"
+          ],
+          "answer": "C",
+          "explain": "Cv(A)=5/100×100%=5%; Cv(B)=4/50×100%=8%. A có biến thiên tương đối thấp hơn.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 144,
+            "question": 143
+          }
+        },
+        {
+          "id": "xstk-144",
+          "q": "Dữ liệu 70 có 1 người, 75 có 2 người, 80 có 1 người. Số trung bình mẫu là bao nhiêu?",
+          "options": [
+            "80",
+            "75",
+            "73,75",
+            "76,25"
+          ],
+          "answer": "B",
+          "explain": "x̄=(70×1+75×2+80×1)/4=300/4=75.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 145,
+            "question": 144
+          }
+        },
+        {
+          "id": "xstk-145",
+          "q": "Phương sai đo lường đặc điểm nào của dữ liệu?",
+          "options": [
+            "Mức độ phân tán quanh số trung bình",
+            "Vị trí chính giữa",
+            "Giá trị xuất hiện nhiều nhất",
+            "Kích thước mẫu"
+          ],
+          "answer": "A",
+          "explain": "Phương sai là trung bình bình phương khoảng cách tới số trung bình, dùng để mô tả phân tán.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 146,
+            "question": 145
+          }
+        },
+        {
+          "id": "xstk-146",
+          "q": "Ưu điểm của độ lệch chuẩn so với phương sai là gì?",
+          "options": [
+            "Luôn nhỏ hơn số trung bình",
+            "Không phụ thuộc dữ liệu",
+            "Không bị ảnh hưởng bởi ngoại lai",
+            "Có cùng đơn vị đo gốc với biến số"
+          ],
+          "answer": "D",
+          "explain": "SD có cùng đơn vị đo với dữ liệu gốc, còn phương sai có đơn vị bình phương.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 147,
+            "question": 146
+          }
+        },
+        {
+          "id": "xstk-147",
+          "q": "Mục tiêu chính của chọn mẫu phân tầng là gì?",
+          "options": [
+            "Chỉ lấy nhóm đông nhất",
+            "Giảm mẫu xuống tối thiểu",
+            "Bảo đảm các nhóm quan trọng đều được đại diện trong mẫu",
+            "Loại bỏ hoàn toàn sai số"
+          ],
+          "answer": "C",
+          "explain": "Phân tầng giúp bảo đảm những nhóm quan trọng được đưa vào mẫu.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 148,
+            "question": 147
+          }
+        },
+        {
+          "id": "xstk-148",
+          "q": "Bốc thăm ngẫu nhiên từ danh sách toàn bộ bệnh nhân là ví dụ của phương pháp nào?",
+          "options": [
+            "Chọn mẫu chủ đích",
+            "Chọn mẫu ngẫu nhiên đơn giản",
+            "Chọn mẫu phân tầng",
+            "Chọn mẫu thuận tiện"
+          ],
+          "answer": "B",
+          "explain": "Bốc thăm ngẫu nhiên từ danh sách đầy đủ là một cách thực hiện chọn mẫu ngẫu nhiên đơn giản.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 149,
+            "question": 148
+          }
+        },
+        {
+          "id": "xstk-149",
+          "q": "Trong báo cáo, chỉ số nào mô tả giá trị phổ biến nhất của một mẫu?",
+          "options": [
+            "Mốt",
+            "Trung vị",
+            "Phương sai",
+            "Độ lệch chuẩn"
+          ],
+          "answer": "A",
+          "explain": "Mốt là giá trị có tần số xuất hiện cao nhất.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 150,
+            "question": 149
+          }
+        },
+        {
+          "id": "xstk-150",
+          "q": "Một mẫu có số trung bình 120 và SD=3 được đánh giá thế nào so với mẫu có cùng trung bình nhưng SD=15?",
+          "options": [
+            "Mẫu thứ hai ổn định hơn",
+            "Hai mẫu giống nhau hoàn toàn",
+            "Không thể so sánh độ phân tán",
+            "Mẫu thứ nhất đồng đều và ổn định hơn"
+          ],
+          "answer": "D",
+          "explain": "Cùng trung bình nhưng SD=3 nhỏ hơn SD=15, nên mẫu thứ nhất ít phân tán hơn.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 151,
+            "question": 150
+          }
+        },
+        {
+          "id": "xstk-151",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Quần thể nghiên cứu là toàn bộ đối tượng có đặc trưng mà nhà nghiên cứu quan tâm.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Quần thể gồm toàn bộ đối tượng thuộc phạm vi nghiên cứu xác định.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 152,
+            "question": 151
+          }
+        },
+        {
+          "id": "xstk-152",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Mẫu nghiên cứu bắt buộc phải bao gồm toàn bộ quần thể.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Mẫu là một bộ phận của quần thể; khảo sát toàn bộ là điều tra toàn bộ.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 153,
+            "question": 152
+          }
+        },
+        {
+          "id": "xstk-153",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Mẫu đủ lớn nhưng không đại diện vẫn có thể gây sai lệch khi suy rộng.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Tăng cỡ mẫu không tự sửa được thiên lệch do chọn mẫu thiếu đại diện.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 154,
+            "question": 153
+          }
+        },
+        {
+          "id": "xstk-154",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trong chọn mẫu ngẫu nhiên đơn giản, mọi đối tượng có cơ hội được lựa chọn như nhau.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Trong chọn mẫu ngẫu nhiên đơn giản, các đối tượng có cùng xác suất được chọn.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 155,
+            "question": 154
+          }
+        },
+        {
+          "id": "xstk-155",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Chọn mẫu phân tầng là chỉ chọn đối tượng từ tầng có số lượng lớn nhất.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Chọn mẫu phân tầng phải chọn trong các tầng cần đại diện, không chỉ tầng đông nhất.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 156,
+            "question": 155
+          }
+        },
+        {
+          "id": "xstk-156",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phân tầng theo khoa phòng có thể giúp mẫu phản ánh đúng cơ cấu bệnh nhân toàn bệnh viện.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Phân tầng theo khoa có thể bảo đảm các khoa được đại diện phù hợp trong mẫu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 157,
+            "question": 156
+          }
+        },
+        {
+          "id": "xstk-157",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Số trung bình mẫu là một số thống kê của mẫu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Số trung bình mẫu được tính từ các quan sát mẫu nên là một thống kê mẫu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 158,
+            "question": 157
+          }
+        },
+        {
+          "id": "xstk-158",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Tham số quần thể và số thống kê mẫu luôn là cùng một giá trị.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Thống kê mẫu thay đổi theo mẫu và chỉ ước lượng tham số quần thể.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 159,
+            "question": 158
+          }
+        },
+        {
+          "id": "xstk-159",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phương sai mẫu hiệu chỉnh thường chia cho n-1.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Phương sai mẫu hiệu chỉnh sử dụng n−1 bậc tự do.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 160,
+            "question": 159
+          }
+        },
+        {
+          "id": "xstk-160",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Độ lệch chuẩn mẫu là căn bậc hai của phương sai mẫu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. s=√s².",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 161,
+            "question": 160
+          }
+        },
+        {
+          "id": "xstk-161",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Số trung bình bằng tổng các quan sát chia cho số quan sát.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. x̄=Σxᵢ/n; với bảng tần số dùng tổng có trọng số.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 162,
+            "question": 161
+          }
+        },
+        {
+          "id": "xstk-162",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trung vị là giá trị nằm giữa dữ liệu đã sắp xếp.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Với n lẻ lấy giá trị giữa; với n chẵn lấy trung bình hai giá trị giữa.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 163,
+            "question": 162
+          }
+        },
+        {
+          "id": "xstk-163",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Mốt là giá trị xuất hiện ít nhất trong mẫu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Mốt là giá trị xuất hiện nhiều nhất, không phải ít nhất.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 164,
+            "question": 163
+          }
+        },
+        {
+          "id": "xstk-164",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Số trung bình ít bị ảnh hưởng bởi giá trị ngoại lai hơn trung vị.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Số trung bình thường bị ngoại lai ảnh hưởng mạnh hơn trung vị.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 165,
+            "question": 164
+          }
+        },
+        {
+          "id": "xstk-165",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trung vị thường phù hợp với dữ liệu lệch như thời gian nằm viện hoặc chi phí điều trị.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Trung vị mô tả vị trí trung tâm tốt khi dữ liệu lệch và có ngoại lai.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 166,
+            "question": 165
+          }
+        },
+        {
+          "id": "xstk-166",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Mốt có thể dùng để mô tả trạng thái phổ biến nhất.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Mốt chỉ giá trị hoặc trạng thái có tần số cao nhất.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 167,
+            "question": 166
+          }
+        },
+        {
+          "id": "xstk-167",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng biến thiên bằng giá trị lớn nhất trừ giá trị nhỏ nhất.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Khoảng biến thiên bằng max−min.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 168,
+            "question": 167
+          }
+        },
+        {
+          "id": "xstk-168",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phương sai càng lớn thì dữ liệu càng đồng đều.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Phương sai lớn biểu thị phân tán lớn, mức đồng đều thấp hơn.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 169,
+            "question": 168
+          }
+        },
+        {
+          "id": "xstk-169",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Độ lệch chuẩn có cùng đơn vị với biến số gốc.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Lấy căn phương sai đưa đơn vị về đơn vị gốc.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 170,
+            "question": 169
+          }
+        },
+        {
+          "id": "xstk-170",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Hệ số biến thiên là chỉ số phân tán tương đối.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Cv so sánh độ lệch chuẩn với mức trung bình nên là thước đo tương đối.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 171,
+            "question": 170
+          }
+        },
+        {
+          "id": "xstk-171",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Cv được tính bằng SD chia cho số trung bình rồi nhân 100%.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Cv=(SD/EX)×100%, với trung bình phù hợp và khác 0.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 172,
+            "question": 171
+          }
+        },
+        {
+          "id": "xstk-172",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khi so sánh độ biến thiên tương đối của hai chỉ số có mức trung bình khác nhau, Cv hữu ích hơn SD đơn thuần.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng với các đại lượng thang tỷ lệ có trung bình dương. Cv chuẩn hóa SD theo mức trung bình để so sánh biến thiên tương đối.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 173,
+            "question": 172
+          }
+        },
+        {
+          "id": "xstk-173",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với EX=100 và SD=5, Cv bằng 20%.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Cv=5/100×100%=5%, không phải 20%.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 174,
+            "question": 173
+          }
+        },
+        {
+          "id": "xstk-174",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng EX±2SD thường được dùng để mô tả khoảng bao phủ xấp xỉ 95% khi dữ liệu gần chuẩn.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Với dữ liệu gần chuẩn, khoảng EX±2SD bao phủ xấp xỉ 95% các giá trị cá thể.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 175,
+            "question": 174
+          }
+        },
+        {
+          "id": "xstk-175",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu EX=130 và SD=15 thì ngưỡng dưới của khoảng ±2SD là 115.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Ngưỡng dưới là 130−2×15=100, không phải 115.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 176,
+            "question": 175
+          }
+        },
+        {
+          "id": "xstk-176",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Một phác đồ có SD nhỏ hơn thường kiểm soát chỉ số bệnh nhân ổn định hơn.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng khi so sánh cùng chỉ số và các điều kiện tương đương: SD nhỏ hơn phản ánh phân tán thấp hơn.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 177,
+            "question": 176
+          }
+        },
+        {
+          "id": "xstk-177",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Chọn mẫu thuận tiện luôn bảo đảm tính đại diện tốt nhất.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Chọn mẫu thuận tiện có thể thiên lệch và không bảo đảm tính đại diện.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 178,
+            "question": 177
+          }
+        },
+        {
+          "id": "xstk-178",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trong dãy 15,20,20,25,30,35,140, trung vị là 25.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Có 7 giá trị đã sắp xếp, trung vị là giá trị thứ 4: 25.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 179,
+            "question": 178
+          }
+        },
+        {
+          "id": "xstk-179",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trong dãy 15,20,20,25,30,35,140, mốt là 20.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. 20 xuất hiện hai lần, nhiều hơn các giá trị còn lại.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 180,
+            "question": 179
+          }
+        },
+        {
+          "id": "xstk-180",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Thêm một giá trị ngoại lai rất lớn thường làm số trung bình thay đổi nhiều hơn trung vị.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Ngoại lai làm tổng số liệu biến động mạnh, trong khi trung vị phụ thuộc thứ tự.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 181,
+            "question": 180
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bài 4 – Ước lượng và cỡ mẫu",
+      "questions": [
+        {
+          "id": "xstk-181",
+          "q": "Khoảng tin cậy trong nghiên cứu y sinh là gì?",
+          "options": [
+            "Khoảng giá trị tính từ mẫu có khả năng chứa tham số thực của quần thể với độ tin cậy cho trước",
+            "Khoảng chứa toàn bộ giá trị cá thể",
+            "Khoảng từ giá trị nhỏ nhất đến lớn nhất của mẫu",
+            "Một giá trị duy nhất của mẫu"
+          ],
+          "answer": "A",
+          "explain": "Khoảng tin cậy là khoảng tính từ mẫu bằng một quy trình có mức bao phủ tham số cho trước; không phải khoảng chứa mọi cá thể.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 182,
+            "question": 181
+          }
+        },
+        {
+          "id": "xstk-182",
+          "q": "Ý nghĩa phù hợp của khoảng tin cậy 95% cho số trung bình là gì?",
+          "options": [
+            "95% cá thể bắt buộc nằm trong khoảng",
+            "Xác suất từng bệnh nhân có giá trị đúng bằng trung bình là 95%",
+            "Khoảng luôn chứa tham số thực trong mọi mẫu",
+            "Ta tin tưởng 95% rằng số trung bình thực của quần thể nằm trong khoảng ước lượng"
+          ],
+          "answer": "D",
+          "explain": "Chọn D theo cách diễn đạt nhập môn. Diễn giải chặt chẽ: nếu lặp lại lấy mẫu và dựng khoảng bằng cùng phương pháp, khoảng 95% các khoảng sẽ chứa trung bình thật; không phải 95% cá thể nằm trong khoảng.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 183,
+            "question": 182
+          }
+        },
+        {
+          "id": "xstk-183",
+          "q": "Sai số chuẩn của số trung bình mẫu được tính bằng công thức nào?",
+          "options": [
+            "se=n/SD",
+            "se=SD²/n",
+            "se=SD/√n",
+            "se=SD×√n"
+          ],
+          "answer": "C",
+          "explain": "Sai số chuẩn của trung bình ước lượng bằng se=s/√n khi các quan sát độc lập.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 184,
+            "question": 183
+          }
+        },
+        {
+          "id": "xstk-184",
+          "q": "Khi tăng cỡ mẫu n trong khi SD không đổi, sai số chuẩn thay đổi thế nào?",
+          "options": [
+            "Bằng 1",
+            "Giảm",
+            "Tăng",
+            "Không đổi"
+          ],
+          "answer": "B",
+          "explain": "Vì se=SD/√n nên tăng n trong khi SD không đổi làm se giảm.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 185,
+            "question": 184
+          }
+        },
+        {
+          "id": "xstk-185",
+          "q": "Khoảng tin cậy 95% càng hẹp thường cho thấy điều gì?",
+          "options": [
+            "Ước lượng càng chính xác",
+            "Mẫu càng thiên lệch",
+            "SD càng lớn",
+            "Sai số chuẩn càng lớn"
+          ],
+          "answer": "A",
+          "explain": "Khoảng hẹp hơn phản ánh độ chính xác theo nghĩa ít bất định hơn; không tự bảo đảm không có thiên lệch.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 186,
+            "question": 185
+          }
+        },
+        {
+          "id": "xstk-186",
+          "q": "Sai số chuẩn của tỷ lệ mẫu f được tính bằng công thức nào?",
+          "options": [
+            "sep=f/n",
+            "sep=SD/√n",
+            "sep=nf(1-f)",
+            "sep=√[f(1-f)/n]"
+          ],
+          "answer": "D",
+          "explain": "Với các quan sát Bernoulli độc lập, sai số chuẩn ước lượng của tỷ lệ là √[f(1−f)/n].",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 187,
+            "question": 186
+          }
+        },
+        {
+          "id": "xstk-187",
+          "q": "Với SD=1,5 và n=100, sai số chuẩn của số trung bình là bao nhiêu?",
+          "options": [
+            "0,015",
+            "15,00",
+            "0,15",
+            "1,50"
+          ],
+          "answer": "C",
+          "explain": "se=1,5/√100=1,5/10=0,15.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 188,
+            "question": 187
+          }
+        },
+        {
+          "id": "xstk-188",
+          "q": "Mẫu có x̄=7,5 mmol/L, SD=1,5, n=100. Khoảng tin cậy 95% xấp xỉ là gì?",
+          "options": [
+            "7,50-7,65 mmol/L",
+            "7,21-7,79 mmol/L",
+            "6,00-9,00 mmol/L",
+            "7,35-7,65 mmol/L"
+          ],
+          "answer": "B",
+          "explain": "se=1,5/10=0,15. Khoảng xấp xỉ chuẩn: 7,5±1,96×0,15=[7,206;7,794]≈[7,21;7,79].",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 189,
+            "question": 188
+          }
+        },
+        {
+          "id": "xstk-189",
+          "q": "Mẫu n=64, x̄=135 mmHg, SD=16 mmHg. Khoảng tin cậy 95% xấp xỉ là gì?",
+          "options": [
+            "131,08-138,92 mmHg",
+            "119,00-151,00 mmHg",
+            "133,00-137,00 mmHg",
+            "127,16-142,84 mmHg"
+          ],
+          "answer": "A",
+          "explain": "se=16/√64=2. Khoảng 135±1,96×2=[131,08;138,92] mmHg.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 190,
+            "question": 189
+          }
+        },
+        {
+          "id": "xstk-190",
+          "q": "Mẫu n=25 có thời gian phục hồi trung bình 14 ngày, SD=2,5 ngày. Khoảng tin cậy 95% xấp xỉ là gì?",
+          "options": [
+            "11,50-16,50 ngày",
+            "13,50-14,50 ngày",
+            "9,10-18,90 ngày",
+            "13,02-14,98 ngày"
+          ],
+          "answer": "D",
+          "explain": "Theo xấp xỉ chuẩn trong đề: se=2,5/√25=0,5; 14±1,96×0,5=[13,02;14,98]. Khi σ chưa biết và mẫu nhỏ phân phối chuẩn, dùng t₂₄≈2,064 cho khoảng [12,968;15,032], khác xấp xỉ này.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 191,
+            "question": 190
+          }
+        },
+        {
+          "id": "xstk-191",
+          "q": "Mẫu n=100 có x̄=120 và SD=10. Khoảng tin cậy 95% xấp xỉ là gì?",
+          "options": [
+            "119,00-121,00",
+            "100,40-139,60",
+            "118,04-121,96",
+            "110,00-130,00"
+          ],
+          "answer": "C",
+          "explain": "se=10/√100=1. Khoảng xấp xỉ: 120±1,96=[118,04;121,96].",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 192,
+            "question": 191
+          }
+        },
+        {
+          "id": "xstk-192",
+          "q": "Yếu tố nào làm khoảng tin cậy của số trung bình hẹp hơn khi các yếu tố khác không đổi?",
+          "options": [
+            "Tăng sai số chuẩn",
+            "Tăng cỡ mẫu",
+            "Tăng độ lệch chuẩn",
+            "Giảm cỡ mẫu"
+          ],
+          "answer": "B",
+          "explain": "Tăng n làm SD/√n nhỏ đi, nên khoảng tin cậy hẹp hơn khi các yếu tố khác giữ nguyên.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 193,
+            "question": 192
+          }
+        },
+        {
+          "id": "xstk-193",
+          "q": "Trong mẫu có k ca mắc bệnh trên n người, tỷ lệ mẫu f được tính như thế nào?",
+          "options": [
+            "f=k/n",
+            "f=n/k",
+            "f=k×n",
+            "f=1-k/n"
+          ],
+          "answer": "A",
+          "explain": "Tỷ lệ mẫu là số ca có biến cố chia tổng số quan sát: f=k/n.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 194,
+            "question": 193
+          }
+        },
+        {
+          "id": "xstk-194",
+          "q": "Có 40 ca dương tính trong 400 người. Tỷ lệ mẫu là bao nhiêu?",
+          "options": [
+            "0,01 (1%)",
+            "0,40 (40%)",
+            "0,90 (90%)",
+            "0,10 (10%)"
+          ],
+          "answer": "D",
+          "explain": "f=40/400=0,10=10%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 195,
+            "question": 194
+          }
+        },
+        {
+          "id": "xstk-195",
+          "q": "Với f=0,10 và n=400, sai số chuẩn của tỷ lệ xấp xỉ bằng bao nhiêu?",
+          "options": [
+            "0,025",
+            "0,150",
+            "0,015",
+            "0,10"
+          ],
+          "answer": "C",
+          "explain": "sep=√[0,10×0,90/400]=√0,000225=0,015.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 196,
+            "question": 195
+          }
+        },
+        {
+          "id": "xstk-196",
+          "q": "Với f=0,10, n=400, khoảng tin cậy 95% cho tỷ lệ xấp xỉ là gì?",
+          "options": [
+            "1,50%-18,50%",
+            "7,06%-12,94%",
+            "9,00%-11,00%",
+            "5,00%-15,00%"
+          ],
+          "answer": "B",
+          "explain": "Khoảng Wald: 0,10±1,96×0,015=[0,0706;0,1294], tức 7,06%–12,94%.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 197,
+            "question": 196
+          }
+        },
+        {
+          "id": "xstk-197",
+          "q": "Có 16 trẻ sốt nhẹ sau tiêm trong 200 trẻ. Khoảng tin cậy 95% cho tỷ lệ xấp xỉ là gì?",
+          "options": [
+            "4,24%-11,76%",
+            "6,00%-10,00%",
+            "8,00%-16,00%",
+            "1,00%-15,00%"
+          ],
+          "answer": "A",
+          "explain": "f=16/200=0,08; sep=√(0,08×0,92/200)≈0,01918. Khoảng 0,08±1,96×sep≈[0,0424;0,1176].",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 198,
+            "question": 197
+          }
+        },
+        {
+          "id": "xstk-198",
+          "q": "Có 75 ca biến cố trong 500 người. Khoảng tin cậy 95% cho tỷ lệ xấp xỉ là gì?",
+          "options": [
+            "13,00%-17,00%",
+            "8,50%-21,50%",
+            "15,00%-18,13%",
+            "11,87%-18,13%"
+          ],
+          "answer": "D",
+          "explain": "f=75/500=0,15; sep=√(0,15×0,85/500)≈0,01597. Khoảng 0,15±1,96×sep≈[0,1187;0,1813].",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 199,
+            "question": 198
+          }
+        },
+        {
+          "id": "xstk-199",
+          "q": "Công thức cỡ mẫu ước lượng một số trung bình ở mức tin cậy 95% là gì?",
+          "options": [
+            "n=p(1-p)/d",
+            "n=SD/d²",
+            "n=(1,96²×SD²)/d²",
+            "n=1,96×SD/d"
+          ],
+          "answer": "C",
+          "explain": "Đặt biên sai số d=1,96×SD/√n rồi giải ra n=1,96²SD²/d²; làm tròn lên nếu có phần lẻ.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 200,
+            "question": 199
+          }
+        },
+        {
+          "id": "xstk-200",
+          "q": "Ước lượng BMI trung bình có SD=3,0 và sai số d=0,5. Cỡ mẫu tối thiểu là bao nhiêu?",
+          "options": [
+            "153",
+            "139",
+            "138",
+            "140"
+          ],
+          "answer": "B",
+          "explain": "n=1,96²×3²/0,5²=138,2976. Làm tròn lên 139 người.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 201,
+            "question": 200
+          }
+        },
+        {
+          "id": "xstk-201",
+          "q": "Ước lượng Hemoglobin trung bình có SD=8 g/L, sai số d=1 g/L. Cỡ mẫu tối thiểu là bao nhiêu?",
+          "options": [
+            "246",
+            "245",
+            "247",
+            "256"
+          ],
+          "answer": "A",
+          "explain": "n=1,96²×8²/1²=245,8624. Làm tròn lên 246 người.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 202,
+            "question": 201
+          }
+        },
+        {
+          "id": "xstk-202",
+          "q": "Ước lượng thời gian luyện tập trung bình có SD=12 phút, sai số d=2 phút. Cỡ mẫu tối thiểu là bao nhiêu?",
+          "options": [
+            "138",
+            "140",
+            "152",
+            "139"
+          ],
+          "answer": "D",
+          "explain": "n=1,96²×12²/2²=138,2976. Làm tròn lên 139 người.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 203,
+            "question": 202
+          }
+        },
+        {
+          "id": "xstk-203",
+          "q": "Công thức cỡ mẫu ước lượng một tỷ lệ ở mức tin cậy 95% là gì?",
+          "options": [
+            "n=npq",
+            "n=p/d",
+            "n=1,96²p(1-p)/d²",
+            "n=1,96²SD²/d²"
+          ],
+          "answer": "C",
+          "explain": "Từ d=1,96√[p(1−p)/n], suy ra n=1,96²p(1−p)/d².",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 204,
+            "question": 203
+          }
+        },
+        {
+          "id": "xstk-204",
+          "q": "Ước lượng tỷ lệ p=0,20 với sai số d=0,04. Cỡ mẫu tối thiểu là bao nhiêu?",
+          "options": [
+            "424",
+            "385",
+            "384",
+            "400"
+          ],
+          "answer": "B",
+          "explain": "n=1,96²×0,20×0,80/0,04²=384,16. Làm tròn lên 385 người.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 205,
+            "question": 204
+          }
+        },
+        {
+          "id": "xstk-205",
+          "q": "Ước lượng tỷ lệ đái tháo đường thai kỳ p=0,08 với sai số d=0,02. Cỡ mẫu tối thiểu là bao nhiêu?",
+          "options": [
+            "707",
+            "706",
+            "708",
+            "778"
+          ],
+          "answer": "A",
+          "explain": "n=1,96²×0,08×0,92/0,02²=706,8544. Làm tròn lên 707 người.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 206,
+            "question": 205
+          }
+        },
+        {
+          "id": "xstk-206",
+          "q": "Ước lượng tỷ lệ p=0,15 với sai số d=0,03. Cỡ mẫu tối thiểu là bao nhiêu?",
+          "options": [
+            "544",
+            "546",
+            "600",
+            "545"
+          ],
+          "answer": "D",
+          "explain": "n=1,96²×0,15×0,85/0,03²≈544,2267. Làm tròn lên 545 người.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 207,
+            "question": 206
+          }
+        },
+        {
+          "id": "xstk-207",
+          "q": "Khi kết quả tính cỡ mẫu là 138,3, quy tắc xử lý phù hợp là gì?",
+          "options": [
+            "Giữ 138,3 người",
+            "Làm tròn về 130",
+            "Làm tròn lên 139",
+            "Làm tròn xuống 138"
+          ],
+          "answer": "C",
+          "explain": "Để đạt số người tối thiểu, 138,3 phải làm tròn lên 139.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 208,
+            "question": 207
+          }
+        },
+        {
+          "id": "xstk-208",
+          "q": "Cỡ mẫu tối thiểu là 139 và dự phòng bỏ cuộc 10%. Số người cần tuyển tối thiểu là bao nhiêu?",
+          "options": [
+            "152",
+            "153",
+            "139",
+            "150",
+            "155"
+          ],
+          "answer": "E",
+          "explain": "Nếu 10% số tuyển dự kiến bỏ cuộc, cần ceil[139/(1−0,10)]=155 người để số còn lại kỳ vọng đạt ít nhất 139. Excel chọn 153 theo cách chỉ cộng 10%: ceil(139×1,10)=153; cách cộng thêm này không bù đủ tỷ lệ mất 10% trên số tuyển. Đã bổ sung lựa chọn E=155.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 209,
+            "question": 208
+          }
+        },
+        {
+          "id": "xstk-209",
+          "q": "Nếu giảm sai số cho phép d xuống còn một nửa, cỡ mẫu thay đổi thế nào?",
+          "options": [
+            "Tăng gấp 4 lần",
+            "Tăng gấp 2 lần",
+            "Giảm một nửa",
+            "Không đổi"
+          ],
+          "answer": "A",
+          "explain": "Cỡ mẫu tỷ lệ nghịch với d²; thay d bằng d/2 làm cỡ mẫu tăng 4 lần.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 210,
+            "question": 209
+          }
+        },
+        {
+          "id": "xstk-210",
+          "q": "Một nghiên cứu đồng thời cần 139 người cho mục tiêu trung bình và 545 người cho mục tiêu tỷ lệ. Cỡ mẫu tối thiểu chung nên chọn là bao nhiêu?",
+          "options": [
+            "139",
+            "342",
+            "684",
+            "545"
+          ],
+          "answer": "D",
+          "explain": "Để đáp ứng cả hai mục tiêu trên cùng mẫu và cùng điều kiện, chọn max(139,545)=545.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 211,
+            "question": 210
+          }
+        },
+        {
+          "id": "xstk-211",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Ước lượng khoảng dùng số liệu mẫu để suy đoán tham số thực của quần thể.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Ước lượng khoảng sử dụng thống kê mẫu để suy luận về tham số quần thể.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 212,
+            "question": 211
+          }
+        },
+        {
+          "id": "xstk-212",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng tin cậy 95% là khoảng từ giá trị nhỏ nhất đến lớn nhất của mẫu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Khoảng min–max là khoảng biến thiên của dữ liệu, khác khoảng tin cậy tham số.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 213,
+            "question": 212
+          }
+        },
+        {
+          "id": "xstk-213",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Sai số chuẩn của số trung bình bằng SD chia căn bậc hai của n.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Sai số chuẩn của trung bình là SD/√n khi các quan sát độc lập.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 214,
+            "question": 213
+          }
+        },
+        {
+          "id": "xstk-214",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khi cỡ mẫu tăng, sai số chuẩn thường giảm.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng khi các yếu tố khác giữ nguyên. se tỷ lệ nghịch với √n.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 215,
+            "question": 214
+          }
+        },
+        {
+          "id": "xstk-215",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khi độ lệch chuẩn tăng, khoảng tin cậy thường hẹp hơn.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Với cùng cỡ mẫu và mức tin cậy, SD tăng làm sai số chuẩn và độ rộng khoảng tăng.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 216,
+            "question": 215
+          }
+        },
+        {
+          "id": "xstk-216",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng tin cậy hẹp hơn thường phản ánh ước lượng chính xác hơn.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng theo nghĩa độ chính xác của ước lượng: khoảng hẹp hơn biểu thị ít bất định hơn, chưa loại trừ thiên lệch.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 217,
+            "question": 216
+          }
+        },
+        {
+          "id": "xstk-217",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng tin cậy 95% cho số trung bình được tính x̄±1,96se.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng trong phương pháp xấp xỉ chuẩn 95% của bộ câu hỏi. Nếu σ chưa biết và mẫu nhỏ, thường cần hệ số t thay 1,96.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 218,
+            "question": 217
+          }
+        },
+        {
+          "id": "xstk-218",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với SD=16 và n=64, se=2.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. se=16/√64=16/8=2.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 219,
+            "question": 218
+          }
+        },
+        {
+          "id": "xstk-219",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với x̄=135 và se=2, biên sai số 95% là 3,92.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Biên sai số=1,96×2=3,92.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 220,
+            "question": 219
+          }
+        },
+        {
+          "id": "xstk-220",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Tỷ lệ mẫu f bằng số ca biến cố chia cho kích thước mẫu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. f=k/n với k là số ca có biến cố và n là số quan sát.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 221,
+            "question": 220
+          }
+        },
+        {
+          "id": "xstk-221",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Sai số chuẩn của tỷ lệ là căn bậc hai của f(1-f)/n.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Sai số chuẩn ước lượng của tỷ lệ là √[f(1−f)/n] trong mô hình lấy mẫu độc lập.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 222,
+            "question": 221
+          }
+        },
+        {
+          "id": "xstk-222",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu có 40 ca trong 400 người thì f=0,40.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. f=40/400=0,10, không phải 0,40.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 223,
+            "question": 222
+          }
+        },
+        {
+          "id": "xstk-223",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Với f=0,10 và n=400, sep xấp xỉ 0,015.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. √(0,10×0,90/400)=0,015.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 224,
+            "question": 223
+          }
+        },
+        {
+          "id": "xstk-224",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng tin cậy tỷ lệ được tính f±1,96sep.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng trong xấp xỉ Wald 95%, khi cỡ mẫu và số ca đủ lớn. Với mẫu nhỏ hoặc tỷ lệ sát 0 hay 1, nên dùng phương pháp khoảng khác.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 225,
+            "question": 224
+          }
+        },
+        {
+          "id": "xstk-225",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Cỡ mẫu ước lượng trung bình phụ thuộc vào SD và sai số d.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Ở cùng mức tin cậy, n=1,96²SD²/d² phụ thuộc SD và d.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 226,
+            "question": 225
+          }
+        },
+        {
+          "id": "xstk-226",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Cỡ mẫu ước lượng tỷ lệ phụ thuộc vào p và sai số d.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Ở cùng mức tin cậy, n=1,96²p(1−p)/d² phụ thuộc p và d.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 227,
+            "question": 226
+          }
+        },
+        {
+          "id": "xstk-227",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khi kết quả cỡ mẫu có phần thập phân, có thể làm tròn xuống để tiết kiệm chi phí.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Làm tròn xuống có thể làm cỡ mẫu nhỏ hơn mức tối thiểu yêu cầu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 228,
+            "question": 227
+          }
+        },
+        {
+          "id": "xstk-228",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Quy tắc trong giáo trình là luôn làm tròn cỡ mẫu lên số nguyên tiếp theo.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng với kết quả có phần lẻ: dùng hàm làm tròn lên. Nếu kết quả đã nguyên thì giữ nguyên, không cộng thêm 1.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 229,
+            "question": 228
+          }
+        },
+        {
+          "id": "xstk-229",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Cỡ mẫu càng lớn thì sai số ước lượng thường càng nhỏ.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng khi thiết kế và các yếu tố khác tương đương. Cỡ mẫu lớn hơn thường làm sai số ngẫu nhiên nhỏ hơn.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 230,
+            "question": 229
+          }
+        },
+        {
+          "id": "xstk-230",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Sai số d nằm ở mẫu số và được bình phương trong công thức cỡ mẫu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Cả công thức cỡ mẫu trung bình và tỷ lệ đều chứa d² ở mẫu số.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 231,
+            "question": 230
+          }
+        },
+        {
+          "id": "xstk-231",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Giảm d xuống một nửa làm cỡ mẫu tăng gấp bốn lần.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. 1/(d/2)²=4/d² nên cỡ mẫu tăng bốn lần.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 232,
+            "question": 231
+          }
+        },
+        {
+          "id": "xstk-232",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Tăng d gấp đôi làm cỡ mẫu tăng gấp bốn lần.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Tăng d gấp đôi làm cỡ mẫu giảm còn một phần tư.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 233,
+            "question": 232
+          }
+        },
+        {
+          "id": "xstk-233",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Dự phòng Drop-out thường cộng thêm khoảng 10%-20% cỡ mẫu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng theo cách dự phòng cộng thêm của bộ câu hỏi. Nếu muốn bù đúng tỷ lệ mất r tính trên số tuyển, dùng n_tuyển=ceil[n/(1−r)]; tỷ lệ dự phòng cụ thể cần theo thiết kế.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 234,
+            "question": 233
+          }
+        },
+        {
+          "id": "xstk-234",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu cỡ mẫu tối thiểu 385 và cộng 10% thì cần tuyển khoảng 424 người.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng theo phép cộng thêm được nêu rõ: ceil(385×1,10)=424. Nếu dự kiến mất đúng 10% số tuyển thì cần ceil(385/0,90)=428.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 235,
+            "question": 234
+          }
+        },
+        {
+          "id": "xstk-235",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Cỡ mẫu tối thiểu 139 cộng 10% dự phòng là 139 người.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Cộng thêm 10% cho 139 cho ceil(152,9)=153. Nếu bù tỷ lệ mất 10% số tuyển, cần 155.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 236,
+            "question": 235
+          }
+        },
+        {
+          "id": "xstk-236",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khi gộp nhiều mục tiêu nghiên cứu, nên chọn cỡ mẫu lớn nhất trong các cỡ mẫu tính được.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng khi các mục tiêu dùng chung mẫu và điều kiện thiết kế tương thích: chọn cỡ mẫu lớn nhất để đủ cho từng mục tiêu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 237,
+            "question": 236
+          }
+        },
+        {
+          "id": "xstk-237",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Công thức cỡ mẫu tỷ lệ áp dụng cho biến liên tục như huyết áp.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Huyết áp là biến liên tục; để ước lượng trung bình dùng công thức có SD, không dùng công thức tỷ lệ.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 238,
+            "question": 237
+          }
+        },
+        {
+          "id": "xstk-238",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Công thức cỡ mẫu trung bình áp dụng cho biến đo lường như BMI và glucose máu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. BMI và glucose là đại lượng đo lường, phù hợp bài toán ước lượng trung bình.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 239,
+            "question": 238
+          }
+        },
+        {
+          "id": "xstk-239",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Tăng độ chính xác của nghiên cứu thường đòi hỏi tăng cỡ mẫu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Muốn sai số d nhỏ hơn thường phải tăng n do n tỷ lệ nghịch với d². Giá trị Đúng trong Excel đã được chuẩn hóa thành đáp án A.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 240,
+            "question": 239
+          }
+        },
+        {
+          "id": "xstk-240",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khoảng tin cậy 95% càng rộng thì ước lượng càng chính xác.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Khoảng rộng hơn thể hiện mức bất định lớn hơn ở cùng mức tin cậy. Giá trị Sai trong Excel đã được chuẩn hóa thành đáp án B.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 241,
+            "question": 240
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bài 5 – Kiểm định, tương quan và hồi quy",
+      "questions": [
+        {
+          "id": "xstk-241",
+          "q": "Giả thuyết H0 thường phát biểu điều gì?",
+          "options": [
+            "Không có sự khác biệt hoặc can thiệp không có hiệu quả",
+            "Có sự khác biệt chắc chắn",
+            "Mối tương quan bằng 1",
+            "Sai số chuẩn bằng 0"
+          ],
+          "answer": "A",
+          "explain": "H₀ thường biểu diễn không có khác biệt hoặc hiệu ứng bằng 0 trong bài toán so sánh nhập môn.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 242,
+            "question": 241
+          }
+        },
+        {
+          "id": "xstk-242",
+          "q": "Đối giả thuyết H1 thường phát biểu điều gì?",
+          "options": [
+            "Không có sự khác biệt",
+            "Mẫu hoàn toàn đại diện",
+            "p luôn lớn hơn 0,05",
+            "Có sự khác biệt hoặc can thiệp có hiệu quả"
+          ],
+          "answer": "D",
+          "explain": "H₁ mô tả sự khác biệt hoặc hiệu ứng khác 0; có thể là đối thuyết một phía hoặc hai phía.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 243,
+            "question": 242
+          }
+        },
+        {
+          "id": "xstk-243",
+          "q": "Ý nghĩa của p-value là gì?",
+          "options": [
+            "Tỷ lệ bệnh trong quần thể",
+            "Kích thước ảnh hưởng tuyệt đối",
+            "Xác suất quan sát chênh lệch lớn như dữ liệu mẫu nếu H0 đúng",
+            "Xác suất H0 chắc chắn đúng"
+          ],
+          "answer": "C",
+          "explain": "p-value là xác suất, giả sử H₀ đúng và mô hình kiểm định phù hợp, thu được thống kê kiểm định cực đoan ít nhất như đã quan sát; không phải xác suất H₀ đúng.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 244,
+            "question": 243
+          }
+        },
+        {
+          "id": "xstk-244",
+          "q": "Nếu p=0,012, quyết định theo ngưỡng 0,05 là gì?",
+          "options": [
+            "Không thể kết luận vì p nhỏ",
+            "Bác bỏ H0, kết luận khác biệt có ý nghĩa thống kê",
+            "Chấp nhận H0 chắc chắn",
+            "Chưa đủ cơ sở bác bỏ H0"
+          ],
+          "answer": "B",
+          "explain": "0,012<0,05 nên bác bỏ H₀ ở mức ý nghĩa 5%; chưa thể suy ra mức quan trọng về thực tiễn chỉ từ p.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 245,
+            "question": 244
+          }
+        },
+        {
+          "id": "xstk-245",
+          "q": "Nếu p=0,082, quyết định phù hợp là gì?",
+          "options": [
+            "Chưa đủ cơ sở bác bỏ H0",
+            "Bác bỏ H0",
+            "Chấp nhận H1 tuyệt đối",
+            "Kết luận hiệu quả chắc chắn"
+          ],
+          "answer": "A",
+          "explain": "0,082≥0,05 nên chưa đủ bằng chứng bác bỏ H₀; không chứng minh hai nhóm giống nhau.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 246,
+            "question": 245
+          }
+        },
+        {
+          "id": "xstk-246",
+          "q": "Nếu p=0,050 theo quy tắc p≥0,05 trong giáo trình, kết luận nào phù hợp?",
+          "options": [
+            "Bác bỏ H0",
+            "H1 chắc chắn đúng",
+            "Không cần kiểm định",
+            "Chưa đủ cơ sở bác bỏ H0"
+          ],
+          "answer": "D",
+          "explain": "Đề quy định dùng p<0,05 để bác bỏ. Vì p=0,050 nên chưa bác bỏ theo quy tắc đó; cần phân biệt giá trị chính xác và giá trị p đã làm tròn.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 247,
+            "question": 246
+          }
+        },
+        {
+          "id": "xstk-247",
+          "q": "So sánh số trung bình mẫu với một giá trị chuẩn đã biết nên dùng phép kiểm nào?",
+          "options": [
+            "T-test bắt cặp",
+            "Chi bình phương",
+            "T-test một mẫu",
+            "T-test độc lập"
+          ],
+          "answer": "C",
+          "explain": "So sánh một trung bình với giá trị chuẩn dùng t-test một mẫu khi các giả định kiểm định phù hợp.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 248,
+            "question": 247
+          }
+        },
+        {
+          "id": "xstk-248",
+          "q": "So sánh huyết áp trung bình giữa nhóm dùng thuốc mới và nhóm dùng thuốc cũ, hai nhóm riêng biệt, dùng phép kiểm nào?",
+          "options": [
+            "Fisher",
+            "T-test độc lập",
+            "T-test bắt cặp",
+            "Chi bình phương"
+          ],
+          "answer": "B",
+          "explain": "Hai nhóm bệnh nhân độc lập và kết quả liên tục: dùng t-test độc lập, thường ưu tiên Welch khi không giả định phương sai bằng nhau.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 249,
+            "question": 248
+          }
+        },
+        {
+          "id": "xstk-249",
+          "q": "So sánh đường huyết trước và sau điều trị trên cùng một nhóm bệnh nhân dùng phép kiểm nào?",
+          "options": [
+            "T-test bắt cặp",
+            "T-test độc lập",
+            "Chi bình phương",
+            "Tương quan Pearson"
+          ],
+          "answer": "A",
+          "explain": "Các phép đo trước–sau trên cùng người tạo cặp; t-test bắt cặp kiểm định trung bình chênh lệch.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 250,
+            "question": 249
+          }
+        },
+        {
+          "id": "xstk-250",
+          "q": "T-test phù hợp với loại biến kết quả nào?",
+          "options": [
+            "Biến danh mục tỷ lệ",
+            "Biến định tính nhị phân duy nhất",
+            "Biến cố xung khắc",
+            "Biến liên tục đo lường"
+          ],
+          "answer": "D",
+          "explain": "T-test kiểm định trung bình của dữ liệu định lượng; cần kiểm tra điều kiện phân phối và tính độc lập thích hợp.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 251,
+            "question": 250
+          }
+        },
+        {
+          "id": "xstk-251",
+          "q": "Thiết kế nào là ví dụ T-test độc lập?",
+          "options": [
+            "So sánh hai tỷ lệ tử vong",
+            "Đánh giá r giữa tuổi và huyết áp",
+            "Hai nhóm bệnh nhân khác nhau dùng hai thuốc khác nhau",
+            "Cùng bệnh nhân đo trước và sau"
+          ],
+          "answer": "C",
+          "explain": "Hai nhóm gồm các bệnh nhân khác nhau là hai mẫu độc lập, phù hợp t-test độc lập cho kết quả liên tục.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 252,
+            "question": 251
+          }
+        },
+        {
+          "id": "xstk-252",
+          "q": "Thiết kế nào là ví dụ T-test bắt cặp?",
+          "options": [
+            "So sánh nam và nữ khác nhau",
+            "Đo Cholesterol trên cùng bệnh nhân trước và sau một tháng",
+            "So sánh hai khoa độc lập",
+            "So sánh tỷ lệ khỏi bệnh"
+          ],
+          "answer": "B",
+          "explain": "Cholesterol đo hai thời điểm trên cùng người là dữ liệu bắt cặp.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 253,
+            "question": 252
+          }
+        },
+        {
+          "id": "xstk-253",
+          "q": "So sánh tỷ lệ tử vong giữa hai phác đồ nên dùng phép kiểm nào?",
+          "options": [
+            "Chi bình phương",
+            "T-test độc lập",
+            "T-test bắt cặp",
+            "Hồi quy tuyến tính"
+          ],
+          "answer": "A",
+          "explain": "Tử vong là kết quả phân loại; với hai nhóm độc lập và tần số kỳ vọng đủ lớn, dùng kiểm định χ² cho bảng chéo.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 254,
+            "question": 253
+          }
+        },
+        {
+          "id": "xstk-254",
+          "q": "Khi bảng 2×2 có nhiều ô với tần số kỳ vọng dưới 5, nên dùng phép kiểm nào?",
+          "options": [
+            "T-test một mẫu",
+            "Pearson r",
+            "Hồi quy",
+            "Fisher chính xác"
+          ],
+          "answer": "D",
+          "explain": "Khi bảng 2×2 có tần số kỳ vọng nhỏ, Fisher chính xác phù hợp hơn xấp xỉ χ².",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 255,
+            "question": 254
+          }
+        },
+        {
+          "id": "xstk-255",
+          "q": "Hai phác đồ có tỷ lệ tử vong 15% và 28%, kiểm định cho p=0,024. Kết luận phù hợp là gì?",
+          "options": [
+            "p quá lớn để kết luận",
+            "Hai phác đồ tương đương hoàn toàn",
+            "Tỷ lệ tử vong khác nhau có ý nghĩa thống kê",
+            "Không có khác biệt"
+          ],
+          "answer": "C",
+          "explain": "0,024<0,05 nên tỷ lệ tử vong khác nhau có ý nghĩa thống kê ở mức 5%; p không đo trực tiếp độ lớn hiệu quả.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 256,
+            "question": 255
+          }
+        },
+        {
+          "id": "xstk-256",
+          "q": "So sánh huyết áp trung bình giữa hai nhóm bệnh nhân hoàn toàn riêng biệt cần dùng phép kiểm nào?",
+          "options": [
+            "Fisher",
+            "T-test độc lập",
+            "T-test bắt cặp",
+            "Chi bình phương"
+          ],
+          "answer": "B",
+          "explain": "Huyết áp là biến liên tục, hai nhóm riêng biệt nên dùng t-test độc lập nếu các điều kiện phù hợp.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 257,
+            "question": 256
+          }
+        },
+        {
+          "id": "xstk-257",
+          "q": "Đánh giá Cholesterol trước và sau uống thuốc trên cùng 30 bệnh nhân cần dùng phép kiểm nào?",
+          "options": [
+            "T-test bắt cặp",
+            "T-test độc lập",
+            "Chi bình phương",
+            "Tương quan Pearson"
+          ],
+          "answer": "A",
+          "explain": "Hai lần đo trên cùng 30 người là dữ liệu phụ thuộc theo cặp, nên dùng t-test bắt cặp.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 258,
+            "question": 257
+          }
+        },
+        {
+          "id": "xstk-258",
+          "q": "So sánh tỷ lệ khỏi bệnh giữa nhóm can thiệp và nhóm chứng cần dùng phép kiểm nào?",
+          "options": [
+            "T-test bắt cặp",
+            "T-test một mẫu",
+            "Hồi quy tuyến tính",
+            "Chi bình phương"
+          ],
+          "answer": "D",
+          "explain": "Khỏi bệnh là biến phân loại; so sánh hai tỷ lệ ở nhóm độc lập bằng χ² khi điều kiện tần số kỳ vọng phù hợp.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 259,
+            "question": 258
+          }
+        },
+        {
+          "id": "xstk-259",
+          "q": "Hệ số tương quan Pearson r được dùng khi nào?",
+          "options": [
+            "Tính cỡ mẫu",
+            "Tính trung vị",
+            "Đánh giá mối liên hệ tuyến tính giữa hai biến liên tục",
+            "So sánh hai tỷ lệ"
+          ],
+          "answer": "C",
+          "explain": "Pearson r đo mức độ và chiều liên hệ tuyến tính giữa hai biến định lượng; dùng phổ biến với biến liên tục.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 260,
+            "question": 259
+          }
+        },
+        {
+          "id": "xstk-260",
+          "q": "Nếu r>0, mối tương quan có chiều hướng nào?",
+          "options": [
+            "Quan hệ phi tuyến chắc chắn",
+            "Tương quan thuận",
+            "Tương quan nghịch",
+            "Không tương quan"
+          ],
+          "answer": "B",
+          "explain": "r>0 cho biết X lớn hơn có xu hướng đi cùng Y lớn hơn: tương quan thuận.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 261,
+            "question": 260
+          }
+        },
+        {
+          "id": "xstk-261",
+          "q": "Nếu r<0, mối tương quan có chiều hướng nào?",
+          "options": [
+            "Tương quan nghịch",
+            "Tương quan thuận",
+            "Không tương quan",
+            "Quan hệ nhân quả chắc chắn"
+          ],
+          "answer": "A",
+          "explain": "r<0 cho biết X lớn hơn có xu hướng đi cùng Y nhỏ hơn: tương quan nghịch.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 262,
+            "question": 261
+          }
+        },
+        {
+          "id": "xstk-262",
+          "q": "Theo giáo trình, |r| lớn hơn 0,7 thường được xếp mức nào?",
+          "options": [
+            "Tương quan trung bình",
+            "Tương quan yếu",
+            "Không tương quan",
+            "Tương quan mạnh"
+          ],
+          "answer": "D",
+          "explain": "Theo ngưỡng phân loại trong đề, |r|>0,7 được gọi là tương quan mạnh. Ngưỡng mô tả có thể thay đổi theo lĩnh vực.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 263,
+            "question": 262
+          }
+        },
+        {
+          "id": "xstk-263",
+          "q": "Kết quả r=0,58 và p=0,001 giữa tuổi và huyết áp được diễn giải thế nào?",
+          "options": [
+            "Không có tương quan",
+            "Tương quan thuận nhưng không có ý nghĩa",
+            "Tương quan thuận mức trung bình và có ý nghĩa thống kê",
+            "Tương quan nghịch mạnh"
+          ],
+          "answer": "C",
+          "explain": "r=0,58>0 là thuận, mức trung bình theo đề; p=0,001<0,05 nên có ý nghĩa thống kê.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 264,
+            "question": 263
+          }
+        },
+        {
+          "id": "xstk-264",
+          "q": "Kết quả r=-0,82 và p=0,010 được diễn giải thế nào?",
+          "options": [
+            "Không có ý nghĩa thống kê",
+            "Tương quan nghịch mạnh và có ý nghĩa thống kê",
+            "Tương quan thuận mạnh",
+            "Tương quan nghịch yếu"
+          ],
+          "answer": "B",
+          "explain": "r=−0,82 là nghịch mạnh vì |r|>0,7; p=0,010<0,05 nên có ý nghĩa thống kê.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 265,
+            "question": 264
+          }
+        },
+        {
+          "id": "xstk-265",
+          "q": "Chỉ số p của hệ số tương quan nhỏ hơn 0,05 cho biết gì?",
+          "options": [
+            "Mối tương quan có ý nghĩa thống kê",
+            "r chắc chắn bằng 1",
+            "Có quan hệ nhân quả tuyệt đối",
+            "Hai biến có cùng đơn vị"
+          ],
+          "answer": "A",
+          "explain": "Với H₀:ρ=0 và kiểm định phù hợp, p<0,05 là bằng chứng có liên hệ tuyến tính khác 0; không chứng minh nhân quả.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 266,
+            "question": 265
+          }
+        },
+        {
+          "id": "xstk-266",
+          "q": "Trong phương trình Y=a+bX, hằng số a có ý nghĩa gì?",
+          "options": [
+            "Mức Y thay đổi khi X tăng 1",
+            "Tỷ lệ biến thiên được giải thích",
+            "Hệ số tương quan",
+            "Giá trị dự báo của Y khi X=0"
+          ],
+          "answer": "D",
+          "explain": "Thay X=0 vào Ŷ=a+bX được Ŷ=a. Ý nghĩa thực tiễn chỉ phù hợp khi X=0 có nghĩa trong phạm vi mô hình.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 267,
+            "question": 266
+          }
+        },
+        {
+          "id": "xstk-267",
+          "q": "Trong phương trình Y=a+bX, hệ số b cho biết gì?",
+          "options": [
+            "Phần trăm biến thiên của Y được giải thích",
+            "Giá trị p của mô hình",
+            "Y thay đổi trung bình bao nhiêu khi X tăng 1 đơn vị",
+            "Y khi X bằng 0"
+          ],
+          "answer": "C",
+          "explain": "b là hệ số góc: X tăng một đơn vị thì Y dự báo thay đổi b đơn vị, không tự khẳng định quan hệ nhân quả.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 268,
+            "question": 267
+          }
+        },
+        {
+          "id": "xstk-268",
+          "q": "R²=0,64 có ý nghĩa gì?",
+          "options": [
+            "36% biến thiên của Y được giải thích",
+            "64% biến thiên của Y được giải thích bởi X trong mô hình",
+            "r bằng 0,64 chắc chắn",
+            "Y tăng 64 đơn vị"
+          ],
+          "answer": "B",
+          "explain": "R²=0,64 nghĩa là mô hình giải thích 64% tổng biến thiên quan sát của Y; còn 36% chưa được giải thích bởi mô hình.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 269,
+            "question": 268
+          }
+        },
+        {
+          "id": "xstk-269",
+          "q": "Phương trình Y=8,5+0,4X. Khi X=6, Y dự báo bằng bao nhiêu?",
+          "options": [
+            "10,9",
+            "8,9",
+            "11,3",
+            "2,4"
+          ],
+          "answer": "A",
+          "explain": "Ŷ=8,5+0,4×6=8,5+2,4=10,9.",
+          "tags": [
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 270,
+            "question": 269
+          }
+        },
+        {
+          "id": "xstk-270",
+          "q": "Nguyên tắc sử dụng mô hình hồi quy nào là đúng?",
+          "options": [
+            "Luôn dự báo được mọi giá trị X",
+            "R² thấp vẫn cho dự báo tuyệt đối",
+            "Không cần kiểm tra p của hệ số b",
+            "Không suy rộng dự báo ra ngoài khoảng X đã nghiên cứu"
+          ],
+          "answer": "D",
+          "explain": "Ngoại suy vượt miền X đã quan sát có thể sai vì quan hệ tuyến tính chưa được kiểm chứng ngoài miền đó.",
+          "tags": [
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 271,
+            "question": 270
+          }
+        },
+        {
+          "id": "xstk-271",
+          "q": "Phát biểu sau đây Đúng hay Sai: “H0 thường phát biểu không có sự khác biệt hoặc can thiệp không có hiệu quả.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. H₀ thường là giả thuyết không có khác biệt hoặc hiệu ứng bằng 0.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 272,
+            "question": 271
+          }
+        },
+        {
+          "id": "xstk-272",
+          "q": "Phát biểu sau đây Đúng hay Sai: “H1 luôn phát biểu không có sự khác biệt.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. H₁ thường phát biểu có khác biệt hoặc có hiệu ứng, tùy câu hỏi nghiên cứu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 273,
+            "question": 272
+          }
+        },
+        {
+          "id": "xstk-273",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu p<0,05 thì bác bỏ H0 theo quy tắc của giáo trình.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng theo quy tắc đề bài: p<0,05 thì bác bỏ H₀ ở mức ý nghĩa 5%.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 274,
+            "question": 273
+          }
+        },
+        {
+          "id": "xstk-274",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu p≥0,05 thì chưa đủ cơ sở bác bỏ H0.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng theo quy tắc đề bài. Chưa bác bỏ H₀ không đồng nghĩa chứng minh H₀ đúng.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 275,
+            "question": 274
+          }
+        },
+        {
+          "id": "xstk-275",
+          "q": "Phát biểu sau đây Đúng hay Sai: “p-value là xác suất H0 đúng tuyệt đối.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. p-value được tính với giả định H₀ đúng, không phải xác suất H₀ đúng.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 276,
+            "question": 275
+          }
+        },
+        {
+          "id": "xstk-276",
+          "q": "Phát biểu sau đây Đúng hay Sai: “p=0,002 cung cấp bằng chứng mạnh hơn chống lại H0 so với p=0,20.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng trong cùng bối cảnh kiểm định: p nhỏ hơn biểu thị dữ liệu ít phù hợp hơn với H₀; không đồng nghĩa hiệu ứng lớn hơn.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 277,
+            "question": 276
+          }
+        },
+        {
+          "id": "xstk-277",
+          "q": "Phát biểu sau đây Đúng hay Sai: “T-test áp dụng cho biến kết quả liên tục.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng trong phạm vi nhập môn của bộ câu hỏi: t-test thường dùng để so sánh trung bình của kết quả liên tục, với các giả định thích hợp.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 278,
+            "question": 277
+          }
+        },
+        {
+          "id": "xstk-278",
+          "q": "Phát biểu sau đây Đúng hay Sai: “T-test độc lập dùng cho hai nhóm bệnh nhân riêng biệt.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. T-test độc lập so sánh trung bình của hai nhóm quan sát độc lập.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 279,
+            "question": 278
+          }
+        },
+        {
+          "id": "xstk-279",
+          "q": "Phát biểu sau đây Đúng hay Sai: “T-test bắt cặp dùng cho cùng một nhóm đo ở hai thời điểm.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. T-test bắt cặp phân tích chênh lệch trong cùng người hoặc các cặp đã ghép.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 280,
+            "question": 279
+          }
+        },
+        {
+          "id": "xstk-280",
+          "q": "Phát biểu sau đây Đúng hay Sai: “So sánh tỷ lệ tử vong giữa hai phác đồ nên dùng T-test.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Tử vong là biến phân loại; thường dùng χ² hoặc Fisher để so sánh tỷ lệ giữa nhóm độc lập.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 281,
+            "question": 280
+          }
+        },
+        {
+          "id": "xstk-281",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Kiểm định Chi bình phương phù hợp để so sánh hai tỷ lệ.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng với các nhóm độc lập và điều kiện tần số kỳ vọng phù hợp. Nếu dữ liệu phân loại bắt cặp thì cần phương pháp khác như McNemar.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 282,
+            "question": 281
+          }
+        },
+        {
+          "id": "xstk-282",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Khi tần số kỳ vọng nhỏ dưới 5, có thể cần dùng Fisher chính xác.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Tần số kỳ vọng quá nhỏ có thể làm xấp xỉ χ² kém, đặc biệt trong bảng 2×2.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 283,
+            "question": 282
+          }
+        },
+        {
+          "id": "xstk-283",
+          "q": "Phát biểu sau đây Đúng hay Sai: “T-test bắt cặp thường giúp kiểm soát khác biệt cơ địa vì đo trên cùng người.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. So sánh thay đổi trong cùng người giúp loại bỏ những khác biệt cá nhân ổn định theo thời gian.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 284,
+            "question": 283
+          }
+        },
+        {
+          "id": "xstk-284",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Hệ số Pearson r chỉ dùng khi cả hai biến là biến liên tục.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai nếu hiểu chữ “chỉ” một cách tuyệt đối. Pearson áp dụng cho biến số có phương sai khác 0, không bắt buộc cả hai liên tục; ví dụ biến nhị phân mã hóa 0/1 với biến liên tục cho tương quan điểm–nhị phân, là trường hợp của Pearson. Excel đánh dấu Đúng theo cách giới thiệu giản lược.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 285,
+            "question": 284
+          }
+        },
+        {
+          "id": "xstk-285",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Hệ số r luôn nằm từ -1 đến +1.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng khi r xác định, tức hai biến đều có phương sai khác 0: −1≤r≤1.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 286,
+            "question": 285
+          }
+        },
+        {
+          "id": "xstk-286",
+          "q": "Phát biểu sau đây Đúng hay Sai: “r>0 biểu thị tương quan nghịch.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. r>0 biểu thị tương quan thuận.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 287,
+            "question": 286
+          }
+        },
+        {
+          "id": "xstk-287",
+          "q": "Phát biểu sau đây Đúng hay Sai: “r<0 biểu thị tương quan nghịch.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. r<0 biểu thị tương quan nghịch.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 288,
+            "question": 287
+          }
+        },
+        {
+          "id": "xstk-288",
+          "q": "Phát biểu sau đây Đúng hay Sai: “|r| càng gần 1 thì mối liên hệ tuyến tính càng chặt.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. |r| càng gần 1 thì liên hệ tuyến tính càng chặt; vẫn cần kiểm tra ngoại lai và đồ thị.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 289,
+            "question": 288
+          }
+        },
+        {
+          "id": "xstk-289",
+          "q": "Phát biểu sau đây Đúng hay Sai: “r=0 khẳng định không có bất kỳ mối liên hệ nào giữa hai biến.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. r=0 chỉ nói không có tương quan tuyến tính, vẫn có thể tồn tại quan hệ phi tuyến.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 290,
+            "question": 289
+          }
+        },
+        {
+          "id": "xstk-290",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Tương quan có ý nghĩa thống kê đồng nghĩa chắc chắn có quan hệ nhân quả.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Tương quan có thể do nhiễu, nguyên nhân chung hoặc chiều tác động khác; không tự chứng minh nhân quả.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 291,
+            "question": 290
+          }
+        },
+        {
+          "id": "xstk-291",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu r=0,58 thì mức tương quan được xếp trung bình theo ngưỡng của giáo trình.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng theo ngưỡng của bộ câu hỏi. |0,58| thuộc mức trung bình.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 292,
+            "question": 291
+          }
+        },
+        {
+          "id": "xstk-292",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu r=-0,82 thì đây là tương quan nghịch mạnh.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng theo ngưỡng của bộ câu hỏi. Dấu âm chỉ chiều nghịch, độ lớn 0,82 chỉ mức mạnh.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 293,
+            "question": 292
+          }
+        },
+        {
+          "id": "xstk-293",
+          "q": "Phát biểu sau đây Đúng hay Sai: “p của hệ số r nhỏ hơn 0,05 cho biết tương quan có ý nghĩa thống kê.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng với H₀:ρ=0 và điều kiện kiểm định phù hợp: p<0,05 cho ý nghĩa thống kê ở mức 5%.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 294,
+            "question": 293
+          }
+        },
+        {
+          "id": "xstk-294",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Phương trình hồi quy tuyến tính đơn có dạng Y=a+bX.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Mô hình tuyến tính đơn viết Y=a+bX+ε; phương trình dự báo là Ŷ=a+bX như đề nêu.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 295,
+            "question": 294
+          }
+        },
+        {
+          "id": "xstk-295",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Trong phương trình Y=a+bX, b là giá trị dự báo Y khi X=0.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. a là giá trị Y dự báo khi X=0; b là hệ số góc.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 296,
+            "question": 295
+          }
+        },
+        {
+          "id": "xstk-296",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Hệ số b cho biết Y thay đổi trung bình bao nhiêu khi X tăng một đơn vị.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Trong mô hình tuyến tính, một đơn vị tăng của X đi kèm thay đổi trung bình dự báo b đơn vị của Y.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 297,
+            "question": 296
+          }
+        },
+        {
+          "id": "xstk-297",
+          "q": "Phát biểu sau đây Đúng hay Sai: “R² cho biết tỷ lệ biến thiên của Y được giải thích bởi X.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng với hồi quy tuyến tính có hệ số chặn theo định nghĩa thông thường: R² là tỷ lệ biến thiên quan sát của Y được mô hình giải thích.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 298,
+            "question": 297
+          }
+        },
+        {
+          "id": "xstk-298",
+          "q": "Phát biểu sau đây Đúng hay Sai: “R²=0,64 nghĩa là 64% biến thiên của Y được mô hình giải thích.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. 0,64=64% biến thiên Y được giải thích bởi mô hình, không phải bảo đảm dự báo đúng 64% trường hợp.",
+          "tags": [
+            "dung-sai",
+            "bai-tap"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 299,
+            "question": 298
+          }
+        },
+        {
+          "id": "xstk-299",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Nếu p của hệ số b lớn hơn 0,05 thì vẫn có thể khẳng định X tác động tuyến tính có ý nghĩa.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "B",
+          "explain": "Sai. Với ngưỡng 0,05, p>0,05 chưa đủ bằng chứng kết luận hệ số góc khác 0 có ý nghĩa thống kê; cũng không chứng minh không có liên hệ.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 300,
+            "question": 299
+          }
+        },
+        {
+          "id": "xstk-300",
+          "q": "Phát biểu sau đây Đúng hay Sai: “Không nên dùng phương trình hồi quy để dự báo quá xa ngoài khoảng dữ liệu đã nghiên cứu.”",
+          "options": [
+            "Đúng",
+            "Sai"
+          ],
+          "answer": "A",
+          "explain": "Đúng. Ngoại suy xa miền dữ liệu có thể thiếu tin cậy vì quan hệ ngoài miền quan sát chưa được xác minh.",
+          "tags": [
+            "dung-sai",
+            "ly-thuyet"
+          ],
+          "source": {
+            "file": "4. Bộ câu hỏi XSTK (SV).xlsx",
+            "sheet": "Mẫu",
+            "row": 301,
+            "question": 300
+          }
+        }
+      ]
+    }
+  ]
+}
