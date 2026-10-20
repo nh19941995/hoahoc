@@ -47,6 +47,11 @@ textarea{width:100%;min-height:96px;font:13px/1.4 ui-monospace,Menlo,monospace;b
 .score{font-size:2rem;font-weight:700;line-height:1.2}
 .bd-ok{border-left:5px solid var(--ok)}.bd-bad{border-left:5px solid var(--bad)}.bd-na{border-left:5px solid var(--mut)}
 .tw{overflow-x:auto}
+.slot{position:relative;z-index:1}
+.kiss{position:absolute;top:-70px;line-height:1;background:none;pointer-events:none;user-select:none;will-change:transform;animation:kfall linear forwards}
+@keyframes kfall{0%{transform:translate3d(0,0,0) rotate(var(--r0))}100%{transform:translate3d(var(--dx),calc(100vh + 140px),0) rotate(var(--r1))}}
+.love{font-size:1.55rem;font-weight:800;margin:10px 0 4px;color:#ff6b9d;text-shadow:0 0 14px #ff6b9d88;animation:hb .9s ease-in-out infinite alternate}
+@keyframes hb{from{transform:scale(1)}to{transform:scale(1.09)}}
 .exp{margin-top:10px;padding:10px 12px;border-left:4px solid var(--ac);background:var(--acbg);border-radius:8px;font-size:.95rem;line-height:1.5;white-space:pre-line}
 .types{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media(min-width:560px){.types{grid-template-columns:repeat(4,1fr)}}
@@ -72,7 +77,7 @@ input[type=range]{width:100%;min-height:36px;accent-color:var(--ac)}
 .pop{animation:pp .25s}@keyframes pp{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
 .toast{position:fixed;left:50%;bottom:calc(118px + env(safe-area-inset-bottom,0px));background:var(--ac);color:#fff;padding:9px 16px;border-radius:22px;z-index:40;font-weight:600;animation:tst 1.7s forwards}
 @keyframes tst{0%{opacity:0;transform:translate(-50%,12px)}15%{opacity:1;transform:translate(-50%,0)}85%{opacity:1}100%{opacity:0}}
-@media (prefers-reduced-motion:reduce){.pop,.reel.spin,.slot.gold{animation:none}}
+@media (prefers-reduced-motion:reduce){.pop,.reel.spin,.slot.gold,.love,.kiss{animation:none}}
 </style>
 </head>
 <body>
@@ -177,6 +182,7 @@ function home(msg){
   if(msg)h+=`<div class="card">${esc(msg)}</div>`;
   if(ss)h+=`<div class="card"><div>Bạn đang làm dở một bài (${Object.keys(ss.ans).length}/${ss.ids.length} câu đã chọn).</div><div class="row" style="margin-top:8px"><button class="p" id="resume">Tiếp tục</button></div></div>`;
   {const xp=S.xp||0,td=ymd(new Date()),yd=ymd(new Date(Date.now()-864e5)),sn=S.dy&&(S.dy.last===td||S.dy.last===yd)?S.dy.n:0;h+=`<div class="card"><div class="row" style="justify-content:space-between;flex-wrap:nowrap"><b>Cấp ${Math.floor(xp/300)+1}</b><span>🔥 ${sn} ngày liên tiếp</span></div><div class="prog" style="margin:8px 0 4px"><i style="width:${(xp%300)/3}%"></i></div><div class="mut">${xp%300}/300 XP đến cấp tiếp theo</div></div>`}
+  if(ALL.length&&ALL.every(q=>S.stats[q.id]&&S.stats[q.id].ok>0))h+=`<div class="card" style="border-left:5px solid #ff6b9d"><b>💖 Vợ iu đã làm đúng mọi câu hỏi ít nhất 1 lần của môn học ${esc(SUBJ[cur].title)}.</b></div>`;
   h+=`<h2>Chọn môn</h2><div class="modes">`+SUBJ.map((s,i)=>`<button class="${i===cur?"p":""}" data-s="${i}"><b>${esc(s.title)}</b><span>${s.chs.reduce((n,c)=>n+c.q.length,0)} câu · ${s.chs.length} bài</span></button>`).join("")+`</div>`;
   h+=`<h2>Chọn bài</h2><div class="card">`+CH.map((c,i)=>`<label class="chk"><input type="checkbox" data-c="${i}" ${sel.includes(i)?"checked":""}><span>${esc(c.n)} <span class="mut">(${c.q.filter(q=>isT(q,ty)).length} câu)</span></span></label>`).join("")+`</div>`;
   h+=`<h2>Chọn dạng câu hỏi</h2><div class="card"><div class="types">`+TYPES.map(([k,l])=>{const n=ALL.filter(q=>sel.includes(q.ch)&&isT(q,k)).length;return `<button class="${k===ty?"p":""}" data-t="${k}" aria-pressed="${k===ty}" ${n||k===ty?"":"disabled"}>${l} <span style="opacity:.8">(${n})</span></button>`}).join("")+`</div><div class="mut" style="margin-top:8px">Một câu có thể thuộc nhiều dạng, ví dụ câu đúng sai về lý thuyết.</div></div>`;
@@ -223,7 +229,7 @@ function quiz(){
   const sub=ss.sub,tot=ss.ids.length;let ok=0;
   if(sub)ss.ids.forEach(id=>{if(ss.ans[id]===BY[id].a)ok++});
   let h=`<h1>${esc(ss.mode)}</h1><div class="mut">${esc(BY[ss.ids[0]].sub.title)}</div>`;
-  if(sub)h+=`<div class="card"><div class="score">${ok}/${tot} <span class="mut" style="font-size:1rem">(${Math.round(100*ok/tot)}%)</span></div><div><b>${ss.rec?"🏆 Kỷ lục mới! ":""}${tier(ok/tot)}</b></div><div class="mut">Câu bỏ trống được tính là sai. Kéo xuống để xem đáp án từng câu.</div></div>`;
+  if(sub)h+=`<div class="card"><div class="score">${ok}/${tot} <span class="mut" style="font-size:1rem">(${Math.round(100*ok/tot)}%)</span></div><div><b>${ss.rec?"🏆 Kỷ lục mới! ":""}${tier(ok/tot)}</b></div>${ss.love?`<div style="margin:4px 0;font-weight:700;color:#ff6b9d">💖 Vợ iu anh giỏi quá!</div>`:""}<div class="mut">Câu bỏ trống được tính là sai. Kéo xuống để xem đáp án từng câu.</div></div>`;
   h+=ss.ids.map((id,k)=>{const q=BY[id],a=ss.ans[id];
     const cls=sub?(a===undefined?"bd-na":a===q.a?"bd-ok":"bd-bad"):"";
     return `<div class="card ${cls}"><div class="tag">${esc(short(q.sub.chs[q.ch]))} · Câu ${q.no} · ${k+1}/${tot}${tl(q)}${sub?(a===undefined?" · Chưa chọn":a===q.a?" · Đúng":" · Sai"):""}</div><div class="q">${esc(q.t)}</div>`+
@@ -241,7 +247,11 @@ function quiz(){
     ss.ids.forEach(id=>{const a=ss.ans[id];if(a===undefined)return;const s=S.stats[id]||(S.stats[id]={n:0,ok:0,last:0});s.n++;if(a===BY[id].a){s.ok++;s.last=1}else s.last=0});
     let c=0;ss.ids.forEach(id=>{if(ss.ans[id]===BY[id].a)c++});
     const sb=BY[ss.ids[0]].sub.id;const pv=S.hist.filter(x=>x.sub===sb&&x.tot>=10).map(x=>x.ok/x.tot);const rec=tot>=10&&c>0&&(!pv.length||c/tot>Math.max(...pv));S.hist.push({t:Date.now(),mode:ss.mode,tot:tot,ok:c,sub:sb});if(S.hist.length>200)S.hist=S.hist.slice(-200);
-    const rw=reward(c,tot,rec);ss.sub=true;ss.rec=rec;save();quiz();scrollTo(0,0);showResult(c,tot,rec,rw)};
+    const sj=BY[ss.ids[0]].sub,allq=[].concat(...sj.chs.map(x=>x.q));
+    const full=allq.every(q=>S.stats[q.id]&&S.stats[q.id].ok>0);
+    const love=full&&!(S.pf&&S.pf[sb])?"Vợ iu đã làm đúng mọi câu hỏi ít nhất 1 lần của môn học "+sj.title:"";
+    if(love){S.pf=S.pf||{};S.pf[sb]=1}
+    const rw=reward(c,tot,rec);ss.sub=true;ss.rec=rec;ss.love=love;save();quiz();scrollTo(0,0);showResult(c,tot,rec,rw,love)};
   else document.getElementById("redo").onclick=()=>{const w=ss.ids.filter(id=>ss.ans[id]!==BY[id].a);S.sess={mode:"Làm lại câu sai",ids:w,ans:{},sub:false};save();quiz();scrollTo(0,0)};
 }
 const ymd=d=>d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();
@@ -264,22 +274,57 @@ function confetti(n,dur){
   const t0=performance.now();
   (function f(t){x.clearRect(0,0,cv.width,cv.height);P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.04;p.a+=p.va;x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillStyle=p.c;x.fillRect(-p.r,-p.r/2,p.r*2,p.r);x.restore()});if(t-t0<dur)requestAnimationFrame(f);else cv.remove()})(t0);
 }
-function showResult(c,tot,rec,rw){
-  const p=c/tot,fin=rec?"💎":p>=1?"🏆":p>=.9?"⭐":p>=.5?"🍀":"📘";
+function fireworks(host){
+  const cv=document.createElement("canvas");cv.style.cssText="position:absolute;inset:0;width:100%;height:100%;pointer-events:none";host.insertBefore(cv,host.firstChild);
+  const dpr=Math.min(window.devicePixelRatio||1,2),W=cv.width=Math.round(innerWidth*dpr),H=cv.height=Math.round(innerHeight*dpr),x=cv.getContext("2d");
+  let R=[],P=[],run=true,next=0;
+  const burst=(px,py)=>{const h=Math.random()*360,n=60+(Math.random()*50|0),heart=Math.random()<.25;
+    for(let i=0;i<n;i++){let vx,vy;
+      if(heart){const t=i/n*Math.PI*2;vx=16*Math.pow(Math.sin(t),3)*.42;vy=-(13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t))*.42}
+      else{const a=Math.random()*Math.PI*2,sp=1+Math.random()*5.5;vx=Math.cos(a)*sp;vy=Math.sin(a)*sp}
+      P.push({x:px,y:py,vx:vx*dpr,vy:vy*dpr,l:1,d:.011+Math.random()*.012,h:(heart?335:h)+Math.random()*40,r:(1.4+Math.random()*1.6)*dpr})}};
+  function f(t){
+    if(!run)return;
+    if(t>next){R.push({x:(.1+Math.random()*.8)*W,y:H,vy:-(11+Math.random()*3)*dpr,ty:(.15+Math.random()*.35)*H});next=t+300+Math.random()*450}
+    x.globalCompositeOperation="destination-out";x.fillStyle="rgba(0,0,0,.18)";x.fillRect(0,0,W,H);x.globalCompositeOperation="lighter";
+    R=R.filter(r=>{r.y+=r.vy;r.vy*=.985;x.fillStyle="#fff";x.beginPath();x.arc(r.x,r.y,2*dpr,0,7);x.fill();
+      if(r.y<=r.ty||r.vy>-1.5*dpr){burst(r.x,r.y);return false}return true});
+    P=P.filter(p=>{p.x+=p.vx;p.y+=p.vy;p.vx*=.985;p.vy=p.vy*.985+.05*dpr;p.l-=p.d;if(p.l<=0)return false;
+      x.fillStyle="hsla("+p.h+",100%,60%,"+p.l+")";x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill();return true});
+    requestAnimationFrame(f)}
+  requestAnimationFrame(f);
+  return()=>{run=false;cv.remove()};
+}
+function kissRain(host){
+  const box=document.createElement("div");box.style.cssText="position:absolute;inset:0;overflow:hidden;pointer-events:none";host.insertBefore(box,host.firstChild);
+  let run=true;
+  const drop=()=>{if(!run||document.hidden)return;
+    const im=document.createElement("span"),sz=24+Math.random()*34;
+    im.textContent="😘";im.className="kiss";
+    im.style.cssText="left:"+(Math.random()*100)+"%;font-size:"+sz+"px;animation-duration:"+(3.2+Math.random()*3.2)+"s;--dx:"+((Math.random()-.5)*120)+"px;--r0:"+((Math.random()-.5)*50)+"deg;--r1:"+((Math.random()-.5)*400)+"deg";
+    im.onanimationend=()=>im.remove();box.appendChild(im)};
+  for(let i=0;i<14;i++)setTimeout(drop,i*90);
+  const t=setInterval(drop,110);
+  return()=>{run=false;clearInterval(t);box.remove()};
+}
+function showResult(c,tot,rec,rw,love){
+  const p=c/tot,fin=love?"❤️":rec?"💎":p>=1?"🏆":p>=.9?"⭐":p>=.5?"🍀":"📘";
   const fx=cfg().fx!==false&&!matchMedia("(prefers-reduced-motion: reduce)").matches;
   const lab=(rec?"🏆 Kỷ lục mới! ":"")+tier(p);
   const ov=document.createElement("div");ov.className="ov";
   ov.innerHTML='<div class="slot'+(p>=.9||rec?" gold":"")+'"><div class="mut">KẾT QUẢ</div><div class="reels">'+'<div class="reel spin">🎰</div>'.repeat(3)+'</div><div class="sc" id="sc">0/'+tot+'</div><div id="sl"></div><button class="p" id="ovx" style="width:100%;margin-top:14px">Xem đáp án</button></div>';
+  if(love)ov.style.background="rgba(8,6,20,.84)";
   document.body.appendChild(ov);
-  const R=[...ov.querySelectorAll(".reel")],pool=["🍒","🔔","7️⃣","🍀","⭐","💎","🏆","📘"],T=[];let done=false;
+  const R=[...ov.querySelectorAll(".reel")],pool=["🍒","🔔","7️⃣","🍀","⭐","💎","🏆","📘"],T=[];let done=false,stopFW=null;
   const end=()=>{if(done)return;done=true;T.forEach(t=>{clearTimeout(t);clearInterval(t)});
     R.forEach(r=>{r.textContent=fin;r.classList.remove("spin")});
     document.getElementById("sc").textContent=c+"/"+tot;
-    document.getElementById("sl").innerHTML='<div class="lab">'+esc(lab)+'</div><div class="mut">+'+rw.xp+' XP'+(rw.lvUp?" · Lên cấp "+rw.lv+"!":"")+(rw.newDay?" · 🔥 Chuỗi "+rw.streak+" ngày":"")+'</div>';
+    document.getElementById("sl").innerHTML='<div class="lab">'+esc(lab)+'</div><div class="mut">'+(rw.demo?"Chạy thử bằng phím tắt · không lưu gì cả":"+"+rw.xp+" XP"+(rw.lvUp?" · Lên cấp "+rw.lv+"!":"")+(rw.newDay?" · 🔥 Chuỗi "+rw.streak+" ngày":""))+'</div>'+(love?'<div class="love">Vợ iu anh giỏi quá! 💖</div>'+(typeof love==="string"?'<div class="mut">'+esc(love)+'</div>':''):'');
     play(rec?"ky-luc":c===tot?"tuyet-doi":p>=.9?"diem-cao":p>=.5?"dat":"chua-dat");
-    if(fx&&p>=.5)confetti(rec||p>=1?240:p>=.9?150:70,rec||p>=1?3500:2500)};
+    if(fx&&p>=.5)confetti(rec||p>=1?240:p>=.9?150:70,rec||p>=1?3500:2500);
+    if(love&&fx){const a=kissRain(ov),b=fireworks(ov);stopFW=()=>{a();b()}}};
   ov.onclick=e=>{if(e.target.id!=="ovx")end()};
-  document.getElementById("ovx").onclick=()=>{end();ov.remove()};
+  document.getElementById("ovx").onclick=()=>{end();if(stopFW)stopFW();ov.remove()};
   if(!fx){end();return}
   play("nop");
   T.push(setInterval(()=>R.forEach(r=>{if(!r.classList.contains("stop"))r.textContent=pool[Math.random()*pool.length|0]}),70));
@@ -288,12 +333,19 @@ function showResult(c,tot,rec,rw){
     if(i===2){let k=0;T.push(setInterval(()=>{k++;document.getElementById("sc").textContent=Math.round(c*k/10)+"/"+tot;if(k>=10)end()},50))}
   },ms)));
 }
+document.addEventListener("keydown",e=>{
+  if((e.ctrlKey||e.altKey||e.metaKey)&&(e.code==="Digit1"||e.key==="1")){
+    e.preventDefault();
+    if(document.querySelector(".ov"))return;
+    showResult(1,1,false,{xp:0,demo:true},"Vợ iu đã làm đúng mọi câu hỏi ít nhất 1 lần của môn học");
+  }
+});
 let screen="home";
 const AUD={};
 const cfg=()=>Object.assign({sound:true,vol:0.7,fx:true},S.set||{});
 function play(n,f){const c=cfg();if(!c.sound&&!f)return;try{let a=AUD[n];if(!a)a=AUD[n]=new Audio("am-thanh/"+n+".wav");a.volume=c.vol;a.currentTime=0;const p=a.play();if(p&&p.catch)p.catch(()=>{})}catch(e){}}
 document.addEventListener("pointerdown",()=>{["chon","bat-dau","nop","dat","chua-dat","diem-cao","tuyet-doi","ky-luc"].forEach(n=>{try{const x=AUD[n]||(AUD[n]=new Audio("am-thanh/"+n+".wav"));x.volume=0;const p=x.play();if(p&&p.then)p.then(()=>{x.pause();x.currentTime=0}).catch(()=>{})}catch(e){}})},{once:true});
-const tier=p=>p>=1?"Tuyệt đối!":p>=.9?"Rất tốt!":p>=.5?"Đạt yêu cầu.":"Cần cố gắng thêm.";
+const tier=p=>p>=1?"Tuyệt đối điện ảnh!":p>=.9?"Rất tốt!":p>=.5?"Đạt yêu cầu.":"Cần cố gắng thêm.";
 function settings(msg){
   screen="set";
   const c=cfg(),g=id=>document.getElementById(id);
@@ -302,7 +354,7 @@ function settings(msg){
   h+=`<h2>Âm thanh và hiệu ứng</h2><div class="card"><label class="chk"><input type="checkbox" id="snd" ${c.sound?"checked":""}><span>Bật âm thanh (chọn đáp án, nộp bài, điểm số, kỷ lục)</span></label>
   <label class="chk"><input type="checkbox" id="fx" ${c.fx?"checked":""}><span>Hiệu ứng động (quay số, pháo giấy, thông báo tiến độ)</span></label>
   <div style="margin:8px 0">Âm lượng: <b id="vv">${Math.round(c.vol*100)}%</b></div><input type="range" id="vol" min="0" max="100" value="${Math.round(c.vol*100)}">
-  <div class="mut" style="margin:10px 0 6px">Nghe thử:</div><div class="row">`+[["chon","Chọn"],["bat-dau","Bắt đầu"],["nop","Nộp bài"],["chua-dat","Chưa đạt"],["dat","Đạt"],["diem-cao","Điểm cao"],["tuyet-doi","Tuyệt đối"],["ky-luc","Kỷ lục"]].map(x=>`<button style="flex:1 1 90px" data-p="${x[0]}">${x[1]}</button>`).join("")+`</div></div>`;
+  <div class="mut" style="margin:10px 0 6px">Nghe thử:</div><div class="row">`+[["chon","Chọn"],["bat-dau","Bắt đầu"],["nop","Nộp bài"],["chua-dat","Chưa đạt"],["dat","Đạt"],["diem-cao","Điểm cao"],["tuyet-doi","Tuyệt đối điện ảnh"],["ky-luc","Kỷ lục"]].map(x=>`<button style="flex:1 1 90px" data-p="${x[0]}">${x[1]}</button>`).join("")+`</div></div>`;
   h+=`<h2>Môn học (file JSON)</h2><div class="card"><div class="mut">Mỗi file JSON trong thư mục mon-hoc là một môn, được nạp tự động khi mở trang. Bạn cũng có thể nạp tay nhiều file cùng lúc (chỉ lưu trên thiết bị này); file trùng mã môn sẽ thay thế môn cũ.</div>`+
   SUBJ.map(s=>`<div style="margin-top:6px">• <b>${esc(s.title)}</b> <span class="mut">(${esc(s.id)} · ${s.chs.reduce((n,c)=>n+c.q.length,0)} câu · ${s.src})</span></div>`).join("")+
   `<div class="row" style="margin-top:10px"><button id="pick">Chọn file JSON (nhiều file)</button><button id="useBase" ${CUS.length?"":"disabled"}>Bỏ file nạp tay</button></div>
@@ -322,8 +374,8 @@ function settings(msg){
   g("qLoad").onclick=()=>loadText(g("qd").value);
   g("qOut").onclick=()=>{g("qd").value=JSON.stringify(SUBJ[cur].d,null,1);g("qd").select()};
   g("useBase").onclick=()=>{try{localStorage.removeItem(DKEY)}catch(e){}rebuild();save();settings("Đã bỏ các file nạp tay.")};
-  g("ex").onclick=()=>{g("bk").value=JSON.stringify({stats:S.stats,hist:S.hist,xp:S.xp||0,dy:S.dy||null});g("bk").select()};
-  g("im").onclick=()=>{try{const d=JSON.parse(g("bk").value);if(!d||typeof d.stats!=="object")throw 0;const st={};for(const k in d.stats){const v=d.stats[k];st[mig(k)]={n:+v.n||0,ok:+v.ok||0,last:v.last===1?1:0}}S.stats=st;S.hist=Array.isArray(d.hist)?d.hist.slice(-200).map(x=>({t:+x.t||0,mode:String(x.mode||"").slice(0,30),tot:+x.tot||1,ok:+x.ok||0,sub:String(x.sub||"")})):[];S.xp=+d.xp||0;S.dy=d.dy&&typeof d.dy==="object"?{last:String(d.dy.last||""),n:+d.dy.n||0}:null;save();settings("Đã nhập dữ liệu tiến độ.")}catch(e){settings("Dữ liệu tiến độ không hợp lệ.")}};
+  g("ex").onclick=()=>{g("bk").value=JSON.stringify({stats:S.stats,hist:S.hist,xp:S.xp||0,dy:S.dy||null,pf:S.pf||{}});g("bk").select()};
+  g("im").onclick=()=>{try{const d=JSON.parse(g("bk").value);if(!d||typeof d.stats!=="object")throw 0;const st={};for(const k in d.stats){const v=d.stats[k];st[mig(k)]={n:+v.n||0,ok:+v.ok||0,last:v.last===1?1:0}}S.stats=st;S.hist=Array.isArray(d.hist)?d.hist.slice(-200).map(x=>({t:+x.t||0,mode:String(x.mode||"").slice(0,30),tot:+x.tot||1,ok:+x.ok||0,sub:String(x.sub||"")})):[];S.xp=+d.xp||0;S.pf=d.pf&&typeof d.pf==="object"?d.pf:{};S.dy=d.dy&&typeof d.dy==="object"?{last:String(d.dy.last||""),n:+d.dy.n||0}:null;save();settings("Đã nhập dữ liệu tiến độ.")}catch(e){settings("Dữ liệu tiến độ không hợp lệ.")}};
   let armed=false;g("rs").onclick=()=>{if(armed){const c=S.cur,st=S.set;S=fresh();S.cur=c;S.set=st;save();settings("Đã xóa toàn bộ tiến độ.")}else{armed=true;g("rs").textContent="Bấm lần nữa để xác nhận"}};
 }
 function empty(msg){
