@@ -47,6 +47,7 @@ textarea{width:100%;min-height:96px;font:13px/1.4 ui-monospace,Menlo,monospace;b
 .score{font-size:2rem;font-weight:700;line-height:1.2}
 .bd-ok{border-left:5px solid var(--ok)}.bd-bad{border-left:5px solid var(--bad)}.bd-na{border-left:5px solid var(--mut)}
 .tw{overflow-x:auto}
+.exp{margin-top:10px;padding:10px 12px;border-left:4px solid var(--ac);background:var(--acbg);border-radius:8px;font-size:.95rem;line-height:1.5;white-space:pre-line}
 .types{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media(min-width:560px){.types{grid-template-columns:repeat(4,1fr)}}
 .types button{padding:10px 8px;text-align:center}
@@ -132,7 +133,7 @@ function rebuild(){
   CUS.forEach(d=>m.set(sid(d),{d,src:"file nạp tay"}));
   SUBJ=[...m].map(([id,v])=>{
     const s={id,d:v.d,src:v.src,title:v.d.title};
-    s.chs=v.d.chapters.map((c,i)=>({n:c.name,q:c.questions.map((q,j)=>({t:q.q,o:q.options.map(String),a:L.indexOf(String(q.answer).toUpperCase()),id:id+"|"+(q.id!=null?String(q.id):(i+1)+"-"+(j+1)),ch:i,no:j+1,tg:normTags(q),sub:s}))}));
+    s.chs=v.d.chapters.map((c,i)=>({n:c.name,q:c.questions.map((q,j)=>({t:q.q,o:q.options.map(String),a:L.indexOf(String(q.answer).toUpperCase()),id:id+"|"+(q.id!=null?String(q.id):(i+1)+"-"+(j+1)),ch:i,no:j+1,tg:normTags(q),e:q.explain?String(q.explain):"",sub:s}))}));
     return s});
   BY={};SUBJ.forEach(s=>s.chs.forEach(c=>c.q.forEach(q=>BY[q.id]=q)));
   if(!SUBJ.length){CH=[];ALL=[];return}
@@ -226,7 +227,7 @@ function quiz(){
   h+=ss.ids.map((id,k)=>{const q=BY[id],a=ss.ans[id];
     const cls=sub?(a===undefined?"bd-na":a===q.a?"bd-ok":"bd-bad"):"";
     return `<div class="card ${cls}"><div class="tag">${esc(short(q.sub.chs[q.ch]))} · Câu ${q.no} · ${k+1}/${tot}${tl(q)}${sub?(a===undefined?" · Chưa chọn":a===q.a?" · Đúng":" · Sai"):""}</div><div class="q">${esc(q.t)}</div>`+
-    q.o.map((o,i)=>{let c="opt";if(sub){if(i===q.a)c+=" ok";else if(i===a)c+=" bad"}else if(i===a)c+=" sel";return `<button class="${c}" data-q="${esc(id)}" data-i="${i}"><i>${L[i]}.</i><span>${esc(o)}</span></button>`}).join("")+`</div>`}).join("");
+    q.o.map((o,i)=>{let c="opt";if(sub){if(i===q.a)c+=" ok";else if(i===a)c+=" bad"}else if(i===a)c+=" sel";return `<button class="${c}" data-q="${esc(id)}" data-i="${i}"><i>${L[i]}.</i><span>${esc(o)}</span></button>`}).join("")+(sub&&q.e?`<div class="exp"><b>Giải thích:</b> ${esc(q.e)}</div>`:"")+`</div>`}).join("");
   const n=Object.keys(ss.ans).length;
   h+=sub?`<div class="bar"><div class="info">Kết quả: ${ok}/${tot}</div><div class="row"><button id="redo" ${ok===tot?"disabled":""}>Làm lại câu sai</button><button class="p" id="back">Về trang chính</button></div></div>`
   :`<div class="bar"><div class="prog"><i id="pg" style="width:${100*n/tot}%"></i></div><div class="info" id="cnt">Đã chọn ${n}/${tot}</div><div class="row"><button id="back">Thoát (lưu nháp)</button><button class="p" id="sub">Nộp bài</button></div></div>`;
