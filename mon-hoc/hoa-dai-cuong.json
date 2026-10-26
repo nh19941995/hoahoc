@@ -2674,6 +2674,720 @@
      ]
     }
    ]
+  },
+  {
+   "name": "Bài 7 – Phản ứng oxy hóa - khử và điện hóa",
+   "questions": [
+    {
+     "q": "Trong một ion đa nguyên tử, tổng số oxy hóa của tất cả các nguyên tử bằng điện tích của ion đó.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Với ion đa nguyên tử, tổng số oxy hóa của các nguyên tử bằng điện tích ion. Ví dụ SO₄²⁻: S (+6) + 4·O (−2) = −2.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Cho biết trong phản ứng: 4HNO₃(đặc, nóng) + Cu → Cu(NO₃)₂ + 2NO₂ + 2H₂O. HNO₃ chỉ đóng vai trò là chất oxy hóa.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Trong 4HNO₃ + Cu → Cu(NO₃)₂ + 2NO₂ + 2H₂O, chỉ 2 HNO₃ bị khử thành NO₂ (N: +5 → +4) nên đóng vai trò chất oxy hóa; 2 HNO₃ còn lại giữ nguyên số oxy hóa N = +5 trong Cu(NO₃)₂, đóng vai trò môi trường (tạo muối).",
+     "tags": [
+      "dung-sai",
+      "bai-tap"
+     ]
+    },
+    {
+     "q": "Phản ứng 2Fe³⁺ + Sn²⁺ → 2Fe²⁺ + Sn⁴⁺ xảy ra theo chiều nghịch ở điều kiện chuẩn và ở 25 °C. Cho E°(Fe³⁺/Fe²⁺) = +0,77 V và E°(Sn⁴⁺/Sn²⁺) = +0,15 V.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. E°pin = E°(Fe³⁺/Fe²⁺) − E°(Sn⁴⁺/Sn²⁺) = 0,77 − 0,15 = +0,62 V > 0 nên phản ứng tự xảy ra theo chiều thuận (Fe³⁺ oxy hóa Sn²⁺), không phải chiều nghịch.",
+     "tags": [
+      "dung-sai",
+      "bai-tap"
+     ]
+    },
+    {
+     "q": "Trong phương trình oxy hóa - khử đã cân bằng, tổng số electron nhường bằng tổng số electron nhận.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Phản ứng oxy hóa - khử tuân theo bảo toàn electron: tổng số electron chất khử nhường bằng tổng số electron chất oxy hóa nhận.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Không thể đo trực tiếp một thế điện cực đơn lẻ bằng vôn kế; thế điện cực được xác định tương đối so với điện cực tham chiếu.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Vôn kế chỉ đo được hiệu thế giữa hai điện cực, nên thế của một điện cực đơn lẻ chỉ xác định tương đối so với điện cực tham chiếu, thường là điện cực hydrogen chuẩn (quy ước E° = 0 V).",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Cặp oxy hóa/khử có thế khử chuẩn E° càng lớn thì dạng oxy hóa của cặp là chất oxy hóa càng yếu.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. E° càng lớn thì dạng oxy hóa của cặp càng dễ nhận electron, tức là chất oxy hóa càng mạnh (và dạng khử càng yếu).",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Trong pin Galvani, việc tách quá trình oxy hóa và khử ở hai điện cực cho phép electron đi qua mạch ngoài và tạo dòng điện.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Pin Galvani tách quá trình oxy hóa (anot) và quá trình khử (catot) ra hai điện cực riêng, nên electron buộc phải đi qua mạch ngoài, tạo thành dòng điện.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Trong pin Galvani đang phát điện, electron đi qua dung dịch điện ly từ anot đến catot.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Electron đi qua dây dẫn ở mạch ngoài, từ anot sang catot. Trong dung dịch điện ly, dòng điện được tải bởi sự chuyển động của các ion, không phải electron.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Ở điều kiện chuẩn, nếu E° của pin theo chiều phản ứng đã viết lớn hơn 0 thì ΔG° của phản ứng theo chiều đó nhỏ hơn 0.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. ΔG° = −nFE°. Nếu E° > 0 thì ΔG° < 0, phản ứng tự diễn ra theo chiều đã viết ở điều kiện chuẩn.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Trong điện phân, cation chuyển về anot còn anion chuyển về catot.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Trong điện phân, cation chuyển về catot (cực âm) và anion chuyển về anot (cực dương). Nội dung phát biểu bị đảo ngược.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Trong pin Galvani đang phát điện, anot luôn là cực dương còn catot luôn là cực âm.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Trong pin Galvani đang phát điện, anot (xảy ra quá trình oxy hóa) là cực âm, còn catot (xảy ra quá trình khử) là cực dương. Phát biểu đã đảo dấu hai cực.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi đảo chiều một phản ứng oxy hóa - khử, giá trị E° của phản ứng đổi dấu và hằng số cân bằng K của phản ứng mới bằng nghịch đảo của K ban đầu.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Đảo chiều phản ứng thì ΔG° đổi dấu nên E° đổi dấu, đồng thời K′ = 1/K.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Ở điều kiện chuẩn và xét về mặt nhiệt động, dựa vào dãy thế khử chuẩn, nhận định nào sau đây đúng?",
+     "options": [
+      "Dạng oxy hóa của cặp có E° thấp có xu hướng oxy hóa dạng khử của cặp có E° cao.",
+      "Dạng oxy hóa của cặp có E° cao có xu hướng oxy hóa dạng khử của cặp có E° thấp.",
+      "Dạng khử của cặp có E° cao có xu hướng oxy hóa dạng khử của cặp có E° thấp.",
+      "Hai cặp oxy hóa - khử chỉ có thể phản ứng khi chúng có cùng giá trị E°."
+     ],
+     "answer": "B",
+     "explain": "B. Dạng oxy hóa của cặp có E° cao là chất oxy hóa mạnh hơn nên có xu hướng oxy hóa dạng khử của cặp có E° thấp. Hai cặp phản ứng được khi E°pin = E°cao − E°thấp > 0, không cần có cùng E°.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Trong phản ứng 2Fe³⁺ + Sn²⁺ → 2Fe²⁺ + Sn⁴⁺, chất oxy hóa là:",
+     "options": [
+      "Fe³⁺.",
+      "Fe²⁺.",
+      "Sn⁴⁺.",
+      "Sn²⁺."
+     ],
+     "answer": "A",
+     "explain": "A. Trong 2Fe³⁺ + Sn²⁺ → 2Fe²⁺ + Sn⁴⁺, Fe³⁺ nhận electron (+3 → +2) nên là chất oxy hóa; Sn²⁺ nhường electron (+2 → +4) nên là chất khử.",
+     "tags": [
+      "bai-tap"
+     ]
+    },
+    {
+     "q": "Trong môi trường acid, phương trình MnO₄⁻ + Fe²⁺ + H⁺ → Mn²⁺ + Fe³⁺ + H₂O được cân bằng với hệ số tối giản của H⁺ là:",
+     "options": [
+      "5.",
+      "6.",
+      "8.",
+      "10."
+     ],
+     "answer": "C",
+     "explain": "C. Bán phản ứng: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O và Fe²⁺ → Fe³⁺ + e⁻ (nhân 5). Phương trình: MnO₄⁻ + 5Fe²⁺ + 8H⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O, hệ số H⁺ bằng 8.",
+     "tags": [
+      "bai-tap"
+     ]
+    },
+    {
+     "q": "Trong công thức khối lượng đương lượng E = M/n của một chất trong phản ứng oxy hóa - khử, n biểu thị:",
+     "options": [
+      "Số mol proton trao đổi bởi 1 mol chất trong phản ứng.",
+      "Số mol ion tạo thành từ 1 mol chất trong dung dịch.",
+      "Số mol nguyên tử có trong 1 mol chất đang xét.",
+      "Số mol electron trao đổi bởi 1 mol chất theo phản ứng."
+     ],
+     "answer": "D",
+     "explain": "D. Trong E = M/n, n là số mol electron trao đổi bởi 1 mol chất theo phản ứng oxy hóa - khử đang xét (nhường hoặc nhận).",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Hệ điện hóa nào sau đây được gọi là pin Galvani?",
+     "options": [
+      "Hệ tự phát tạo dòng điện từ một phản ứng oxy hóa - khử.",
+      "Hệ dùng dòng điện ngoài để cưỡng bức một phản ứng hóa học.",
+      "Hệ chỉ đo độ dẫn điện mà không có phản ứng điện cực.",
+      "Hệ chỉ có một điện cực nhúng trong dung dịch điện ly."
+     ],
+     "answer": "A",
+     "explain": "A. Pin Galvani là hệ điện hóa hoạt động tự phát, biến hóa năng của phản ứng oxy hóa - khử thành điện năng. Hệ dùng dòng điện ngoài để cưỡng bức phản ứng là bình điện phân.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Bộ điều kiện nào phù hợp với điện cực hydrogen chuẩn?",
+     "options": [
+      "Pt; p(H₂) = 1 bar; a(H⁺) = 1.",
+      "Pt; p(H₂) = 1 bar; a(H⁺) = 0.",
+      "Cu; p(H₂) = 1 bar; a(H⁺) = 1.",
+      "Pt; p(H₂) = 2 bar; a(H⁺) = 1."
+     ],
+     "answer": "A",
+     "explain": "A. Điện cực hydrogen chuẩn (SHE) gồm điện cực Pt nhúng trong dung dịch có a(H⁺) = 1, được sục H₂ ở p(H₂) = 1 bar, quy ước E° = 0 V.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Trong điện cực Pt tiếp xúc với dung dịch chứa Fe³⁺/Fe²⁺, vai trò chủ yếu của Pt là:",
+     "options": [
+      "Tạo Pt²⁺ để duy trì cân bằng điện tích của dung dịch.",
+      "Dẫn electron và cung cấp bề mặt cho trao đổi electron.",
+      "Cung cấp Fe³⁺ để duy trì quá trình khử ở điện cực.",
+      "Cung cấp Fe²⁺ để duy trì quá trình oxy hóa ở điện cực."
+     ],
+     "answer": "B",
+     "explain": "B. Pt là kim loại trơ: không tham gia phản ứng mà chỉ dẫn electron và cung cấp bề mặt để Fe³⁺/Fe²⁺ trao đổi electron. Fe³⁺ và Fe²⁺ đã có sẵn trong dung dịch, không do Pt cung cấp.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Kí hiệu nào phù hợp với pin Daniell khi Zn là anot và Cu là catot?",
+     "options": [
+      "Zn²⁺|Zn || Cu|Cu²⁺.",
+      "Cu|Cu²⁺ || Zn²⁺|Zn.",
+      "Zn|Zn²⁺ || Cu²⁺|Cu.",
+      "Zn²⁺|Cu || Zn|Cu²⁺."
+     ],
+     "answer": "C",
+     "explain": "C. Kí hiệu pin viết anot bên trái, catot bên phải, hai bên cách nhau bởi cầu muối (||): Zn|Zn²⁺ || Cu²⁺|Cu.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi các thế điện cực đều được viết dưới dạng thế khử, suất điện động chuẩn của pin được tính bằng:",
+     "options": [
+      "E°pin = E°anot − E°catot.",
+      "E°pin = E°catot + E°anot.",
+      "E°pin = E°catot − E°anot.",
+      "E°pin = (E°catot − E°anot)/2."
+     ],
+     "answer": "C",
+     "explain": "C. Khi dùng thế khử chuẩn cho cả hai điện cực thì E°pin = E°catot − E°anot.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Biểu thức Nernst tổng quát cho một phản ứng pin là:",
+     "options": [
+      "E = E° + (RT/nF)lnQ.",
+      "E = E° − (RT/nF)lnQ.",
+      "E = E° − (nF/RT)lnQ.",
+      "E = E° + (nF/RT)lnQ."
+     ],
+     "answer": "B",
+     "explain": "B. Phương trình Nernst tổng quát: E = E° − (RT/nF)lnQ, với Q là thương số phản ứng. Ở 25 °C: E = E° − (0,05916/n)lgQ.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Ở 25 °C, quan hệ đúng giữa hằng số cân bằng K và suất điện động chuẩn E° của phản ứng là:",
+     "options": [
+      "lgK = 0,05916/(nE°).",
+      "lgK = n/(0,05916E°).",
+      "lgK = 0,05916nE°.",
+      "lgK = nE°/0,05916."
+     ],
+     "answer": "D",
+     "explain": "D. Ở cân bằng ΔG° = −RT lnK = −nFE°. Suy ra lgK = nE°/0,05916 (ở 25 °C).",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi điện phân MgCl₂ nóng chảy bằng điện cực trơ, sản phẩm ở hai điện cực là:",
+     "options": [
+      "H₂ ở catot và Cl₂ ở anot.",
+      "Mg ở catot và O₂ ở anot.",
+      "Mg ở catot và Cl₂ ở anot.",
+      "H₂ ở catot và O₂ ở anot."
+     ],
+     "answer": "C",
+     "explain": "C. Điện phân MgCl₂ nóng chảy (không có nước): catot Mg²⁺ + 2e⁻ → Mg; anot 2Cl⁻ → Cl₂ + 2e⁻.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi điện phân dung dịch K₂SO₄ bằng điện cực trơ theo mô hình bài học, sản phẩm chính ở hai điện cực là:",
+     "options": [
+      "K ở catot và O₂ ở anot.",
+      "H₂ ở catot và O₂ ở anot.",
+      "K ở catot và SO₂ ở anot.",
+      "H₂ ở catot và SO₂ ở anot."
+     ],
+     "answer": "B",
+     "explain": "B. K⁺ không bị khử trong dung dịch nước và SO₄²⁻ không bị oxy hóa, nên nước bị điện phân: catot 2H₂O + 2e⁻ → H₂ + 2OH⁻; anot 2H₂O → O₂ + 4H⁺ + 4e⁻.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi điện phân dung dịch CuSO₄ với anot bằng Cu, bán phản ứng đặc trưng của anot tan là:",
+     "options": [
+      "Cu(s) → Cu²⁺ + 2e⁻.",
+      "Cu²⁺ + 2e⁻ → Cu(s).",
+      "2H₂O → O₂ + 4H⁺ + 4e⁻.",
+      "2SO₄²⁻ → S₂O₈²⁻ + 2e⁻."
+     ],
+     "answer": "A",
+     "explain": "A. Khi anot bằng Cu (anot tan), chính Cu bị oxy hóa: Cu(s) → Cu²⁺ + 2e⁻. Ở catot, Cu²⁺ bị khử thành Cu(s).",
+     "tags": [
+      "ly-thuyet"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bài 8 – Kim loại và phi kim",
+   "questions": [
+    {
+     "q": "Ở trạng thái tự do, kim loại thường có xu hướng nhường electron nên thể hiện tính khử.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Nguyên tử kim loại có ít electron hóa trị và dễ nhường electron để thành cation, nên kim loại thể hiện tính khử.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Mọi nguyên tố kim loại có vai trò sinh học thiết yếu đều an toàn cho cơ thể ở mọi liều lượng.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Nhiều kim loại thiết yếu (Fe, Cu, Zn, Co...) vẫn gây độc khi thừa. Vai trò sinh học không có nghĩa là an toàn ở mọi liều lượng; chỉ có khoảng nồng độ thích hợp.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Carbon monoxide gây độc một phần vì tạo carboxyhemoglobin, làm giảm khả năng vận chuyển oxygen của máu.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. CO gắn vào hemoglobin mạnh hơn nhiều so với O₂, tạo carboxyhemoglobin (HbCO) nên máu giảm khả năng vận chuyển oxygen tới mô.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Tính oxy hóa của halogen giảm dần theo thứ tự F₂ > Cl₂ > Br₂ > I₂.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Đi từ F₂ đến I₂, độ âm điện và độ hoạt động giảm nên tính oxy hóa giảm dần: F₂ > Cl₂ > Br₂ > I₂.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Oxygen là chất cháy nên bản thân nó được dùng như nhiên liệu trong các quá trình cháy.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Oxygen là chất oxy hóa, duy trì sự cháy nhưng bản thân không cháy nên không dùng làm nhiên liệu. Nhiên liệu là chất cháy được (như H₂, CH₄).",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "BaSO₄ rất ít tan và tương đối trơ nên có thể dùng làm chất cản quang đường tiêu hóa trong chế phẩm phù hợp; các muối bari tan có thể gây độc.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. BaSO₄ rất ít tan nên được dùng làm chất cản quang chụp đường tiêu hóa, còn các muối bari tan (như BaCl₂) giải phóng Ba²⁺ độc.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Một số chế phẩm MgSO₄ có thể được dùng làm thuốc nhuận tràng do giúp giữ nước trong lòng ruột theo cơ chế thẩm thấu.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. MgSO₄ ít được hấp thu ở ruột, giữ nước trong lòng ruột theo cơ chế thẩm thấu nên có tác dụng nhuận tràng.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Thạch cao sống CaSO₄·2H₂O khi nhào với nước có khả năng đông cứng nên được dùng làm bột bó chỉnh hình.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Bột bó chỉnh hình dùng thạch cao nung (CaSO₄·½H₂O): khi nhào với nước, nó kết tinh trở lại thành CaSO₄·2H₂O và đông cứng. Thạch cao sống CaSO₄·2H₂O đã ngậm nước nên không có tính chất này.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Mg²⁺ là cofactor của nhiều enzym và tham gia chuyển hóa năng lượng, hoạt động thần kinh - cơ và duy trì xương.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Mg²⁺ là cofactor của nhiều enzym, tham gia chuyển hóa năng lượng (ATP), hoạt động thần kinh - cơ và là thành phần của xương.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Phơi nhiễm chì và nhiều hợp chất của chì có thể gây độc cho hệ thần kinh, hệ tạo máu và thận.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Chì và nhiều hợp chất của chì tích lũy trong cơ thể, gây độc cho hệ thần kinh, hệ tạo máu và thận.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Ion Ag⁺ kích thích sự phát triển của vi khuẩn ngay ở nồng độ rất nhỏ.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Ion Ag⁺ có tác dụng diệt khuẩn, ức chế vi khuẩn ngay ở nồng độ rất nhỏ, chứ không kích thích chúng phát triển.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Động vật và thực vật bậc cao có thể sử dụng trực tiếp N₂ trong không khí để tổng hợp các hợp chất chứa nitrogen.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Liên kết ba N≡N rất bền nên động vật và thực vật bậc cao không dùng trực tiếp N₂ được. N₂ phải được vi sinh vật cố định đạm (hoặc quá trình công nghiệp, sét) chuyển thành dạng hợp chất như NH₃/NH₄⁺, NO₃⁻.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Kim loại rất hoạt động như Na thường được điều chế theo nguyên tắc nào?",
+     "options": [
+      "Dùng CO khử oxide của natri ở nhiệt độ cao.",
+      "Điện phân muối natri nóng chảy để khử Na⁺ ở catot.",
+      "Điện phân dung dịch NaCl để Na⁺ phóng điện trước nước.",
+      "Dùng Fe đẩy Na ra khỏi dung dịch muối natri."
+     ],
+     "answer": "B",
+     "explain": "B. Na hoạt động rất mạnh nên điều chế bằng điện phân muối nóng chảy (NaCl): Na⁺ + e⁻ → Na ở catot. Điện phân dung dịch thì nước bị khử trước, còn CO hay Fe không khử được Na⁺.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Vai trò sinh học chủ yếu của cobalt trong cơ thể người được giải thích phù hợp nhất bởi nhận định nào?",
+     "options": [
+      "Cobalt là cation chính của dịch nội bào và quyết định điện thế màng.",
+      "Cobalt là thành phần chủ yếu của hemoglobin và trực tiếp gắn oxygen.",
+      "Cobalt là khoáng chính của xương và tham gia đông máu như calcium.",
+      "Cobalt có vai trò chủ yếu vì là nguyên tử trung tâm của vitamin B₁₂."
+     ],
+     "answer": "D",
+     "explain": "D. Cobalt có vai trò sinh học chủ yếu vì là nguyên tử trung tâm của vitamin B₁₂ (cobalamin). Hemoglobin chứa iron, không phải cobalt.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Nguyên tố halogen cần thiết cho tổng hợp hormone tuyến giáp là:",
+     "options": [
+      "Fluorine.",
+      "Iodine.",
+      "Chlorine.",
+      "Bromine."
+     ],
+     "answer": "B",
+     "explain": "B. Iodine là nguyên liệu để tuyến giáp tổng hợp hormone thyroxine (T₄) và triiodothyronine (T₃); thiếu iodine gây bướu cổ.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Vai trò sinh học nào sau đây phù hợp nhất với iron?",
+     "options": [
+      "Là thành phần của hemoglobin, myoglobin và nhiều enzym oxy hóa - khử.",
+      "Là cation chủ yếu của dịch ngoại bào và duy trì cân bằng thẩm thấu của máu.",
+      "Là nguyên tử trung tâm của vitamin B₁₂ và không tham gia vận chuyển oxygen.",
+      "Chỉ có vai trò trong cấu tạo xương và không tham gia các quá trình enzym."
+     ],
+     "answer": "A",
+     "explain": "A. Iron là thành phần của hemoglobin, myoglobin (vận chuyển, dự trữ O₂) và nhiều enzym oxy hóa - khử như cytochrome.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Nhận định nào phù hợp nhất với fluoride trong sức khỏe răng miệng?",
+     "options": [
+      "Fluoride là nguyên liệu chính để tổng hợp hormon tuyến giáp; thiếu gây bướu cổ.",
+      "Fluoride là cation chính của dịch nội bào; thiếu gây rối loạn điện thế màng.",
+      "Fluoride ở nồng độ phù hợp giúp dự phòng sâu răng; quá mức có thể gây fluorosis.",
+      "Fluoride là thành phần trung tâm của hemoglobin; thiếu làm giảm vận chuyển oxygen."
+     ],
+     "answer": "C",
+     "explain": "C. Fluoride ở nồng độ phù hợp làm tăng độ bền của men răng, giúp dự phòng sâu răng; dùng quá mức có thể gây nhiễm fluor (fluorosis).",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Vai trò nào sau đây phù hợp nhất với calcium trong cơ thể?",
+     "options": [
+      "Tham gia vận chuyển oxygen trong hemoglobin và myoglobin của hồng cầu.",
+      "Tham gia cấu tạo xương, đông máu, dẫn truyền thần kinh và co cơ.",
+      "Là cation chính của dịch ngoại bào, góp phần duy trì áp suất thẩm thấu.",
+      "Là nguyên tử trung tâm của vitamin B₁₂, quyết định chức năng của cobalamin."
+     ],
+     "answer": "B",
+     "explain": "B. Calcium tham gia cấu tạo xương và răng, đông máu, dẫn truyền thần kinh và co cơ.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Tính dẻo của kim loại chủ yếu được giải thích bởi đặc điểm nào sau đây?",
+     "options": [
+      "Các lớp tinh thể có thể trượt mà liên kết kim loại vẫn được duy trì.",
+      "Các ion dương rời nút mạng và chuyển động tự do trong tinh thể.",
+      "Các proton chuyển động giữa các nút mạng khi có lực tác dụng.",
+      "Các phân tử kim loại quay tự do quanh vị trí cân bằng trong tinh thể."
+     ],
+     "answer": "A",
+     "explain": "A. Khi có lực tác dụng, các lớp ion/nguyên tử trong tinh thể kim loại trượt lên nhau mà liên kết kim loại (nhờ electron tự do) vẫn được duy trì nên kim loại dẻo, không bị vỡ như tinh thể ion.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Tính dẫn điện của kim loại chủ yếu được giải thích bởi đặc điểm nào sau đây?",
+     "options": [
+      "Electron hóa trị có thể chuyển động trong mạng tinh thể.",
+      "Proton có thể chuyển động trong mạng tinh thể kim loại.",
+      "Ion dương kim loại chuyển động tự do trong toàn bộ mạng.",
+      "Nguyên tử kim loại tách khỏi mạng khi có điện trường."
+     ],
+     "answer": "A",
+     "explain": "A. Các electron hóa trị (electron tự do) chuyển động trong mạng tinh thể; khi có điện trường chúng chuyển động có hướng và tạo dòng điện.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Phương pháp nào phù hợp để điều chế Cr từ Cr₂O₃ theo nội dung giáo trình?",
+     "options": [
+      "Điện phân dung dịch CrCl₃.",
+      "Khử Cr₂O₃ bằng Al ở nhiệt độ cao.",
+      "Khử Cr₂O₃ bằng Cu ở nhiệt độ cao.",
+      "Nhiệt phân Cr₂O₃ không dùng chất khử."
+     ],
+     "answer": "B",
+     "explain": "B. Cr₂O₃ + 2Al → Al₂O₃ + 2Cr ở nhiệt độ cao (phương pháp nhiệt nhôm). Cu yếu hơn Cr nên không khử được Cr₂O₃.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi sử dụng oxygen trong cơ sở y tế, biện pháp nào sau đây phù hợp nhất?",
+     "options": [
+      "Dùng nồng độ oxygen cao nhất cho mọi người bệnh.",
+      "Đặt bình oxygen gần nguồn nhiệt để thuận tiện sử dụng.",
+      "Dùng theo chỉ định và để xa các nguồn gây cháy.",
+      "Tự tăng lưu lượng oxygen khi người bệnh thấy khó thở."
+     ],
+     "answer": "C",
+     "explain": "C. Oxygen y tế là thuốc, phải dùng theo chỉ định và đặt xa nguồn nhiệt, lửa vì O₂ làm tăng nguy cơ cháy nổ. Không tự ý tăng nồng độ hay lưu lượng vì oxygen quá liều cũng gây hại.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Nhận định nào đúng về sự phân bố sinh lý chủ yếu của Na⁺ và K⁺ trong cơ thể?",
+     "options": [
+      "Na⁺ chủ yếu ở nội bào; K⁺ chủ yếu ở ngoại bào.",
+      "Na⁺ và K⁺ đều chủ yếu ở dịch ngoại bào.",
+      "Na⁺ và K⁺ đều chủ yếu ở dịch nội bào.",
+      "Na⁺ chủ yếu ở ngoại bào; K⁺ chủ yếu ở nội bào."
+     ],
+     "answer": "D",
+     "explain": "D. Na⁺ là cation chính của dịch ngoại bào, còn K⁺ là cation chính của dịch nội bào. Sự chênh lệch này do bơm Na⁺/K⁺-ATPase duy trì.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Vai trò sinh học quan trọng của nitrogen là:",
+     "options": [
+      "Chủ yếu tạo khoáng của xương và răng.",
+      "Chủ yếu tồn tại trong máu dưới dạng N₂.",
+      "Chủ yếu vận chuyển oxygen trong hồng cầu.",
+      "Có trong amino acid, protein và acid nucleic."
+     ],
+     "answer": "D",
+     "explain": "D. Nitrogen có trong amino acid, protein và acid nucleic (base nitrogen). Trong máu N₂ chỉ hòa tan rất ít, không có vai trò sinh học.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Vai trò sinh học quan trọng của sulfur là:",
+     "options": [
+      "Có trong cysteine, methionine và nhiều protein.",
+      "Chủ yếu tạo khoáng của xương và răng.",
+      "Chủ yếu vận chuyển oxygen trong hồng cầu.",
+      "Là thành phần chính của mọi acid nucleic."
+     ],
+     "answer": "A",
+     "explain": "A. Sulfur có trong các amino acid chứa lưu huỳnh như cysteine và methionine nên có mặt trong nhiều protein (cầu nối disulfide). Acid nucleic chứa phosphorus, không chứa sulfur làm thành phần chính.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Một phát biểu cho rằng “mọi hợp chất chứa chlorine đều độc như khí Cl₂”. Nhận định nào phù hợp nhất?",
+     "options": [
+      "Đúng, vì cùng chứa nguyên tố chlorine nên có độc tính tương tự.",
+      "Đúng, vì chlorine trong hợp chất luôn tồn tại dưới dạng Cl⁻.",
+      "Sai, vì mọi hợp chất chứa chlorine đều hoàn toàn không độc.",
+      "Sai, vì độc tính phụ thuộc dạng hóa học và mức phơi nhiễm."
+     ],
+     "answer": "D",
+     "explain": "D. Độc tính phụ thuộc dạng hóa học và mức phơi nhiễm. Cl₂ rất độc, nhưng NaCl (muối ăn) hay ion Cl⁻ là thiết yếu và an toàn ở liều thường dùng. Phát biểu “mọi hợp chất chứa chlorine đều độc như Cl₂” là sai; cũng không thể nói mọi hợp chất chlorine đều không độc.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    }
+   ]
   }
  ]
 }
