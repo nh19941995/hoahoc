@@ -3388,6 +3388,701 @@
      ]
     }
    ]
+  },
+  {
+   "name": "Bài 9 – Cấu trúc phân tử và liên kết trong hóa học hữu cơ",
+   "questions": [
+    {
+     "q": "Liên kết hóa học chủ yếu trong hợp chất hữu cơ là liên kết cộng hóa trị.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Các nguyên tử trong hợp chất hữu cơ (C, H, O, N, halogen...) chủ yếu liên kết với nhau bằng liên kết cộng hóa trị; liên kết ion chỉ gặp ở một số muối hữu cơ.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Carbon sp³ có cấu trúc phẳng tam giác với góc liên kết khoảng 120°.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Carbon sp³ có cấu trúc tứ diện với góc liên kết khoảng 109,5°. Cấu trúc phẳng tam giác với góc khoảng 120° là của carbon sp².",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Hai chất có cùng công thức phân tử luôn có cùng tính chất vì thành phần nguyên tố giống nhau.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Hai chất cùng công thức phân tử có thể là đồng phân với cấu tạo hoặc cấu trúc không gian khác nhau nên tính chất khác nhau (ví dụ ethanol và dimethyl ether có nhiệt độ sôi và tính chất hóa học khác nhau).",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Hiệu ứng cảm ứng được truyền qua hệ liên kết σ do sự chênh lệch độ âm điện hoặc điện tích của nhóm thế.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Hiệu ứng cảm ứng là sự phân cực liên kết σ lan truyền dọc theo mạch do chênh lệch độ âm điện hoặc do điện tích của nhóm thế, và giảm dần khi cách xa nhóm thế.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Hiệu ứng liên hợp đòi hỏi các orbital p hoặc cặp electron có khả năng xen phủ liên tục trong hệ.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Hiệu ứng liên hợp xảy ra trong hệ liên hợp π–π hoặc p–π, khi các orbital p (hoặc cặp electron tự do) xen phủ liên tục với nhau nên electron được giải tỏa trong cả hệ.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Chỉ từ công thức phân tử C₂H₆O có thể khẳng định duy nhất chất là ethanol.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. C₂H₆O ứng với ít nhất hai chất là ethanol CH₃CH₂OH và dimethyl ether CH₃OCH₃, nên chỉ từ công thức phân tử không thể khẳng định duy nhất là ethanol.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Trong ethyne HC≡CH, carbon có kiểu lai hóa:",
+     "options": [
+      "sp³",
+      "sp²",
+      "sp",
+      "Không lai hóa"
+     ],
+     "answer": "C",
+     "explain": "C. Trong HC≡CH, mỗi carbon tạo 2 liên kết σ (một với H, một với C) và 2 liên kết π nên lai hóa sp, phân tử thẳng với góc 180°. sp³ ứng với carbon chỉ có liên kết đơn, sp² ứng với carbon có liên kết đôi.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Cặp chất nào là đồng phân cấu tạo?",
+     "options": [
+      "CH₄ và C₂H₆",
+      "C₂H₄ và C₂H₂",
+      "H₂O và H₂O₂",
+      "CH₃CH₂OH và CH₃OCH₃"
+     ],
+     "answer": "D",
+     "explain": "D. Đồng phân cấu tạo có cùng công thức phân tử nhưng khác trật tự liên kết. CH₃CH₂OH và CH₃OCH₃ đều là C₂H₆O. Các cặp còn lại có công thức phân tử khác nhau nên không phải đồng phân.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Công thức đơn giản nhất CH₂O có khối lượng công thức 30. Nếu khối lượng mol phân tử M = 180 g/mol, công thức phân tử là:",
+     "options": [
+      "CH₂O",
+      "C₆H₁₂O₆",
+      "C₂H₄O₂",
+      "C₅H₁₀O₅"
+     ],
+     "answer": "B",
+     "explain": "B. Số đơn vị CH₂O: n = 180 : 30 = 6, suy ra công thức phân tử là (CH₂O)₆ = C₆H₁₂O₆. Các phương án khác có M = 30 (CH₂O), 60 (C₂H₄O₂), 150 (C₅H₁₀O₅).",
+     "tags": [
+      "bai-tap"
+     ]
+    },
+    {
+     "q": "Trong dung dịch nước, dãy nào được sắp xếp theo chiều tính bazơ tăng dần từ trái sang phải?",
+     "options": [
+      "NH₃, CH₃NH₂, C₆H₅NH₂",
+      "CH₃NH₂, C₆H₅NH₂, NH₃",
+      "C₆H₅NH₂, NH₃, CH₃NH₂",
+      "CH₃NH₂, NH₃, C₆H₅NH₂"
+     ],
+     "answer": "C",
+     "explain": "C. Nhóm alkyl (−CH₃) đẩy electron làm tăng mật độ electron trên N nên CH₃NH₂ bazơ mạnh hơn NH₃. Nhóm phenyl liên hợp với cặp electron của N làm giảm mật độ electron nên C₆H₅NH₂ bazơ yếu hơn NH₃. Thứ tự tăng dần: C₆H₅NH₂ < NH₃ < CH₃NH₂.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Chất nào sau đây có tính acid mạnh nhất?",
+     "options": [
+      "CH₃COOH",
+      "ClCH₂COOH",
+      "FCH₂COOH",
+      "BrCH₂COOH"
+     ],
+     "answer": "C",
+     "explain": "C. Nguyên tử halogen có hiệu ứng cảm ứng âm (−I) làm tăng tính acid; F có độ âm điện lớn nhất nên −I mạnh nhất. Thứ tự: FCH₂COOH > ClCH₂COOH > BrCH₂COOH > CH₃COOH.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Trong dung dịch nước, chất nào sau đây có tính bazơ yếu nhất?",
+     "options": [
+      "NH₃",
+      "CH₃NH₂",
+      "CH₃CH₂NH₂",
+      "(CH₃)₂NH"
+     ],
+     "answer": "A",
+     "explain": "A. Nhóm alkyl có hiệu ứng +I làm tăng mật độ electron trên N nên các amin bazơ mạnh hơn NH₃. Vì vậy NH₃ có tính bazơ yếu nhất trong bốn chất.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Chất nào sau đây có tính acid mạnh nhất?",
+     "options": [
+      "HCOOH",
+      "CH₃COOH",
+      "CH₃CH₂COOH",
+      "(CH₃)₂CHCOOH"
+     ],
+     "answer": "A",
+     "explain": "A. Nhóm alkyl có hiệu ứng +I làm giảm tính acid. HCOOH không có nhóm alkyl nên acid mạnh nhất: HCOOH > CH₃COOH > CH₃CH₂COOH > (CH₃)₂CHCOOH.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi gắn trực tiếp với một hệ π liên hợp, nhóm nào sau đây thường thể hiện hiệu ứng liên hợp dương (+M)?",
+     "options": [
+      ">C=O",
+      "-C≡N",
+      ">C=NH",
+      "-OH"
+     ],
+     "answer": "D",
+     "explain": "D. Nhóm −OH có cặp electron tự do trên O xen phủ với hệ π nên thể hiện hiệu ứng +M. Các nhóm >C=O, −C≡N, >C=NH có liên kết π phân cực, hút electron của hệ liên hợp nên thể hiện hiệu ứng −M.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Nhóm nào sau đây gây ra hiệu ứng cảm ứng dương (+I)?",
+     "options": [
+      "-Cl",
+      "-OH",
+      "-NH₂",
+      "-CH₃"
+     ],
+     "answer": "D",
+     "explain": "D. Nhóm alkyl −CH₃ đẩy electron qua liên kết σ nên có hiệu ứng +I. Các nhóm −Cl, −OH, −NH₂ gắn với carbon qua nguyên tử có độ âm điện lớn hơn C nên hút electron (−I).",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi gắn trực tiếp với một hệ π liên hợp, nhóm nào sau đây thường thể hiện hiệu ứng liên hợp âm (-M)?",
+     "options": [
+      ">C=O",
+      "-NH₂",
+      "-F",
+      "-OR"
+     ],
+     "answer": "A",
+     "explain": "A. Nhóm >C=O có liên kết π phân cực, hút electron của hệ liên hợp nên thể hiện hiệu ứng −M. Các nhóm −NH₂, −OR, −F có cặp electron tự do cho vào hệ π nên thể hiện hiệu ứng +M.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Ethanol và dimethyl ether có cùng công thức phân tử C₂H₆O. Ethanol có nhiệt độ sôi cao hơn chủ yếu vì:",
+     "options": [
+      "Ethanol tạo được liên kết hydrogen giữa các phân tử.",
+      "Ethanol có khối lượng mol lớn hơn dimethyl ether.",
+      "Dimethyl ether có cấu trúc ion nên dễ bay hơi hơn.",
+      "Dimethyl ether không chứa liên kết cộng hóa trị phân cực."
+     ],
+     "answer": "A",
+     "explain": "A. Ethanol có nhóm −OH nên tạo được liên kết hydrogen giữa các phân tử, làm nhiệt độ sôi cao. Dimethyl ether không có H liên kết với O nên không tạo liên kết hydrogen liên phân tử. Hai chất có cùng khối lượng mol và đều chỉ có liên kết cộng hóa trị.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Phân tử hữu cơ có nhóm phân cực nhưng mạch hydrocarbon tăng dài thường có độ tan trong nước:",
+     "options": [
+      "Tăng do nhóm phân cực chiếm ưu thế hơn.",
+      "Không đổi khi số nguyên tử carbon tăng.",
+      "Giảm do phần hydrocarbon kỵ nước tăng.",
+      "Tăng rồi giữ nguyên khi mạch carbon dài."
+     ],
+     "answer": "C",
+     "explain": "C. Phần hydrocarbon kỵ nước tăng khi mạch carbon dài hơn nên độ tan trong nước thường giảm dần, dù vẫn có nhóm phân cực.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khả năng tạo nhiều mạch thẳng, nhánh và vòng của carbon liên quan trực tiếp đến:",
+     "options": [
+      "Carbon có hóa trị bốn và tạo liên kết C-C bền.",
+      "Carbon có độ âm điện lớn nhất trong chu kỳ 2.",
+      "Carbon chỉ tạo liên kết đơn trong hợp chất hữu cơ.",
+      "Carbon luôn tạo bốn liên kết với bốn nguyên tử khác nhau."
+     ],
+     "answer": "A",
+     "explain": "A. Carbon có hóa trị IV và liên kết C−C bền nên nối được với nhau thành mạch thẳng, nhánh và vòng. Carbon không phải nguyên tố có độ âm điện lớn nhất chu kỳ 2, vẫn tạo được liên kết đôi, liên kết ba và không phải lúc nào cũng nối với bốn nguyên tử khác nhau.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Một nhóm đề xuất chọn đồng phân thuốc chỉ dựa vào công thức phân tử vì cho rằng “cùng công thức thì tác dụng giống nhau”. Nhận định nào sau đây đúng?",
+     "options": [
+      "Hợp lý vì cùng công thức phân tử nên có cùng cấu trúc.",
+      "Hợp lý vì các đồng phân có cùng khối lượng mol phân tử.",
+      "Chưa hợp lý vì cấu trúc có thể làm thay đổi hoạt tính sinh học.",
+      "Chưa hợp lý vì mọi đồng phân đều có hoạt tính sinh học khác nhau."
+     ],
+     "answer": "C",
+     "explain": "C. Cùng công thức phân tử chưa chắc cùng cấu trúc. Các đồng phân (đặc biệt đồng phân lập thể) có thể có hoạt tính sinh học rất khác nhau, nên không thể chọn thuốc chỉ dựa vào công thức phân tử. Tuy vậy không phải mọi đồng phân đều khác hoạt tính, nên D sai.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Bài 10 – Alcohol (ancol) - Phenol",
+   "questions": [
+    {
+     "q": "Alcohol là hợp chất hữu cơ có một hay nhiều nhóm -OH gắn trực tiếp với nguyên tử carbon no (sp³), không gắn trực tiếp vào carbon của vòng thơm.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Đây là định nghĩa alcohol: nhóm −OH gắn vào carbon no sp³. Nếu −OH gắn trực tiếp vào carbon của vòng thơm thì là phenol.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Ethanol tác dụng với Na giải phóng H₂ và tạo sodium ethoxide.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. 2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂↑ (sodium ethoxide).",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Alcohol bậc III dễ bị oxy hóa thành ketone mà không cần phá vỡ liên kết C-C.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Alcohol bậc III không có H trên carbon mang nhóm −OH nên không bị oxy hóa nhẹ thành ketone; muốn bị oxy hóa phải phá vỡ liên kết C−C. Alcohol bậc II mới bị oxy hóa thành ketone.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Methanol và ethanol có thể thay thế cho nhau trong mọi ứng dụng vì cùng là alcohol đơn chức.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Methanol rất độc, không thể thay thế ethanol trong thực phẩm, đồ uống hay y tế dù cùng là alcohol đơn chức. Tính chất, độc tính và ứng dụng của hai chất khác nhau.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Glycerol tạo dung dịch xanh lam đậm với Cu(OH)₂ mới tạo do có nhiều nhóm -OH kề nhau.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Glycerol có các nhóm −OH liền kề nên hòa tan Cu(OH)₂ mới tạo, cho dung dịch phức màu xanh lam đậm: 2C₃H₅(OH)₃ + Cu(OH)₂ → [C₃H₅(OH)₂O]₂Cu + 2H₂O.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Việc ethanol có ứng dụng sát khuẩn đồng nghĩa uống ethanol thường xuyên là biện pháp phòng nhiễm khuẩn.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Ethanol sát khuẩn khi dùng ngoài da ở nồng độ thích hợp. Uống ethanol thường xuyên không phòng được nhiễm khuẩn mà còn gây hại cho gan và thần kinh.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Phenol là hợp chất có nhóm -OH gắn trực tiếp vào carbon của vòng thơm.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Phenol là hợp chất có nhóm −OH gắn trực tiếp vào carbon của vòng thơm, ví dụ C₆H₅OH.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Phenol có tính acid yếu hơn ethanol vì vòng benzene làm ion phenoxide kém bền.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "B",
+     "explain": "Sai. Phenol có tính acid mạnh hơn ethanol vì ion phenoxide được ổn định nhờ liên hợp điện tích âm với vòng benzene, nên bền hơn ion ethoxide. Phát biểu ion phenoxide kém bền là sai.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Ethanol là chất tác động thần kinh; việc uống ethanol, kể cả với lượng vừa phải, không nên được xem là biện pháp có lợi cho tiêu hóa hoặc thần kinh.",
+     "options": [
+      "Đúng",
+      "Sai"
+     ],
+     "answer": "A",
+     "explain": "Đúng. Ethanol là chất tác động lên thần kinh trung ương; uống ethanol, kể cả với lượng vừa phải, không nên xem là biện pháp có lợi cho tiêu hóa hay thần kinh.",
+     "tags": [
+      "dung-sai",
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Tên IUPAC của CH₃CH(OH)CH₃ là:",
+     "options": [
+      "Propan-2-ol",
+      "Propan-1-ol",
+      "Propanal",
+      "Propanone"
+     ],
+     "answer": "A",
+     "explain": "A. Mạch chính có 3 carbon (propan), nhóm −OH ở carbon số 2 nên tên là propan-2-ol. Propan-1-ol có −OH ở C1; propanal là aldehyde; propanone là ketone.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Sản phẩm hữu cơ khi hai phân tử ethanol tách một phân tử nước trong điều kiện thích hợp là:",
+     "options": [
+      "Ethene",
+      "Ethanal",
+      "Diethyl ether",
+      "Acetic acid"
+     ],
+     "answer": "C",
+     "explain": "C. Tách nước liên phân tử (khoảng 140 °C, H₂SO₄ đặc): 2C₂H₅OH → C₂H₅OC₂H₅ + H₂O, tạo diethyl ether.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Tách nước nội phân tử của ethanol ở nhiệt độ cao tạo:",
+     "options": [
+      "Ethane",
+      "Ethanal",
+      "Ethyl acetate",
+      "Ethene"
+     ],
+     "answer": "D",
+     "explain": "D. Tách nước nội phân tử (khoảng 170 °C, H₂SO₄ đặc): C₂H₅OH → CH₂=CH₂ + H₂O, tạo ethene.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Ethanol phản ứng với acetic acid có H₂SO₄ đặc, đun nóng tạo:",
+     "options": [
+      "Ethyl acetate và nước",
+      "Methanol và CO₂",
+      "Ethene và H₂",
+      "Sodium acetate"
+     ],
+     "answer": "A",
+     "explain": "A. Đây là phản ứng ester hóa thuận nghịch: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O (H₂SO₄ đặc, đun nóng), tạo ethyl acetate và nước.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Oxy hóa nhẹ propan-2-ol tạo sản phẩm chính:",
+     "options": [
+      "Propanal",
+      "Propanoic acid",
+      "Propanone",
+      "Propene oxide"
+     ],
+     "answer": "C",
+     "explain": "C. Propan-2-ol là alcohol bậc II nên bị oxy hóa nhẹ thành ketone: CH₃CH(OH)CH₃ + [O] → CH₃COCH₃ + H₂O (propanone). Propanal là sản phẩm của propan-1-ol.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Cặp sản phẩm nào lần lượt minh họa tách nước liên phân tử và tách nước nội phân tử của ethanol?",
+     "options": [
+      "Ethene; diethyl ether",
+      "Ester; aldehyde",
+      "Sodium ethoxide; ester",
+      "Diethyl ether; ethene"
+     ],
+     "answer": "D",
+     "explain": "D. Tách nước liên phân tử cho ether (diethyl ether), tách nước nội phân tử cho alkene (ethene).",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Alcohol được dùng phổ biến làm chất sát khuẩn ngoài da trong các chế phẩm phù hợp là:",
+     "options": [
+      "Methanol",
+      "Ethanol",
+      "Ethylene glycol",
+      "Phenol đậm đặc"
+     ],
+     "answer": "B",
+     "explain": "B. Ethanol (thường dùng dung dịch khoảng 70°) được dùng phổ biến để sát khuẩn ngoài da. Methanol và ethylene glycol độc, phenol đậm đặc gây bỏng da.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Glycerol thuộc loại alcohol nào theo số nhóm -OH?",
+     "options": [
+      "Monoalcohol",
+      "Diol",
+      "Triol",
+      "Phenol"
+     ],
+     "answer": "C",
+     "explain": "C. Glycerol (propane-1,2,3-triol) có 3 nhóm −OH nên là triol. Phenol không thuộc phân loại alcohol theo số nhóm −OH.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Nguy cơ nổi bật của methanol là:",
+     "options": [
+      "Có thể gây ngộ độc nặng và tổn thương thị giác.",
+      "Chủ yếu gây kích ứng da và không gây độc toàn thân.",
+      "Chủ yếu gây tăng calci máu và rối loạn đông máu.",
+      "Hầu như không chuyển hóa nên ít gây độc cho cơ thể."
+     ],
+     "answer": "A",
+     "explain": "A. Methanol được chuyển hóa trong cơ thể thành formaldehyde và formic acid, gây nhiễm toan, tổn thương thần kinh thị giác, có thể dẫn đến mù hoặc tử vong.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Alcohol nào khi oxy hóa nhẹ tạo aldehyde?",
+     "options": [
+      "Propan-2-ol",
+      "Ethanol",
+      "tert-Butanol",
+      "Phenol"
+     ],
+     "answer": "B",
+     "explain": "B. Chỉ alcohol bậc I bị oxy hóa nhẹ thành aldehyde; ethanol bị oxy hóa thành ethanal. Propan-2-ol (bậc II) tạo ketone, tert-butanol (bậc III) không bị oxy hóa nhẹ, phenol không phải alcohol.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Để phân biệt ethanol và glycerol trong phòng thực hành, thuốc thử phù hợp nhất là:",
+     "options": [
+      "NaCl",
+      "Dung dịch glucose",
+      "Cu(OH)₂ mới tạo",
+      "Khí nitrogen"
+     ],
+     "answer": "C",
+     "explain": "C. Cu(OH)₂ mới tạo hòa tan với glycerol cho dung dịch xanh lam đậm, còn ethanol không có nhóm −OH kề nhau nên không phản ứng. NaCl, dung dịch glucose, khí nitrogen không phân biệt được hai chất này.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Chất nào là phenol?",
+     "options": [
+      "C₆H₅CH₂OH",
+      "CH₃CH₂OH",
+      "C₆H₅OH",
+      "HOCH₂CH₂OH"
+     ],
+     "answer": "C",
+     "explain": "C. Phenol là chất có −OH gắn trực tiếp vào vòng benzene: C₆H₅OH. C₆H₅CH₂OH là benzyl alcohol, các chất còn lại là alcohol no.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Phenol phản ứng với NaOH tạo:",
+     "options": [
+      "Benzene và oxygen",
+      "Ethanol và NaCl",
+      "Phenyl chloride duy nhất",
+      "Sodium phenoxide và nước"
+     ],
+     "answer": "D",
+     "explain": "D. C₆H₅OH + NaOH → C₆H₅ONa + H₂O, tạo sodium phenoxide và nước (phenol có tính acid yếu nhưng đủ phản ứng với kiềm).",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Đun butan-2-ol với H₂SO₄ đặc ở khoảng 170 °C, alkene chính thu được là:",
+     "options": [
+      "But-1-ene",
+      "But-2-ene",
+      "2-Methylpropene",
+      "Ethene"
+     ],
+     "answer": "B",
+     "explain": "B. Theo quy tắc Zaitsev, alkene chính là alkene có nhiều nhóm thế hơn ở liên kết đôi, tức but-2-ene: CH₃CH(OH)CH₂CH₃ → CH₃CH=CHCH₃ + H₂O.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Một alcohol đơn chức, no, mạch hở có 60% carbon về khối lượng. Công thức phân tử phù hợp là:",
+     "options": [
+      "C₂H₅OH",
+      "C₃H₇OH",
+      "C₄H₉OH",
+      "CH₃OH"
+     ],
+     "answer": "B",
+     "explain": "B. Alcohol no, đơn chức, mạch hở là CₙH₂ₙ₊₂O: %C = 12n/(14n + 18) = 0,6, suy ra n = 3, công thức C₃H₇OH (M = 60, C = 36/60 = 60%).",
+     "tags": [
+      "bai-tap"
+     ]
+    },
+    {
+     "q": "Alcohol nào sau đây khi tách nước nội phân tử có thể tạo hai alkene đồng phân cấu tạo?",
+     "options": [
+      "Butan-2-ol",
+      "Butan-1-ol",
+      "2-Methylpropan-1-ol",
+      "2-Methylpropan-2-ol"
+     ],
+     "answer": "A",
+     "explain": "A. Butan-2-ol tách nước theo hai hướng, tạo but-1-ene và but-2-ene (hai đồng phân cấu tạo). Butan-1-ol chỉ tạo but-1-ene; 2-methylpropan-1-ol và 2-methylpropan-2-ol chỉ tạo 2-methylpropene.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Alcohol nào sau đây khi bị oxy hóa thích hợp tạo ketone?",
+     "options": [
+      "CH₃CH(OH)CH₃",
+      "CH₃CH₂CH₂OH",
+      "(CH₃)₂CHCH₂OH",
+      "Cả ba chất trên"
+     ],
+     "answer": "A",
+     "explain": "A. Chỉ alcohol bậc II là CH₃CH(OH)CH₃ bị oxy hóa thành ketone (propanone). CH₃CH₂CH₂OH và (CH₃)₂CHCH₂OH là alcohol bậc I nên tạo aldehyde, vì vậy D sai.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Công thức phân tử tổng quát của alcohol no, đơn chức, mạch hở là:",
+     "options": [
+      "CₙH₂ₙO (n ≥ 1)",
+      "CₙH₂ₙ₊₂O (n ≥ 1)",
+      "CₙH₂ₙ₋₂O (n ≥ 1)",
+      "CₙH₂ₙ₊₁O (n ≥ 1)"
+     ],
+     "answer": "B",
+     "explain": "B. Alcohol no, đơn chức, mạch hở có công thức tổng quát CₙH₂ₙ₊₂O (n ≥ 1), viết gọn là CₙH₂ₙ₊₁OH.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Khi cho riêng ethanol và phenol tác dụng với dung dịch NaOH ở điều kiện thường, nhận định nào sau đây đúng?",
+     "options": [
+      "Phenol phản ứng, ethanol không phản ứng.",
+      "Ethanol phản ứng, phenol không phản ứng.",
+      "Cả ethanol và phenol đều phản ứng.",
+      "Cả ethanol và phenol đều không phản ứng."
+     ],
+     "answer": "A",
+     "explain": "A. Phenol có tính acid nên phản ứng với NaOH tạo sodium phenoxide, còn ethanol không có tính acid đủ mạnh nên không phản ứng với dung dịch NaOH ở điều kiện thường.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Thuốc thử có thể tạo màu đặc trưng với phenol là:",
+     "options": [
+      "NaCl",
+      "FeCl₃",
+      "KNO₃",
+      "Cu kim loại"
+     ],
+     "answer": "B",
+     "explain": "B. Phenol tạo phức màu tím với dung dịch FeCl₃. NaCl, KNO₃ và Cu kim loại không cho màu đặc trưng với phenol.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    },
+    {
+     "q": "Cho dung dịch phenol phản ứng vừa đủ với nước bromine. Hiện tượng quan sát được là:",
+     "options": [
+      "Nước bromine mất màu, xuất hiện kết tủa trắng.",
+      "Nước bromine không mất màu, xuất hiện kết tủa trắng.",
+      "Nước bromine mất màu, xuất hiện kết tủa vàng.",
+      "Nước bromine không mất màu, không xuất hiện kết tủa."
+     ],
+     "answer": "A",
+     "explain": "A. C₆H₅OH + 3Br₂ → 2,4,6-tribromophenol↓ (trắng) + 3HBr. Nước bromine mất màu và xuất hiện kết tủa trắng ngay ở điều kiện thường.",
+     "tags": [
+      "ly-thuyet"
+     ]
+    }
+   ]
   }
  ]
 }
